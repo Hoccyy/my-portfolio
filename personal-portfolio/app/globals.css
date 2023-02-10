@@ -1,4 +1,72 @@
+::selection{
+  background-color: #000;
+}
+.b-Men{
+  background-color: #000;
+}
+
+.left-tab{
+  background-color: #000;
+  text-align: right;
+  width: 10%;
+  /*padding-top: 3vh;*/
+  margin-right: 100rem;
+}
+.menu-it{
+  background-color: #000;
+  text-align: right;
+  width: 100vw;
+  position: fixed;
+}
+.rightm{
+  background-color: #000;
+  margin-right: 30px; padding-top: 2vh; padding-bottom: 2vh;
+}
+
+/*#content{}*/
+
+.content-1{
+  text-align:center;
+  /*border-bottom: 3px solid black;*/
+  height: 99vh;
+  margin: 0vw 5vw 0vw 5vw;
+}
+
+
+.banners{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  margin-top: 100px;
+}
+.banners-1{
+  text-align: center;
+  border: 2px #000 solid; border-radius: 25px;
+  width: 23vw;    height: 50vh;
+  box-shadow: 5px 6px 8px 7px #000;
+  margin: 0vw 3vw 0vw 3vw;
+  background-color: #000;
+  color: #FFF;
+}
+.banners-wip{
+  text-align: center;
+  border: 2px #000 solid; border-radius: 25px;
+  width: 23vw;    height: 50vh;
+  box-shadow: 5px 6px 8px 7px #000;
+  margin: 0vw 3vw 0vw 3vw;
+  background-color: #000;
+  color: #FFF;
+}
+
+.content-2{
+  background-color: #2b2b2b;
+  width: 100vw;
+  margin: 0vw 5vw 0vw 5vw;
+}
+
 :root {
+  background-color: rgb(27, 27, 66);
   --max-width: 1100px;
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',

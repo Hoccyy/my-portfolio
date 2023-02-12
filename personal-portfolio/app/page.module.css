@@ -4,13 +4,45 @@
   margin-bottom: 14vh; margin-top: 6vh;
   color: #000;
 }
+.title2Sk{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 2.33rem;
+  font-weight: lighter;
+  margin-top: 6px;
+  color: #FFF;
+  /*animation: title-fade 1.5s ease-in;*/
+}
+.title2GI{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 2.33rem;
+  font-weight: lighter;
+  /*margin-top: 6px;*/
+  color: #FFF;
+  padding-bottom: 10px;
+  /*animation: title-fade 1.5s ease-in;*/
+}
 .title2{
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 2.33rem;
   font-weight: lighter;
   margin-top: 6px;
   color: #000;
-  /*animation: title-fade 1.5s ease-in;*/
+}
+.title2FS{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 2.33rem;
+  font-weight: lighter;
+  margin-top: 6px;
+  color: #000;
+}
+.title2FS:hover{
+  color: rgb(86, 159, 255);
+  font-size: 2.34rem;
+}
+
+.footer{
+  background-color: #000;
+  margin: 0; padding: 0;
 }
 
 .title3{
@@ -77,6 +109,92 @@
   border-radius: 13px;
   box-shadow: #fff;
 }
+.bumpLogo{
+  width: 100%; height: 90%;
+}
+.skillLogo{
+  width: 18vw; height: inherit;
+}
+
+.gridSkills{
+  width: 20vw;
+  background-color: #000;
+  height: 300px;
+  margin: .6vw .3vw 0vw .3vw;
+  padding-bottom: 40vh;
+  padding-left:1vw;
+  border-radius: 25px;
+  box-shadow: -3px 3px 12px 2px #000;
+}
+.gridSkills:hover{
+  animation: hoverPop 0.33s ease-in;
+  width: 21vw;
+  height: 320px;
+  outline: 3px solid #181717;
+  outline-offset: .33px;
+  padding-left: 3vh;
+}
+.gridSkillsN:hover{
+  animation: hoverPop 0.33s ease-in;
+  width: 21vw;
+  height: 320px;
+  outline: 3px solid #181717;
+  outline-offset: .33px;
+  padding-left: 3vh;
+}
+.gridSkillsJS:hover{
+  animation: hoverPop 0.33s ease-in;
+  width: 21vw;
+  height: 320px;
+  outline: 3px solid #181717;
+  outline-offset: .33px;
+  padding-left: 3vh;
+}
+@keyframes hoverPop{
+  0%{
+    width: 20vw;
+    height: 300px;
+  }
+  50%{
+    width: 20.5vw;
+    height: 310px;
+    padding-left: 2vh;
+  }
+  100%{
+    width: 21vw;
+    height: 320px;
+    padding-left: 3vh;
+  }
+}
+
+.gridSkillsN{
+  width: 20vw;
+  background-color: #fff;
+  height: 300px;
+  margin: .6vw .3vw 0vw .3vw;
+  padding-bottom: 40vh;
+  padding-left:1vw;
+  border-radius: 25px;
+}
+.gridSkillsJS{
+  width: 20vw;
+  background-color: #F7DF1E;
+  height: 300px;
+  margin: .6vw .3vw 0vw .3vw;
+  padding-bottom: 40vh;
+  padding-left:1vw;
+  border-radius: 25px;
+  box-shadow: -3px 3px 7px 1px #F7DF1E;
+}
+.gridSkillsN{
+  width: 20vw;
+  background-color: #FFF;
+  height: 300px;
+  margin: .6vw .3vw 0vw .3vw;
+  padding-bottom: 40vh;
+  padding-left:1vw;
+  border-radius: 25px;
+}
 
 .description {
   display: inherit;
@@ -89,6 +207,24 @@
   font-family: var(--font-mono);
   color:#fff;
 }
+.descriptionL {
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  font-size: 0.85rem;
+  max-width: var(--max-width);
+  width: 100%;
+  z-index: 2;
+  font-family: var(--font-mono);
+  color:#fff;
+}
+.descriptionL:hover{
+  background-color: rgb(146, 164, 224);
+  font-size: 0.87rem;
+  font-weight: 700;
+}
+
+
 .description1 {
   display: inherit;
   justify-content: inherit;
@@ -251,6 +387,33 @@
   background-clip: content-box;
 }
 
+.banGrid{
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gridItem{
+  width: 20vw;
+  background-color: red;
+  height: 500px;
+  margin: .6vw .3vw 0vw .3vw;
+  padding-bottom: 40vh;
+}
+.gridItem2{
+  width: 20vw;
+  background-color: red;
+  height: 500px;
+  margin: .6vw .3vw 0vw .3vw;
+  opacity: 0;
+}
+
+.cont{
+  margin: 10vh 0vh 0vh 10vh;
+}
+
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
@@ -273,10 +436,53 @@
   }
 }
 
+.content2{
+  background-color: #2b2b2b;
+  width: 100vw;
+  margin: 0vw 5
+  vw 0vw 5vw;
+  padding-top: 6vh;
+  padding-bottom: 0; margin-bottom: 0;
+}
+.content3{
+  background-color: #3a95b9;
+  padding-bottom: 5vh; padding-top: 3vh;
+  border-top: .1px solid black;
+}
+
 /* Mobile and Tablet */
 @media (max-width: 1023px) {
   .content {
     padding: 4rem;
+  }
+  .content2{
+    background-color: #2b2b2b;
+    width: 100vw;
+    margin: 0vw 0vw 0vw 13.5vw;
+  }
+  .gridSkills{
+    width: 90vw;
+    margin-left: 5vw;
+    margin-top: 5vw;
+  }
+  .title2Sk{
+    margin-left: 5vw;
+  }
+  .bGrid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .banGrid{
+    width: 50%;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+  }
+  .gridItem{
+    background-color: blue;
+    width: 80vw;
+    margin-left: 10vw;
   }
 
   .grid {

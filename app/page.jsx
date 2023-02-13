@@ -2,7 +2,7 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from './page.module.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
   return (
@@ -10,8 +10,8 @@ export default function Home() {
       <div className={styles.content}>
         <div class="content-1">
           <Image
-            src="/vercel.svg"
-            alt="Vercel Logo"
+            src="/Hoccyy.svg"
+            alt="Hoccyy icon"
             className={styles.vercelLogo}
             width={100}
             height={24}

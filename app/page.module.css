@@ -539,8 +539,12 @@
     overflow: auto;
     white-space: nowrap;
     height: 400px;
-    margin-left: 50px;
+    margin-left: 0;
     z-index: -1000;
+  }
+  #content-0{
+    margin-right: 50vw;
+    width: 100vw;
   }
 
   @keyframes hoverPop{
@@ -572,6 +576,7 @@
     outline: 3px solid #181717;
     outline-offset: .33px;
     padding-left: .5vh;
+    margin-left: 23vw;
   }
   .gridSkillsJS:hover{
     animation: hoverPop 0.44s ease-in;
@@ -580,6 +585,7 @@
     outline: 3px solid #181717;
     outline-offset: .33px;
     padding-left: .5vh;
+    margin-left: 23vw;
   }
   .gridSkillsN:hover{
     animation: hoverPop 0.44s ease-in;
@@ -588,18 +594,24 @@
     outline: 3px solid #181717;
     outline-offset: .33px;
     padding-left: 1vh;
+    margin-left: 23vw;
   }
   .gridSkills{
     width: 80vw;
-    margin-left: 5vw;
+    margin-left: 25vw; margin-top: 4.33vh;
   }
+
+  .vercelLogo{
+    opacity: 0;
+  }
+
   .gridSkillsJS{
     width: 80vw;
-    margin-left: 5vw;
+    margin-left: 25vw; margin-top: 4.33vh;
   }
   .gridSkillsN{
     width: 80vw;
-    margin-left: 5vw;
+    margin-left: 25vw; margin-top: 4.33vh;
   }
 
   .gridEdu {
@@ -628,10 +640,10 @@
     width: inherit;
   }
   .gridItem{
-    background-color: blueviolet;
+    background-color: rgb(124, 69, 85);
     border-radius: 15px;
     width: 80vw;
-    margin-left: 6vw;
+    margin-left: 12vw;
   }
 
   .grid {

@@ -263,7 +263,7 @@ export default function Home() {
           </div>
           
 
-          <h1 className={styles.title2}>Something</h1>
+          
           <div id='content-0'>
             <div className={styles.content4}>
               <h1 className={styles.title2Sk}>Education</h1>
@@ -271,7 +271,7 @@ export default function Home() {
                   <div className={styles.gridEdu}>
                     {/*<h1 className={styles.title2Sk}>Python</h1>*/}
                     <Image
-                    //src="/Python-logo.svg"
+                    
                     src="/assets/York.svg"
                     alt="Python 3.0 Logo"
                     className={styles.skillLogo}
@@ -284,7 +284,7 @@ export default function Home() {
                   <div className={styles.gridEdu}>
                     {/*<h1 className={styles.title2Sk}>Python</h1>*/}
                     <Image
-                    //src="/Python-logo.svg"
+                    
                     src="/assets/AlgomaUniversity.svg"
                     alt="Python 3.0 Logo"
                     className={styles.skillLogo}

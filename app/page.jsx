@@ -163,9 +163,9 @@ export default function Home() {
                 </div>
               </div>
 
-          </div>
+        </div>
 
-          <div className={styles.content2}>
+        <div className={styles.content2}>
           <div id='content-0'> <h3 className={styles.title2Sk}>My Projects</h3> </div>
           <div className={styles.banGrid}>
               <div className={styles.gridItem}>

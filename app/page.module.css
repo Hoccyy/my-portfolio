@@ -339,7 +339,7 @@
 .description:hover{
   /*background-color: grey;
   color: #fff;*/
-  animation: menu 5.5 ease-in delay iteration-count direction fill-mode;
+  animation: menu 5.5 ease-in;
 }
 @keyframes menu {
   0%{

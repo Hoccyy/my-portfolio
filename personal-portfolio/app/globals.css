@@ -2,7 +2,7 @@
   background-color: #000;
 }
 .b-Men{
-  background-color: #000;
+  background-color: #FFF;
 }
 
 .left-tab{
@@ -31,8 +31,10 @@
   height: 80vh;
   padding-left: 5vh;
   padding-right: 5vh;
+  margin-top: 0;
   background-color: #FFF;
   background-image: linear-gradient(to bottom, white, white, white, white, rgb(177, 177, 177));
+  z-index: 2;
 }
 
 .content-0{

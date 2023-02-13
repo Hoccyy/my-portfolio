@@ -25,7 +25,6 @@ export default function Home() {
         </div>{/*Div1*/}
 
 
-
         <div className={styles.content3}>
           {/*<button className={styles.button}>Resume</button>*/}
           <div id='content-0'> <h3 className={styles.title2Sk}>My Skills</h3> </div>
@@ -169,41 +168,153 @@ export default function Home() {
           <div className={styles.content2}>
           <div id='content-0'> <h3 className={styles.title2Sk}>My Projects</h3> </div>
           <div className={styles.banGrid}>
-            <div className={styles.gridItem}><h1 className={styles.title2}>Morse Translator</h1>
-            <Image
-            src="/assets/Morse.png"
-            alt="Vercel Logo"
-            className={styles.bumpLogo}
-            width={100}
-            height={24}
-            draggable={false}
-            priority
-            />
-            <h3 className={styles.title2GI}>A web application to translate English into Morse Code and vice versa</h3>
-          </div>
-            <div className={styles.gridItem}><h1 className={styles.title2}>Cache-Woosh</h1></div>
-            <div className={styles.gridItem}><h1 className={styles.title2}>Arduino Timer</h1></div>
-            <div className={styles.gridItem}><h1 className={styles.title2}>Weather app</h1></div>
+              <div className={styles.gridItem}>
+                <Image
+                src="/assets/Morse2.svg"
+                alt="Vercel Logo"
+                className={styles.bumpLogo}
+                width={100}
+                height={24}
+                draggable={false}
+                priority
+                />
+                <h1 className={styles.title2GI}>Morse Translator</h1>
+                <div className={styles.textCont}>
+                  <h3 className={styles.description2}>A web application to translate English into Morse Code and vice versa</h3>
+                </div>
+            </div>
+              <div className={styles.gridItem}>
+                <Image
+                src="/assets/CacheW.svg"
+                alt="Vercel Logo"
+                className={styles.bumpLogo}
+                width={100}
+                height={24}
+                draggable={false}
+                priority
+                />
+                <h1 className={styles.title2GI}>Cache-Woosh</h1>
+                <div className={styles.textCont}>
+                  <h3 className={styles.description2}>Cache cleaning app written in Python using PyQt and batch file manipulation</h3>
+                </div>
+            </div>
+            <div className={styles.gridItem}>
+              <Image
+                src="/assets/wip.svg"
+                alt="Vercel Logo"
+                className={styles.bumpLogo}
+                width={100}
+                height={24}
+                draggable={false}
+                priority
+              />
+              <h1 className={styles.title2GI}>Arduino Timer</h1>
+              <div className={styles.textCont}>
+                  <h3 className={styles.description2}>Project built for a class project to count from 1-9 and display A-F, using an Arduino module and C++</h3>
+              </div>
+            </div>
+            <div className={styles.gridItem}>
+              <Image
+                src="/assets/wip.svg"
+                alt="Vercel Logo"
+                className={styles.bumpLogo}
+                width={100}
+                height={24}
+                draggable={false}
+                priority
+              />
+              <h1 className={styles.title2GI}>Weather app</h1>
+                <div className={styles.textCont}>
+                  <h3 className={styles.description2}>A weather app composed in Next.JS using API technology to retrieve weather data</h3>
+                </div>
+            </div>
           </div>
           <div className={styles.banGrid}>
-            <div className={styles.gridItem}><h1 className={styles.title2}>Water Tracker</h1>
-            <Image
-            src="/assets/Morse.png"
-            alt="Vercel Logo"
-            className={styles.bumpLogo}
-            width={100}
-            height={24}
-            draggable={false}
-            priority
-          />
+            <div className={styles.gridItem}>
+              <Image
+                src="/assets/wip.svg"
+                alt="Vercel Logo"
+                className={styles.bumpLogo}
+                width={100}
+                height={24}
+                draggable={false}
+                priority
+              />
+              <h1 className={styles.title2GI}>Water Tracker</h1>
+              <div className={styles.textCont}>
+                <h3 className={styles.description2}>Web app to track daily water intake written using Next.JS</h3>
+              </div>
             </div>
-            <div className={styles.gridItem}><h1 className={styles.title2}>Cache Cleaner</h1></div>
+            <div className={styles.gridItem}>
+              <Image
+                src="/assets/wip.svg"
+                alt="Vercel Logo"
+                className={styles.bumpLogo}
+                width={100}
+                height={24}
+                draggable={false}
+                priority
+              />
+              <h1 className={styles.title2GI}>Cache Cleaner</h1></div>
+
             <div className={styles.gridItem2}><h1 className={styles.title2}>Cache Cleaner</h1></div>
             <div className={styles.gridItem2}><h1 className={styles.title2}>Cache Cleaner</h1></div>
 
           </div>
+          
+
           <h1 className={styles.title2}>Something</h1>
+          <div id='content-0'>
+            <div className={styles.content4}>
+              <h1 className={styles.title2Sk}>Education</h1>
+              <div className={styles.banGrid}>{/*Skill set 1*/}
+                  <div className={styles.gridEdu}>
+                    {/*<h1 className={styles.title2Sk}>Python</h1>*/}
+                    <Image
+                    //src="/Python-logo.svg"
+                    src="/assets/York.svg"
+                    alt="Python 3.0 Logo"
+                    className={styles.skillLogo}
+                    width={100}
+                    height={24}
+                    draggable={false}
+                    priority
+                    />
+                    </div> {/**Close Logo */}
+                  <div className={styles.gridEdu}>
+                    {/*<h1 className={styles.title2Sk}>Python</h1>*/}
+                    <Image
+                    //src="/Python-logo.svg"
+                    src="/assets/AlgomaUniversity.svg"
+                    alt="Python 3.0 Logo"
+                    className={styles.skillLogo}
+                    width={100}
+                    height={24}
+                    draggable={false}
+                    priority
+                    />
+                    </div> {/**Close Logo */}
+                  <div className={styles.gridEdu}>
+                    {/*<h1 className={styles.title2Sk}>Python</h1>*/}
+                    <Image
+                    //src="/Python-logo.svg"
+                    src="/assets/ThistletownCollegiateInstitute.svg"
+                    alt="Python 3.0 Logo"
+                    className={styles.skillLogo}
+                    width={100}
+                    height={24}
+                    draggable={false}
+                    priority
+                    />
+                    </div> {/**Close Logo */}
+              </div>
+            
+            </div>
+
+          </div>
+
         </div>
+
 
     </div>{/*Main DIv*/}
     </main>

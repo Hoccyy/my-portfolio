@@ -9,18 +9,12 @@ export default function Home() {
     <main className={styles.main}>
       <div className={styles.content}>
         <div class="content-1">
-          <Image
-            src="/Hoccyy.svg"
-            alt="Hoccyy icon"
-            className={styles.vercelLogo}
-            width={100}
-            height={24}
-            draggable={false}
-            priority
-          />
-          <div className={styles.sizefit}><h1 className={styles.title}>Hocian Wade.</h1></div>
-          <div id='content-0'>
-          <h1 className={styles.title2FS}>I am a Full-stack developer</h1></div>
+          <div className={styles.textCont}><h1 className={styles.title}>Hocian Wade.</h1>
+          
+            <h1 className={styles.title2FS}>I am a Full-stack developer</h1>
+            <div id='content-0'>
+            </div>
+          </div>
 
         </div>{/*Div1*/}
 

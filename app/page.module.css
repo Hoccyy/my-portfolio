@@ -7,7 +7,9 @@
 
 .content4 {
   background-color: rgb(165, 165, 165);
-  padding-bottom: 10vh;
+  padding-bottom: 22.33vh;
+  padding-top: 6vh;
+  margin-top: 10vh;
 }
 .content4S {
   padding-left: 2vw;
@@ -59,6 +61,7 @@
   font-size: 2.33rem;
   font-weight: lighter;
   margin-top: 6px;
+  margin-bottom: 1vh;
   color: #000;
 }
 .title2FS:hover{
@@ -121,7 +124,7 @@
   align-items: center;
   margin: 6rem;
   min-height: 100vh;
-  background-color: #000;
+  background-color: transparent;
 }
 
 .content{
@@ -144,6 +147,7 @@
 .skillLogo{
   width: 18vw; height: inherit;
 }
+
 
 .gridEdu{
   width: 25vw;
@@ -453,6 +457,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: 5vw;
 }
 
 .gridItem{
@@ -507,8 +512,7 @@
 .content2{
   background-color: #2b2b2b;
   width: 100vw;
-  margin: 0vw 5
-  vw 0vw 5vw;
+  margin: 0vw 5vw 0vw 5vw;
   padding-top: 6vh;
   padding-bottom: 0; margin-bottom: 0;
 }
@@ -525,8 +529,9 @@
     width: 60vw; height: 200px;
     margin: 0; padding:0 1vw 0 1vw;
   }
+
   .content {
-    padding: 4rem;
+    padding: -25rem 0rem 0rem 4rem;
   }
   .content2{
     background-color: #2b2b2b;
@@ -590,7 +595,7 @@
   .skillLogo{
     width: inherit;
     height: 250px;
-    padding-top: 10px;
+    padding-top: 10vh;
     margin-right: 3vw;
   }
   
@@ -667,6 +672,10 @@
     display: inline;
     align-items: center;
     justify-content: center;
+  }
+
+  .gridItem2{
+    height: 0; width: 0;
   }
 
   .title2GI{

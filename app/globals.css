@@ -9,7 +9,6 @@
   background-color: #000;
   text-align: right;
   width: 10%;
-  /*padding-top: 3vh;*/
   margin-right: 100rem;
 }
 .menu-it{
@@ -22,13 +21,13 @@
   background-color: #000;
   margin-right: 30px; padding-top: 2vh; padding-bottom: 2vh;
 }
-
-/*#content{}*/
+#content-0{
+  padding-bottom: 10vh;
+}
 
 .content-1{
   text-align:center;
-  /*border-bottom: 3px solid black;*/
-  height: 80vh;
+  height: 75vh;
   padding-left: 5vh;
   padding-right: 5vh;
   margin-top: 0;
@@ -144,5 +143,10 @@ a {
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+}
+@media (max-width: 1023px) {
+  .content-1{
+    margin-top: -5vh;
   }
 }

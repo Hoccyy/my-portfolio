@@ -22,11 +22,8 @@ export default function RootLayout({ children }) {
           {children}
         </div>
         <div className={styles.footer}>
-          <ul>
-            <li className={styles.description}>
-            Contact  
-            </li>  
-            <li className={styles.title2GI}>@Hoccyy</li>  
+          <ul class="left-tab">
+            <li class='rightm'> <h1 className={styles.title2GI}>@Hoccyy</h1> </li>  
           </ul>
         </div>
       </body>

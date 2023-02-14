@@ -10,6 +10,8 @@
   text-align: right;
   width: 10%;
   margin-right: 100rem;
+  list-style-type: none;
+  text-decoration: none;
 }
 .menu-it{
   background-color: #000;

@@ -151,4 +151,8 @@ a {
   .content-1{
     margin-top: -5vh;
   }
+  .rightm {
+    margin: 0;
+    width: 100vw;
+}
 }

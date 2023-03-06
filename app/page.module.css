@@ -535,6 +535,16 @@
 
 /* Mobile and Tablet */
 @media (max-width: 1023px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 6rem;
+    min-height: 100vh;
+    background-color: transparent;
+  }
+
   .bumpLogo{
     width: 60vw; height: 200px;
     margin: 0; padding:0 1vw 0 1vw;
@@ -578,6 +588,14 @@
     width: inherit;
     height: inherit;
 
+  }
+  .card{
+    margin: 0;
+  }
+  .descriptionL{
+    /*color: red;*/
+    padding: 0vw;
+    font-size: 11px;
   }
 
   #content-0{

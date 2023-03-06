@@ -14,6 +14,7 @@ export default function RootLayout({ children }) {
           <ul class='menu-it'>
             <li class='rightm'>
               <span className={styles.card}><p className={styles.descriptionL}>About</p></span>
+              <span className={styles.card}><a target="blank" href='https://www.linkedin.com/in/hoccyy/' className={styles.descriptionL}>LinkedIn</a></span>
               <span className={styles.card}><a target="blank" href='https://twitter.com/Hoccyy_' className={styles.descriptionL}>Twitter</a></span>
               <span className={styles.card}><a target="blank" href='https://github.com/Hoccyy' className={styles.descriptionL}>Github</a></span></li> 
           </ul>

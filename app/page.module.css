@@ -173,6 +173,7 @@
   margin: .6vw .3vw 0vw .3vw;
   padding-bottom: 40vh;
   padding-left:1vw;
+  padding-top: 0.8vh;
   border-radius: 25px;
   box-shadow: -3px 3px 12px 2px #000;
 }
@@ -224,6 +225,7 @@
   margin: .6vw .3vw 0vw .3vw;
   padding-bottom: 40vh;
   padding-left:1vw;
+  padding-top: 0.8vh;
   border-radius: 25px;
 }
 .gridSkillsJS{
@@ -233,6 +235,7 @@
   margin: .6vw .3vw 0vw .3vw;
   padding-bottom: 40vh;
   padding-left:1vw;
+  padding-top: 0.8vh;
   border-radius: 25px;
   box-shadow: -3px 3px 7px 1px #F7DF1E;
 }
@@ -459,6 +462,13 @@
   justify-content: center;
   margin-left: 5vw;
 }
+.banGridEdu{
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: inherit;
+}
 
 .gridItem{
   width: 20vw;
@@ -483,7 +493,7 @@
 .textCont{
   width: inherit;
   height: inherit;
-  padding-left: 3vh;
+  padding-left: 2vh;
 }
 
 

@@ -172,7 +172,9 @@ export default function Home() {
                 draggable={false}
                 priority
                 />
-                <h1 className={styles.title2GI}>Morse Translator</h1>
+                <a target="blank" href='https://github.com/Hoccyy/MorseCode-Translator'>
+                  <h1 className={styles.title2GI}>Morse Translator</h1>
+                </a>
                 <div className={styles.textCont}>
                   <h3 className={styles.description2}>A web application to translate English into Morse Code and vice versa</h3>
                 </div>
@@ -187,11 +189,14 @@ export default function Home() {
                 draggable={false}
                 priority
                 />
-                <h1 className={styles.title2GI}>Cache-Woosh</h1>
+                <a target="blank" href='https://github.com/Hoccyy/Cache-Whoosh'>
+                  <h1 className={styles.title2GI}>Cache-Woosh</h1>
+                </a>
                 <div className={styles.textCont}>
                   <h3 className={styles.description2}>Cache cleaning app written in Python using PyQt and batch file manipulation</h3>
                 </div>
             </div>
+
             <div className={styles.gridItem}>
               <Image
                 src="/assets/wip.svg"
@@ -202,11 +207,14 @@ export default function Home() {
                 draggable={false}
                 priority
               />
-              <h1 className={styles.title2GI}>Arduino Timer</h1>
+              <a target="blank" href='https://github.com/Hoccyy/Arduino-Timer-Display'>
+                <h1 className={styles.title2GI}>Arduino Timer</h1>
+              </a>
               <div className={styles.textCont}>
                   <h3 className={styles.description2}>Project built for a class project to count from 1-9 and display A-F, using an Arduino module and C++</h3>
               </div>
             </div>
+
             <div className={styles.gridItem}>
               <Image
                 src="/assets/wip.svg"
@@ -239,9 +247,10 @@ export default function Home() {
                 <h3 className={styles.description2}>Web app to track daily water intake written using Next.JS</h3>
               </div>
             </div>
+
             <div className={styles.gridItem}>
               <Image
-                src="/assets/wip.svg"
+                src="/assets/QuickClick.svg"
                 alt="Vercel Logo"
                 className={styles.bumpLogo}
                 width={100}
@@ -249,7 +258,13 @@ export default function Home() {
                 draggable={false}
                 priority
               />
-              <h1 className={styles.title2GI}>Cache Cleaner</h1></div>
+              <a target="blank" href='https://github.com/Hoccyy/auto-clicker'>
+                <h1 className={styles.title2GI}>QuickClick</h1>
+              </a>
+              <div className={styles.textCont}>
+                  <h3 className={styles.description2}>A python app made to automate repetitive clicking automatically. This can be used for games, or to help with your workflow and productivity.</h3>
+              </div>
+            </div>
 
             <div className={styles.gridItem2}><h1 className={styles.title2}>Cache Cleaner</h1></div>
             <div className={styles.gridItem2}><h1 className={styles.title2}>Cache Cleaner</h1></div>
@@ -261,7 +276,7 @@ export default function Home() {
           <div id='content-0'>
             <div className={styles.content4}>
               <h1 className={styles.title2Sk}>Education</h1>
-              <div className={styles.banGrid}>{/*Skill set 1*/}
+              <div className={styles.banGridEdu}>{/*Skill set 1*/}
                   <div className={styles.gridEdu}>
                     {/*<h1 className={styles.title2Sk}>Python</h1>*/}
                     <Image

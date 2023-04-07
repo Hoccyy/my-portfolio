@@ -383,6 +383,13 @@
   position: relative;
   padding: 4rem 0;
 }
+.center_ {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 4rem 0;
+}
 
 .center::before {
   background: var(--secondary-glow);
@@ -453,6 +460,22 @@
     rgba(var(--tile-end-rgb), 1)
   );
   background-clip: content-box;
+}
+
+.resume {
+  width: 80vw;
+  margin-left: 15vw;
+  display: flex;
+  border-radius: 7px;
+}
+.resumeButton {
+  width: 11.33rem;
+  height: 5rem;
+  font-size: xx-large;
+  border-radius: 12;
+  text-align: center;
+  border-radius: 7px;
+  background-color: rgb(143, 206, 49);
 }
 
 .banGrid{

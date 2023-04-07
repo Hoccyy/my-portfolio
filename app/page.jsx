@@ -20,6 +20,19 @@ export default function Home() {
 
 
         <div className={styles.content3}>
+          
+          <div id='content-0'> <h3 className={styles.title2Sk}>Resume</h3> </div>
+          <Image
+          src="/assets/Resume.png"
+          alt="Resume"
+          className={styles.resume}
+          width={690}
+          height={1100}
+          draggable={true}
+          priority
+          />
+        </div>
+        <div className={styles.content3}>
           {/*<button className={styles.button}>Resume</button>*/}
           <div id='content-0'> <h3 className={styles.title2Sk}>My Skills</h3> </div>
 
@@ -118,7 +131,6 @@ export default function Home() {
                 </div>
                 <div className={styles.gridSkillsJS}>
                   <Image
-                  //src="/Python-logo.svg"
                   src="/assets/CSS.svg"
                   alt="CSS Logo"
                   className={styles.skillLogo}
@@ -130,7 +142,6 @@ export default function Home() {
                 </div>
                 <div className={styles.gridSkills}>
                 <Image
-                  //src="/Python-logo.svg"
                   src="/assets/CPP.svg"
                   alt="C++(CPP) Logo"
                   className={styles.skillLogo}
@@ -172,7 +183,7 @@ export default function Home() {
                 draggable={false}
                 priority
                 />
-                <a target="blank" href='https://github.com/Hoccyy/MorseCode-Translator'>
+                <a target="_blank" href='https://www.morseley.com/'>
                   <h1 className={styles.title2GI}>Morse Translator</h1>
                 </a>
                 <div className={styles.textCont}>
@@ -189,7 +200,7 @@ export default function Home() {
                 draggable={false}
                 priority
                 />
-                <a target="blank" href='https://github.com/Hoccyy/Cache-Whoosh'>
+                <a target="_blank" href='https://github.com/Hoccyy/Cache-Whoosh'>
                   <h1 className={styles.title2GI}>Cache-Woosh</h1>
                 </a>
                 <div className={styles.textCont}>
@@ -207,7 +218,7 @@ export default function Home() {
                 draggable={false}
                 priority
               />
-              <a target="blank" href='https://github.com/Hoccyy/Arduino-Timer-Display'>
+              <a target="_blank" href='https://github.com/Hoccyy/Arduino-Timer-Display'>
                 <h1 className={styles.title2GI}>Arduino Timer</h1>
               </a>
               <div className={styles.textCont}>
@@ -225,9 +236,11 @@ export default function Home() {
                 draggable={false}
                 priority
               />
-              <h1 className={styles.title2GI}>Weather app</h1>
+              <a target="_blank" href='https://chrome.google.com/webstore/detail/mirrorhound/iapfedepagfopcakfpejjjlkafmnpoeh'>
+                 <h1 className={styles.title2GI}>MirrorHound</h1>
+              </a>
                 <div className={styles.textCont}>
-                  <h3 className={styles.description2}>A weather app composed in Next.JS using API technology to retrieve weather data</h3>
+                  <h3 className={styles.description2}>Chrome web extension to detect mirrored websites automatically and potentially prevent phishing scams and fraud</h3>
                 </div>
             </div>
           </div>
@@ -258,7 +271,7 @@ export default function Home() {
                 draggable={false}
                 priority
               />
-              <a target="blank" href='https://github.com/Hoccyy/auto-clicker'>
+              <a target="_blank" href='https://github.com/Hoccyy/auto-clicker'>
                 <h1 className={styles.title2GI}>QuickClick</h1>
               </a>
               <div className={styles.textCont}>

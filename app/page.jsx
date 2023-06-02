@@ -9,9 +9,11 @@ export default function Home() {
     <main className={styles.main}>
       <div className={styles.content}>
         <div class="content-1">
-          <div className={styles.textCont}><h1 className={styles.title}>Hocian Wade.</h1>
+          <div className={styles.textCont}><h1 className={styles.title}>🪻Hocian Wade🌱</h1>
           
-            <h1 className={styles.title2FS}>I am a Full-stack developer</h1>
+            <h1 className={styles.title2FS}>Full-Stack Developer</h1>
+            <h1 className={styles.title2FS}>Back-End | Front-End</h1>
+            <h1 className={styles.title2FS}>Software Engineer</h1>
             <div id='content-0'>
             </div>
           </div>

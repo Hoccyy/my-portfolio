@@ -27,7 +27,7 @@ export default function Home() {
           alt="Resume"
           className={styles.resume}
           width={690}
-          height={1100}
+          height={1300}
           draggable={true}
           priority
           />

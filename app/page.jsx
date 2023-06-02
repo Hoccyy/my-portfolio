@@ -11,9 +11,11 @@ export default function Home() {
         <div class="content-1">
           <div className={styles.textCont}><h1 className={styles.title}>🪻Hocian Wade🌱</h1>
           
-            <h1 className={styles.title2FS}>Full-Stack Developer</h1>
+            <h1 className={styles.title2FS}>Full-Stack Developer ≡</h1>
             <h1 className={styles.title2FSs}>Back-End | Front-End</h1>
             <h1 className={styles.title2FSt}>Software Engineer</h1>
+            <h1 className={styles.title2FS}>Machine Learning 💻📊</h1>
+
             <div id='content-0'>
             </div>
           </div>
@@ -22,7 +24,7 @@ export default function Home() {
 
         <div className={styles.content3}>
           
-          <div id='content-0'> <h3 className={styles.title2Sk}>Resume</h3> </div>
+          <div id='content-0'> <h3 className={styles.title2Sk}> Resume </h3> </div>
           <Image
           src="/assets/Resume.png"
           alt="Resume"
@@ -164,7 +166,7 @@ export default function Home() {
         </div>
 
         <div className={styles.content2}>
-          <div id='content-0'> <h3 className={styles.title2Sk}>My Projects</h3> </div>
+          <div id='content-0'> <a href='http://github.com/Hoccyy' target='_blank'> <h3 className={styles.title2Ska}>My Projects</h3> </a> </div>
           <div className={styles.banGrid}>
               <div className={styles.gridItem}>
                 

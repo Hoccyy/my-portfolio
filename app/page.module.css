@@ -400,7 +400,7 @@
 }
 .title2FSs:hover {
 	color: rgb(255, 80, 80);
-	font-weight: 500;
+	font-weight: 200;
 	font-size: 2.34rem;
 }
 .title2FSt {
@@ -431,6 +431,20 @@
 	font-weight: lighter;
 	margin-top: 6px;
 	text-align: center;
+}
+.title2Ska {
+	color: #FFF;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-size: 3.33rem;
+	font-weight: 600;
+	font-weight: lighter;
+	margin-top: 6px;
+	text-align: center;
+}
+.title2SKa:hover {
+	font-weight: 250;
+	color: #000;
+	font_size: 3.5rem;
 }
 .title3 {
 	color: #000;

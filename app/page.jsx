@@ -297,7 +297,7 @@ export default function Home() {
 
                     <Image
                     src="/assets/York.svg"
-                    alt="Python 3.0 Logo"
+                    alt="University"
                     className={styles.skillLogo}
                     width={100}
                     height={24}
@@ -310,7 +310,7 @@ export default function Home() {
                     
                     <Image
                     src="/assets/AlgomaUniversity.svg"
-                    alt="Python 3.0 Logo"
+                    alt="Previous University"
                     className={styles.skillLogo}
                     width={100}
                     height={24}
@@ -322,7 +322,7 @@ export default function Home() {
                   <div className={styles.gridEdu}>
                     <Image
                     src="/assets/ThistletownCollegiateInstitute.svg"
-                    alt="Python 3.0 Logo"
+                    alt="High School Logo"
                     className={styles.skillLogo}
                     width={100}
                     height={24}

@@ -1,0 +1,290 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+main {
+  background-color: #080402;
+}
+
+::selection {
+  background-color: black;
+  color:yellow;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+#main-div {
+  /*background-color: rgb(93, 53, 60);*/
+  background-color: rgb(84, 48, 126);
+  border-radius: 13px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+  font-family: monospace;
+  scroll-snap-type: x mandatory;
+
+  overflow-x: scroll; /*VITAL*/
+}
+
+#main-div > div {
+  text-align: center;
+  scroll-snap-align: center;
+  flex: none;
+  scroll-snap-type: x mandatory;
+}
+
+#container {
+  margin-top: 3px;
+  outline: 1px dashed rgba(211, 211, 211, 0.47);
+  flex: none;
+  padding: 13px;
+  display: flex;
+  width: 50%;
+  overflow: auto;
+  border-radius: 13px;
+}
+
+#carousel-slide {
+  padding: 1rem;
+  margin-bottom: 30px;
+  min-width: 100%;
+  scroll-snap-align: start;
+  opacity: 0;
+  height: 100% inherit;
+  text-align: center;
+  width: 100%;
+}
+
+.text-7xl {
+  margin-bottom: 23.13px;
+}
+
+#carousel-slide1 {
+  padding: 1rem;
+  margin-bottom: 30px;
+  min-width: 100%;
+  scroll-snap-align: start;
+  height: 100% inherit;
+}
+
+#secondary-h2 {
+  color: white;
+  text-align: center;
+}
+
+#secondary-h2-academia{
+  color: honeydew;
+  opacity: 1;
+}
+
+#listed-items {
+  font-size: 26px;
+}
+#listed-items:hover {
+  text-decoration: underline;
+  color: yellow;
+  background-color: black;
+  border-radius: 13px;
+}
+
+.amazon-logo {
+  width: 100%;
+  height: 95px;
+}
+.amazon-logo:hover {
+  height: 98.1313px;
+  opacity: 0.65;
+}
+
+.bg-green-700 {
+  width: 10px;
+}
+#dynamic-tip-bar {
+  margin: 0;
+  padding: 0;
+  font-size: 31px;
+  opacity: 0;
+  animation: fadeInOut 4.13s ease-in 1.13s;
+}
+#dynamic-tip-bar:hover {
+  text-decoration: underline;
+}
+
+nav {
+  list-style-type: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  background-color: rgb(55, 55, 48);
+  border-radius: 20px;
+  outline: 1px solid rgba(211, 211, 211, 0.47);
+  margin: 3px;
+  min-width: 506px;
+}
+nav:hover {
+  outline: 2.13px solid rgba(211, 211, 211, 0.47);
+}
+#menuItems {
+  color: white;
+  text-align: center;
+  padding: 0.513rem;
+  
+  padding-left: 3rem;
+  padding-right: 3rem;
+  /* animation: hoverFade 1.2s ease-in-out 0s; */
+}
+
+#glow-item:hover {
+  opacity: 1;
+  color: white;
+  text-decoration: underline;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 1), 0 0 1px rgba(255, 255, 255, 0.8), 0 0 1px rgba(255, 255, 255, 0.6);
+
+}
+
+#gone-glow-item:hover {
+  opacity: 1;
+  color: red;
+  text-decoration:line-through;
+}
+
+/* Hide scrollbar */
+#main-div::-webkit-scrollbar {
+  width: 0.5rem; /* Adjust the width as needed */
+  height: 0.5rem; /* Adjust the height as needed */
+}
+#main-div::-webkit-scrollbar-track {
+  background: transparent;
+}
+#main-div::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+/**/
+body::-webkit-scrollbar {
+  width: 0.5rem; /* Adjust the width as needed */
+  height: 0.5rem; /* Adjust the height as needed */
+}
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+body::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.75;
+  }
+  75% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes hoverFadeOut {
+  0% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes hoverFadeIn {
+  0% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0.0;
+    color: white;
+  }
+  20% {
+    opacity: 0.1;
+  }
+  25% {
+    opacity: 0.3;
+  }
+  30% {
+    opacity: 0.5;
+  }
+  40% {
+    opacity: 0.75;
+  }
+  50% {
+    opacity: 1;
+    color: rgb(151, 61, 61);
+  }
+  55% {
+    opacity: 1;
+  }
+  60%{
+    opacity: 0.8;
+  }
+  70% {
+    opacity: 0.75;
+  }
+  80% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+    color: white;
+  }
+}

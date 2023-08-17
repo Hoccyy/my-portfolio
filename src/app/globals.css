@@ -18,6 +18,7 @@
 
 main {
   background-color: #080402;
+  color: white;
 }
 
 ::selection {
@@ -49,6 +50,7 @@ body {
   scroll-snap-type: x mandatory;
 
   overflow-x: scroll; /*VITAL*/
+  color: white;
 }
 
 #main-div > div {
@@ -67,6 +69,7 @@ body {
   width: 50%;
   overflow: auto;
   border-radius: 13px;
+  color: white;
 }
 
 #carousel-slide {
@@ -78,10 +81,12 @@ body {
   height: 100% inherit;
   text-align: center;
   width: 100%;
+  color: white;
 }
 
 .text-7xl {
   margin-bottom: 23.13px;
+  color: white;
 }
 
 #carousel-slide1 {
@@ -90,6 +95,7 @@ body {
   min-width: 100%;
   scroll-snap-align: start;
   height: 100% inherit;
+  color: white;
 }
 
 #secondary-h2 {
@@ -104,6 +110,7 @@ body {
 
 #listed-items {
   font-size: 26px;
+  color: white;
 }
 #listed-items:hover {
   text-decoration: underline;
@@ -123,6 +130,7 @@ body {
 
 .bg-green-700 {
   width: 10px;
+  color: white;
 }
 #dynamic-tip-bar {
   margin: 0;
@@ -130,6 +138,7 @@ body {
   font-size: 31px;
   opacity: 0;
   animation: fadeInOut 4.13s ease-in 1.13s;
+  color: white;
 }
 #dynamic-tip-bar:hover {
   text-decoration: underline;
@@ -146,6 +155,7 @@ nav {
   outline: 1px solid rgba(211, 211, 211, 0.47);
   margin: 3px;
   min-width: 506px;
+  color: white;
 }
 nav:hover {
   outline: 2.13px solid rgba(211, 211, 211, 0.47);

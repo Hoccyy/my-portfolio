@@ -121,7 +121,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <h2 className='mb-9'> <a href='mailto:hocianw@gmail.com?' target='_blank' title='Get in contact with me 🌱'>@Hoccyy ²</a> </h2>
+      <h2 id='email-button' className='mb-9'> <a href='mailto:hocianw@gmail.com?' target='_blank' title='Get in contact with me 🌱'>@Hoccyy ²</a> </h2>
 
     </main>
   )

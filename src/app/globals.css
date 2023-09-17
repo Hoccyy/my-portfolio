@@ -23,7 +23,7 @@ main {
 
 ::selection {
   background-color: black;
-  color:yellow;
+  color:white;
 }
 
 body {
@@ -38,7 +38,7 @@ body {
 
 #main-div {
   /*background-color: rgb(93, 53, 60);*/
-  background-color: rgb(84, 48, 126);
+  background-color: rgb(55, 55, 55);
   border-radius: 13px;
   width: 100%;
   height: 100%;
@@ -114,7 +114,8 @@ body {
 }
 #listed-items:hover {
   text-decoration: underline;
-  color: yellow;
+  color: white;
+  font-weight: 700;
   background-color: black;
   border-radius: 13px;
 }

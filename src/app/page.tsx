@@ -81,10 +81,11 @@ export default function Home() {
             x[0].setAttribute('style', 'animation: fadeIn 0.13s ease-in 0s; opacity: 1;');
           }}>
             <h1 className='text-7xl'>Toolset</h1>
-            <h2 id='listed-items' className='text-4xl m-6'>Java | TypeScript/JavaScript | Python</h2>
-            <h2 id='listed-items' className='text-4xl m-6'>AutoGluon | C++ | C# | Json | Pandas</h2>
-            <h2 id='listed-items' className='text-4xl m-6'>Next.js/React | CI/CD | Tailwind CSS</h2>
-            <h2 id='listed-items' className='text-4xl m-6'>Cloud Infrastructure | AWS | UI/UX Design</h2>
+            <h2 id='listed-items' className='text-4xl m-6'>Java | React | TypeScript/JavaScript | Python</h2>
+            <h2 id='listed-items' className='text-4xl m-6'>Golang | AutoGluon | C++ | C# | Json | Linux</h2>
+            <h2 id='listed-items' className='text-4xl m-6'>Devops | Next.js/React | CI/CD | Tailwind CSS</h2>
+            <h2 id='listed-items' className='text-4xl m-6'>Cloud Infrastructure | PyQt | UI/UX Design</h2>
+            <h2 id='listed-items' className='text-4xl m-6'>AWS Cloud Suite | UI/UX Design</h2>
           </div>
 
           <div id='carousel-slide' className='tools2'
@@ -92,7 +93,7 @@ export default function Home() {
             var x = document.getElementsByClassName('tools2');
             x[0].setAttribute('style', 'animation: fadeIn 0.13s ease-in 0s; opacity: 1;');
           }}>
-            <h2 id='listed-items' className='text-4xl m-6'>LUA | Node JS | JSX | Amazon S3</h2>
+            <h2 id='listed-items' className='text-4xl m-6'>LUA | Node JS | JSX | Amazon S3 | Pandas</h2>
             <h2 id='listed-items' className='text-4xl m-6'>Web Design | Software Design | HTML | AutoGluon</h2>
             <h2 id='listed-items' className='text-4xl m-6'>SQL | Version Control | NumPy</h2>
           </div>
@@ -105,9 +106,10 @@ export default function Home() {
             <h1 className='text-7xl'>My Projects 🚀</h1>
             <h2 id='listed-items' className='text-4xl m-6'> <a href='https://www.morseley.com' target='_blank'>Morseley: fast morse-code translator ✍️</a> </h2>
             <h2 id='listed-items' className='text-4xl m-6'> <a href='https://chrome.google.com/webstore/detail/mirrorhound/iapfedepagfopcakfpejjjlkafmnpoeh' target='_blank' title='Prevents you from using malicious mirrored websites'>MirrorHound, anti-phishing extension</a> </h2>
-            <h2 id='listed-items' className='text-4xl m-6'> <a href='https://github.com/Hoccyy/Arduino-Timer-Display' target='_blank'>Arduino Clock</a> </h2>
-            <h2 id='listed-items' className='text-4xl m-6'> <a href='https://github.com/Hoccyy/Cache-Whoosh' target='_blank'>Python Cache Cleaner</a> </h2>
             <h2 id='listed-items' className='text-4xl m-6'> <a href='https://github.com/Hoccyy/auto-clicker' target='_blank'>QuickClick AutoClicker</a> </h2>
+            <h2 id='listed-items' className='text-4xl m-6'> <a href='https://github.com/Hoccyy/Qr-Code-Maker' target='_blank'>Qr Code Generator</a> </h2>
+            <h2 id='listed-items' className='text-4xl m-6'> <a href='https://github.com/Hoccyy/Graph-Maker' target='_blank'>Graph Plotter</a> </h2>
+            <h2 id='listed-items' className='text-4xl m-6'> <a href='https://github.com/Hoccyy/House-price-prediction' target='_blank'>House Price Predictor</a> </h2>
           </div>
 
           <div id='carousel-slide' className='contact'

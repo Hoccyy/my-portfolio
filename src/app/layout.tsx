@@ -8,7 +8,7 @@ import Head from 'next/head' // Import the Head component
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Hoccyy | SWE',
+  title: '@Hoccyy | SWE',
   description: 'ADD DESC software engineer',
 }
 

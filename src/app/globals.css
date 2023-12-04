@@ -38,7 +38,8 @@ body {
 
 #main-div {
   /*background-color: rgb(93, 53, 60);*/
-  background-color: rgb(55, 55, 55);
+  /*background-color: rgb(55, 55, 55); */
+  background-image: linear-gradient(rgb(55, 55, 55), rgb(55, 55, 55), rgb(55, 55, 55), rgb(55, 55, 55), rgb(55, 55, 55), rgba(57, 57, 57, 0.538));
   border-radius: 13px;
   width: 100%;
   height: 100%;
@@ -70,6 +71,10 @@ body {
   overflow: auto;
   border-radius: 13px;
   color: white;
+}
+
+#container:hover {
+  outline: 1.45px dashed rgba(211, 211, 211, 0.625);
 }
 
 #carousel-slide {
@@ -111,13 +116,63 @@ body {
 #listed-items {
   font-size: 26px;
   color: white;
+
 }
 #listed-items:hover {
-  text-decoration: underline;
-  color: white;
-  font-weight: 700;
-  background-color: black;
+  color: lightblue;
+  font-weight: 600;
   border-radius: 13px;
+}
+#listed-items2 {
+  font-size: 26px;
+  color: white;
+
+}
+#listed-items2:hover {
+  color: lightblue;
+  font-weight: 600;
+  background-color: rgba(0, 0, 0, 0.145);
+  border-radius: 13px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Nunito:wght@200&display=swap');
+
+#Light-fonts {
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Nunito', sans-serif;
+  font-weight: lighter;
+}
+
+#Med-fonts {
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 100;
+}
+
+.resume-hover:hover {
+  text-decoration: underline;
+  color: lightblue;
+}
+
+.outro-pop-cont {
+  height: 130px;
+
+}
+#outro-pop {
+  font-size: 60px;
+  margin: 0;
+}
+
+#outro-pop:hover {
+  animation-name: outroPop2;
+  animation-duration: 0.913s;
+  animation-iteration-count: 2;
+}
+
+#outro-ppp:hover {
+  animation-name: outroPop;
+  animation-duration: 0.713s;
+  animation-iteration-count: 1;
 }
 
 .amazon-logo {
@@ -147,6 +202,9 @@ body {
 
 #email-button:hover {
   text-decoration: underline;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Nunito', sans-serif;
+  font-weight: lighter;
 }
 
 nav {
@@ -163,7 +221,7 @@ nav {
   color: white;
 }
 nav:hover {
-  outline: 2.13px solid rgba(211, 211, 211, 0.47);
+  outline: 1.5px solid rgba(211, 211, 211, 0.47);
 }
 #menuItems {
   color: white;
@@ -300,6 +358,33 @@ body::-webkit-scrollbar-thumb {
   }
   100% {
     opacity: 0;
+    color: white;
+  }
+}
+
+@keyframes outroPop {
+  0% {
+    font-size: 60px;
+    color: lightblue;
+  }
+  50% {
+    font-size: 61px;
+  }
+  100% {
+    font-size: 60px;
+  }
+}
+@keyframes outroPop2 {
+  0% {
+    color: white;
+  }
+  10% {
+    color: rgb(128, 171, 206);
+  }
+  50% {
+    color: lightblue;
+  }
+  100% {
     color: white;
   }
 }

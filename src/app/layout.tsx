@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: '@Hoccyy | Software Engineer 🪴',
-  description: 'ADD DESC software engineer',
+  description: 'I\'m Hocian Wade, Software Engineer and Computer Science student with industry experience and a passion for Software Engineering.',
 }
 
 export default function RootLayout({

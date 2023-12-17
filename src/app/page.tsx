@@ -82,7 +82,7 @@ export default function Home() {
             var x = document.getElementsByClassName('skills');
             x[0].setAttribute('style', 'animation: fadeIn 0.13s ease-in 0s; opacity: 1;');
           }}>
-            <h1 className='text-7xl' id='Light-fonts'>My Skills 🛠️</h1>
+            <h1 className='text-7xl' id='Light-fonts'>General Skills 💼</h1>
             <h2 id='listed-items' className='text-4xl m-6'>Software Development</h2>
             <h2 id='listed-items' className='text-4xl m-6'>Web Development</h2>
             <h2 id='listed-items' className='text-4xl m-6'>Machine Learning 🤖</h2>
@@ -96,11 +96,12 @@ export default function Home() {
             x[0].setAttribute('style', 'animation: fadeIn 0.13s ease-in 0s; opacity: 1;');
           }}>
             <h1 className='text-7xl' id='Light-fonts'>Skills ⚙️</h1>
+            <br></br>
             <h2 id='listed-items' className='text-4xl m-6'>Java | React | TypeScript/JavaScript | Python</h2>
-            <h2 id='listed-items' className='text-4xl m-6'>Golang | AutoGluon | C++ | C# | Json | Linux</h2>
+            <h2 id='listed-items' className='text-4xl m-6'>Golang | APIs | AutoGluon | C++ | C# | Linux</h2>
             <h2 id='listed-items' className='text-4xl m-6'>Devops | Next.js/React | CI/CD | Tailwind CSS</h2>
             <h2 id='listed-items' className='text-4xl m-6'>Cloud Infrastructure | PyQt | UI/UX Design</h2>
-            <h2 id='listed-items' className='text-4xl m-6'>AWS Cloud Suite | UI/UX Design</h2>
+            <h2 id='listed-items' className='text-4xl m-6'>AWS Cloud Suite | UI/UX Design | JSON</h2>
           </div>
 
           <div id='carousel-slide' className='tools2'
@@ -109,9 +110,9 @@ export default function Home() {
             x[0].setAttribute('style', 'animation: fadeIn 0.13s ease-in 0s; opacity: 1;');
           }}>
             <h2 id='listed-items' className='text-4xl m-6'>LUA | Node JS | JSX | Amazon S3 | Pandas</h2>
-            <h2 id='listed-items' className='text-4xl m-6'>PyTorch | Scikit-learn | TensorFlow</h2>
-            <h2 id='listed-items' className='text-4xl m-6'>Web Design | Software Design | HTML | AutoGluon</h2>
-            <h2 id='listed-items' className='text-4xl m-6'>SQL | Version Control | NumPy</h2>
+            <h2 id='listed-items' className='text-4xl m-6'>PyTorch | Scikit-learn | Ai Integration | TSX</h2>
+            <h2 id='listed-items' className='text-4xl m-6'>Web Design | Software Design | TensorFlow | AutoGluon</h2>
+            <h2 id='listed-items' className='text-4xl m-6'>SQL | Version Control | NumPy | HTML5 | CSS | JS</h2>
           </div>
 
           <div id='carousel-slide' className='projects'
@@ -119,14 +120,15 @@ export default function Home() {
             var x = document.getElementsByClassName('projects');
             x[0].setAttribute('style', 'animation: fadeIn 0.13s ease-in 0s; opacity: 1;');
           }}>
-            <h1 className='text-7xl' id='Light-fonts'>Projects 🚀</h1>
-            <h2 id='listed-items' className='text-4xl m-6'> <a href='https://www.morseley.com' target='_blank' title='A translator for morsecode'>Morseley: fast morse-code translator ✍️</a> </h2>
-            <h2 id='listed-items' className='text-4xl m-6'> <a href='https://chrome.google.com/webstore/detail/mirrorhound/iapfedepagfopcakfpejjjlkafmnpoeh' target='_blank' title='Prevents and warns you about using mirrored websites with potential malicious intent'>MirrorHound, anti-phishing extension</a> </h2>
+            <h1 className='text-7xl' id='Light-fonts'>Notable Projects 🚀</h1>
+            <h2 id='listed-items' className='text-4xl m-6'> <a href='https://www.morseley.com' target='_blank' title='A translator for morsecode'>Morseley: Fast Morse-Code Translator ✍️</a> </h2>
+            <h2 id='listed-items' className='text-4xl m-6'> <a href='https://github.com/Hoccyy/CookGPT' target='_blank' title='Web app to help you decide what meal to make based on the ingredients you enter randomly without picking!'>ChefGPT 0.1 (AI) 🍲</a> </h2>
+            <h2 id='listed-items' className='text-4xl m-6'> <a href='https://github.com/Hoccyy/Emotion-Detector' target='_blank' title='A machine learning model that detects emotion from facial expressions made with TensorFlow and Python'>Emotion Detector (ML)</a> </h2>
+            <h2 id='listed-items' className='text-4xl m-6'> <a href='https://chrome.google.com/webstore/detail/mirrorhound/iapfedepagfopcakfpejjjlkafmnpoeh' target='_blank' title='Prevents and warns you about using mirrored websites with potential malicious intent'>MirrorHound: anti-phishing extension</a> </h2>
             <h2 id='listed-items' className='text-4xl m-6'> <a href='https://github.com/Hoccyy/auto-clicker' target='_blank' title='App to automate repetitive tasks with Python'>QuickClick AutoClicker</a> </h2>
-            <h2 id='listed-items' className='text-4xl m-6'> <a href='https://github.com/Hoccyy/Qr-Code-Maker' target='_blank' title='An app made to quickly generate QR codes as needed with ease'>Qr Code Generator</a> </h2>
-            <h2 id='listed-items' className='text-4xl m-6'> <a href='https://github.com/Hoccyy/Graph-Maker' target='_blank' title='Automated graph plotting as a template for quick usage'>Graph Plotter 📈</a> </h2>
+            <h2 id='listed-items' className='text-4xl m-6'> <a href='https://github.com/Hoccyy/Qr-Code-Maker' target='_blank' title='An app made to quickly generate QR codes as needed with ease'>Qr-Code Generator</a> </h2>
             <h2 id='listed-items' className='text-4xl m-6'> <a href='https://github.com/Hoccyy/House-price-prediction' target='_blank' title='Machine learning model to predict housing prices made with Python and Scikit-learn'>House Price Predictor🤖</a> </h2>
-            <h2 id='listed-items' className='text-4xl m-6'> <a href='https://github.com/Hoccyy/Emotion-Detector' target='_blank' title='A machine learning model that detects emotion from facial expressions made with TensorFlow and Python'>Emotion Detector</a> </h2>
+            <h2 id='listed-items' className='text-4xl m-6'> <a href='https://github.com/Hoccyy/Graph-Maker' target='_blank' title='Automated graph plotting as a template for quick usage'>Graph Plotter 📈</a> </h2>
           </div>
 
           <div id='carousel-slide' className='contact'
@@ -140,7 +142,7 @@ export default function Home() {
             </h1>
             </div>
 
-            <h1 id='resume-title' className='text-7xl underline'>My Resume</h1>
+            <h1 id='resume-title' className='text-7xl underline'>Resume</h1>
             <h2 className='text-4xl m-6'>
               <a href='1Hocian_Wade - Resume.pdf' target='_blank' download>
               📥&nbsp;

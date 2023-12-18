@@ -95,7 +95,7 @@ export default function Home() {
             var x = document.getElementsByClassName('tools');
             x[0].setAttribute('style', 'animation: fadeIn 0.13s ease-in 0s; opacity: 1;');
           }}>
-            <h1 className='text-7xl' id='Light-fonts'>Skills ⚙️</h1>
+            <h1 className='text-7xl' id='Light-fonts'>Toolset ⚙️</h1>
             <br></br>
             <h2 id='listed-items' className='text-4xl m-6'>Java | React | TypeScript/JavaScript | Python</h2>
             <h2 id='listed-items' className='text-4xl m-6'>Golang | APIs | AutoGluon | C++ | C# | Linux</h2>
@@ -122,7 +122,7 @@ export default function Home() {
           }}>
             <h1 className='text-7xl' id='Light-fonts'>Notable Projects 🚀</h1>
             <h2 id='listed-items' className='text-4xl m-6'> <a href='https://www.morseley.com' target='_blank' title='A translator for morsecode'>Morseley: Fast Morse-Code Translator ✍️</a> </h2>
-            <h2 id='listed-items' className='text-4xl m-6'> <a href='https://github.com/Hoccyy/CookGPT' target='_blank' title='Web app to help you decide what meal to make based on the ingredients you enter randomly without picking!'>ChefGPT 0.1 (AI) 🍲</a> </h2>
+            <h2 id='listed-items' className='text-4xl m-6'> <a href='https://github.com/Hoccyy/ChefGPT' target='_blank' title='Web app to help you decide what meal to make based on the ingredients you enter randomly without picking!'>ChefGPT 0.1 (AI) 🍲</a> </h2>
             <h2 id='listed-items' className='text-4xl m-6'> <a href='https://github.com/Hoccyy/Emotion-Detector' target='_blank' title='A machine learning model that detects emotion from facial expressions made with TensorFlow and Python'>Emotion Detector (ML)</a> </h2>
             <h2 id='listed-items' className='text-4xl m-6'> <a href='https://chrome.google.com/webstore/detail/mirrorhound/iapfedepagfopcakfpejjjlkafmnpoeh' target='_blank' title='Prevents and warns you about using mirrored websites with potential malicious intent'>MirrorHound: anti-phishing extension</a> </h2>
             <h2 id='listed-items' className='text-4xl m-6'> <a href='https://github.com/Hoccyy/auto-clicker' target='_blank' title='App to automate repetitive tasks with Python'>QuickClick AutoClicker</a> </h2>

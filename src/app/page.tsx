@@ -5,8 +5,8 @@ import styles from './page.module.css'
 import ExperienceItem from './components/ExperienceItem'
 import SkillItem from './components/SkillItem'
 
-const AmazonDesc = 'Focused mainly on Software and Cloud Development designing a scalable automated cloud resource.';
-const LinkedInProfile = 'https://www.linkedin.com/in/hoccyy/';
+const AmazonDesc : string = 'Focused mainly on Software and Cloud Development designing a scalable automated cloud resource.';
+const LinkedInProfile : string = 'https://www.linkedin.com/in/hoccyy/';
 
 
 export default function Home() {

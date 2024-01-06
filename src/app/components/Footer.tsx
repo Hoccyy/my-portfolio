@@ -4,9 +4,6 @@ import styles from '../page.module.css'
 import Link from 'next/link';
 import Image from 'next/image';
 import { SocialIcon } from 'react-social-icons';
-//import ProgressBar from "react-scroll-progress-bar";
-
-const ProgressBar = require('react-scroll-progress-bar');
 
 
 const LinkedInProfile : string = 'https://www.linkedin.com/in/hoccyy/';
@@ -21,7 +18,6 @@ const Footer = ({
 
     return (
         <main>
-          <ProgressBar bgcolor="rgb(67, 140, 129)" height="2.5px" className={styles.scrollProgress}/>
           <div className={styles.centerFtr}>
             <div className={styles.footerContainer}>
               <h1>

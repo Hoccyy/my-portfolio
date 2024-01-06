@@ -1,9 +1,7 @@
-import Image from 'next/image'
-import Link from 'next/link'
 import styles from '../page.module.css'
 import ProjectItem from '../components/ProjectItem'
 
-export default function Home() {
+export default function Work() {
   return (
     <main className={styles.mainProjects}>
       <h1 className={styles.mainHeader}>Noteable Projects</h1>

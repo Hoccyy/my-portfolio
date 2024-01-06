@@ -5,7 +5,7 @@ import SocialMediaItem from '../components/SocialMediaItem'
 // <SocialMediaItem imageSource='/linkedin.png'/>
 const resumeUrl = 'https://drive.google.com/file/d/1O4cXXNgMqks6eakNn5fM6MG8O5aYEvWb/view?usp=sharing';
 
-export default function Home() {
+export default function Contact() {
   return (
     <main className={styles.mainContact}>
       <h1 className={styles.socialTextHeader}>Get in touch with me</h1>

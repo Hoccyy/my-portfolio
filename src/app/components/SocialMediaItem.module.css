@@ -1,0 +1,10 @@
+.menu {
+  list-style: none;
+  display: flex;;
+  background-color: red;
+  text-align: center;
+}
+
+.socialText {
+  color: white;
+}

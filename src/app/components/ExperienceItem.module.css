@@ -1,0 +1,182 @@
+.primaryCardBackground {
+  background-color: rgb(18, 29, 52);
+  outline: 2px rgba(10, 16, 29, 0.401) solid;
+  outline-offset: 2px;
+  border-radius: 11px;
+  width: 20%;
+
+  border-radius: 10px;
+  padding: 25px;
+  margin: 7px;
+  display: flex;
+  max-width: 50vw;
+  min-width: 50vw;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.primaryCardBackground:hover {
+  outline: 2px rgba(10, 16, 29, 0.133) solid;
+}
+
+.companyName {
+  color:white;
+  text-align: center;
+  font-weight: bold;
+}
+
+.roleTitle {
+  color:white;
+  text-align: center;
+  font-weight: lighter;
+}
+
+.comapnyLogo {
+  width: 70vw;
+  height: 20vh;
+  padding: 13px;
+}
+
+.jobDesc {
+  text-align: center;
+}
+
+.responsibilities {
+  text-align: center;
+  font-weight: 700;
+}
+
+.center {
+  display: flex;
+  /* padding: 4rem 0; */
+}
+
+.skillHolder {
+  margin-top: 8px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.skillHolderMobile {
+  display: none;
+}
+
+.projectImage {
+  height: 100%;
+  width: 200px;
+  border-radius: 3px;
+}
+
+.defaultImg {
+  opacity: 0;
+  width: 200px;
+}
+.defaultImgMob {
+  opacity: 0;
+  width: 200px;
+  height: 0;
+}
+
+.mobileImage {
+  display: none;
+}
+
+.jobDesc {
+  max-width: 100%;
+  padding: 11px;
+  text-align: justify;
+  color: grey;
+}
+
+.jobTitle {
+  color: white;
+  text-align: left;
+  font-size: 40px;
+}
+.secondaryPanel {
+  padding: 23px;
+}
+
+.companyName {
+  color: white;
+  font-size: 40px;
+  text-align: left;
+}
+.companyName:hover {
+  text-decoration: underline;
+  color: rgb(67, 140, 129);
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .skillHolder {
+    display: none;
+  }
+  .skillHolderMobile {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+  .comapnyLogo {
+    width: 60vw;
+    height: 20vh;
+    padding: 13px;
+    text-align: center;
+  }
+  .projectImage{
+    display: none;
+  }
+  .mobileImage {
+    height: 30vh;
+    width: 95%;
+    display: inline-block;
+  }
+  .primaryCardBackground {
+    background-color: rgb(18, 29, 52);
+    outline: 2px rgba(10, 16, 29, 0.401) solid;
+    outline-offset: 2px;
+    border-radius: 11px;
+    margin: 5px;
+    width: 98.13%;
+    min-width: 98vw;
+    padding: 6px;
+  }
+  .projectTitle {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+  }
+  .projectTitle:hover {
+    text-decoration: underline;
+    color: rgb(67, 140, 129);
+  }
+  .defaultImg {
+    opacity: 0;
+
+    height: 45px;
+    display: none;
+  }
+  .projDesc {
+    padding: 6px;
+  }
+  .jobTitle {
+    padding: 0;
+    margin: 0;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+  }
+  .companyName {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+  .primaryCardBackground {
+    width: 100vw;
+    max-width: 86vw;
+  }
+  .projectImage {
+    height: 60%;
+  }
+}

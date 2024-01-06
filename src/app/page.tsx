@@ -1,171 +1,99 @@
-'use client';
-import Image from 'next/image'
-import deleteSlide from './deleteSlide'
+"use client"
+import { useEffect } from 'react';
+import Link from 'next/link';
+import styles from './page.module.css'
+import ExperienceItem from './components/ExperienceItem'
+import SkillItem from './components/SkillItem'
 
-const resumeUrl = 'https://drive.google.com/file/d/1O4cXXNgMqks6eakNn5fM6MG8O5aYEvWb/view?usp=sharing';
+const AmazonDesc = 'Focused mainly on Software and Cloud Development designing a scalable automated cloud resource.';
+export const LinkedInProfile = 'https://www.linkedin.com/in/hoccyy/';
+
 
 export default function Home() {
+  useEffect(() => {
+    // This code will run when the component mounts
+    var intro = document.getElementById('intro');
+    //intro?.setAttribute('style', 'animation: loadIntro 0.3s ease-in; oapcity: 1;')
+  }, [])
   return (
-    <main className='flex min-h-screen flex-col items-center justify-between p-2'>
-      <nav id='menu' className='menu'>
-        <li id='menuItems'>
-          <h3 id='glow-item'> 💼<a href='https://github.com/Hoccyy' target='_blank' title='Some of my work'>GitHub</a> </h3>
-        </li>
-        <li id='menuItems'>
-          <h3 id='glow-item'> <a href='https://ca.linkedin.com/in/hoccyy' target='_blank' title='Some of my work'>🔗 LinkedIn</a> </h3>
-        </li>
-        <li id='menuItems'>
-          <h3 id='glow-item'> <a href='https://twitter.com/hoccyy_' target='_blank' title='Keep up with me'>📄 Twitter</a></h3>
-        </li>
-      </nav>
-      <h1 id='dynamic-tip-bar'>Swipe {'>'}{'>'}{'>'}</h1>
+    <main className={styles.main}>
+      <div className={styles.primary}>
+        <h1 id='intro' className={styles.introMessage} onLoadCapture={()=> {
+          alert(13);
+        }}>
+          Hi, I&apos;m Hocian. A Software Engineer. 🌿
+        </h1>
 
-      <div id='container'>
-        <div id='main-div' className='z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex flex-col' dir="ltr">
-          <div id='carousel-slide1' className='min-h-10'>
-            <h1 className='text-8xl' id='Light-fonts'>Hocian Wade</h1>
+        <div className={styles.center}>
+          <h2 className={styles.introBody}>
+            I&apos;m <span className={styles.introName}> <Link href={LinkedInProfile} target='_blank'>Hocian&nbsp;Wade</Link></span> a Sophomore Computer Science student at York University and a Software Engineer with a deep passion for the coding and Software development!
+          </h2>
+        </div>
 
-            <h2 id='secondary-h2' className='text-4xl m-6'>Software Engineer ⚙️</h2>
 
-            <h2 id='secondary-h2-academia' className='text-4xl m-6'>Computer Science Major</h2>
-            
+        <div id='skillsCont' className={styles.skillsCont}>
+          
+        <h1 className={styles.sectionHeader}>
+          Skills
+        </h1>
+          <div className={styles.center}>
+          <div className={styles.skillCenter}>
+              <SkillItem skillName='Python'/>
+              <SkillItem skillName='Java'/>
+              <SkillItem skillName='CI/CD'/>
+              <SkillItem skillName='TypeScript'/>
+              <SkillItem skillName='JavaScript'/>
+              <SkillItem skillName='React'/>
+              <SkillItem skillName='NodeJS'/>
+              <SkillItem skillName='NextJS'/>
+              <SkillItem skillName='Git'/>
+              <SkillItem skillName='Source Control'/>
+              <SkillItem skillName='C#'/>
+              <SkillItem skillName='C++'/>
+              <SkillItem skillName='Go'/>
+              <SkillItem skillName='TensorFlow'/>
+              <SkillItem skillName='HTML5'/>
+              <SkillItem skillName='CSS'/>
+              <SkillItem skillName='Machine Learning'/>
+              <SkillItem skillName='Scikit-learn'/>
+              <SkillItem skillName='UI/UX Design'/>
+              <SkillItem skillName='LUA'/>
+              <SkillItem skillName='UI/UX Design'/>
+              <SkillItem skillName='Cloud Development'/>
+              <SkillItem skillName='Web Development'/>
+              <SkillItem skillName='Scripting'/>
+              <SkillItem skillName='TensorFlow'/>
+              <SkillItem skillName='PyTorch'/>
+              <SkillItem skillName='Object-Oriented Programming'/>
+              <SkillItem skillName='Linux'/>
+              <SkillItem skillName='NumPy'/>
+              <SkillItem skillName='Automation'/>
+              <SkillItem skillName='Tailwind CSS'/>
+              <SkillItem skillName='OpenCv'/>
+              <SkillItem skillName='Full Stack Development'/>
+              <SkillItem skillName='Backend Development'/>
+              <SkillItem skillName='Frontend Development'/>
+              <SkillItem skillName='Document Writing'/>
+              <SkillItem skillName='React Native'/>
+              <SkillItem skillName='PyQt'/>
+              <SkillItem skillName='Mockups'/>
+              <SkillItem skillName='Testing'/>
           </div>
+        </div>
+        </div>
 
-          <div id='carousel-slide' className='edu'
-           onMouseOver={() => {
-            var x = document.getElementsByClassName('edu');
-            x[0].setAttribute('style', 'animation: fadeIn 0.13s ease-in 0s; opacity: 1;');
-          }}>
-            <h1 className='text-7xl' id='Light-fonts'>Education 📚</h1>
-            <h2 id='listed-items2' className='text-4xl m-6'>
-              <a href='https://futurestudents.yorku.ca/program/computer-science' target='_blank'>
-                York University -: Computer Science (B.A) <br/> 2023 - Present
-              </a>
-            </h2>
-            <h2 id='listed-items2' className='text-4xl m-6'>
-              <a href='https://algomau.ca/academics/programs/computer-science/' target='_blank'>
-                Algoma University -: Computer Science (B.A Hons.) <br/> 2022 - 2023
-              </a>
-            </h2>
-            <h2 id='listed-items2' className='text-4xl m-6'>
-              <a href='https://www.ontario.ca/document/specialist-high-skills-major-policy-and-implementation-guide/information-and-communications-technology' target='_blank'>
-                Thistletown&nbsp;Collegiate&nbsp;Institute&nbsp;:&nbsp;<br/>OSSD&nbsp;(S.H.S.M&nbsp;Seal)<br/>2020 - 2022
-              </a>
-            </h2>
-          </div>
+        <h1 className={styles.sectionHeader}>Experience</h1>
 
-          <div id='carousel-slide' className='exp'
-           onMouseOver={() => {
-            var x = document.getElementsByClassName('exp');
-            x[0].setAttribute('style', 'animation: fadeIn 0.13s ease-in 0s; opacity: 1;');
-          }}>
-            <h1 className='text-7xl' id='Light-fonts'>Experience</h1>
-            <div>
-              <h2 className='text-4xl m-6' id='Med-fonts' title='Cloud Infrastructure, Software and Web Development'>Amazon, SDE I (L4)</h2>
-              
-              <Image
-                src="Amazon_icon.svg"
-                alt="Resume"
-                className='amazon-logo'
-                width={50}
-                height={50}
-                draggable={true}
-                priority
-                title='AWS Team'
-              />
-              <h2 className='text-4xl m-6' id='Med-fonts'>Summer 2023</h2>
-            </div>
-          </div>
-
-          <div id='carousel-slide' className='skills'
-           onMouseOver={() => {
-            var x = document.getElementsByClassName('skills');
-            x[0].setAttribute('style', 'animation: fadeIn 0.13s ease-in 0s; opacity: 1;');
-          }}>
-            <h1 className='text-7xl' id='Light-fonts'>General Skills 💼</h1>
-            <h2 id='listed-items' className='text-4xl m-6'>Software Development</h2>
-            <h2 id='listed-items' className='text-4xl m-6'>Web Development</h2>
-            <h2 id='listed-items' className='text-4xl m-6'>Machine Learning 🤖</h2>
-            <h2 id='listed-items' className='text-4xl m-6'>Scripting 🚀</h2>
-            <h2 id='listed-items' className='text-4xl m-6'>Automation and Artificial Intelligence</h2>
-          </div>
-
-          <div id='carousel-slide' className='tools'
-           onMouseOver={() => {
-            var x = document.getElementsByClassName('tools');
-            x[0].setAttribute('style', 'animation: fadeIn 0.13s ease-in 0s; opacity: 1;');
-          }}>
-            <h1 className='text-7xl' id='Light-fonts'>Toolset ⚙️</h1>
-            <br></br>
-            <h2 id='listed-items' className='text-4xl m-6'>Java | React | TypeScript/JavaScript | Python</h2>
-            <h2 id='listed-items' className='text-4xl m-6'>Golang | APIs | AutoGluon | C++ | C# | Linux</h2>
-            <h2 id='listed-items' className='text-4xl m-6'>Devops | Next.js/React | CI/CD | Tailwind CSS</h2>
-            <h2 id='listed-items' className='text-4xl m-6'>Cloud Infrastructure | PyQt | UI/UX Design</h2>
-            <h2 id='listed-items' className='text-4xl m-6'>AWS Cloud Suite | UI/UX Design | JSON</h2>
-          </div>
-
-          <div id='carousel-slide' className='tools2'
-           onMouseOver={() => {
-            var x = document.getElementsByClassName('tools2');
-            x[0].setAttribute('style', 'animation: fadeIn 0.13s ease-in 0s; opacity: 1;');
-          }}>
-            <h2 id='listed-items' className='text-4xl m-6'>LUA | Node JS | JSX | Amazon S3 | Pandas</h2>
-            <h2 id='listed-items' className='text-4xl m-6'>PyTorch | Scikit-learn | Ai Integration | TSX</h2>
-            <h2 id='listed-items' className='text-4xl m-6'>Web Design | Software Design | TensorFlow | AutoGluon</h2>
-            <h2 id='listed-items' className='text-4xl m-6'>SQL | Version Control | NumPy | HTML5 | CSS | JS</h2>
-          </div>
-
-          <div id='carousel-slide' className='projects'
-           onMouseOver={() => {
-            var x = document.getElementsByClassName('projects');
-            x[0].setAttribute('style', 'animation: fadeIn 0.13s ease-in 0s; opacity: 1;');
-          }}>
-            <h1 className='text-7xl' id='Light-fonts'>Notable Projects 🚀</h1>
-            <h2 id='listed-items' className='text-4xl m-6'> <a href='https://www.morseley.com' target='_blank' title='A translator for morsecode'>Morseley: Fast Morse-Code Translator ✍️</a> </h2>
-            <h2 id='listed-items' className='text-4xl m-6'> <a href='https://github.com/Hoccyy/ChefGPT' target='_blank' title='Web app to help you decide what meal to make based on the ingredients you enter randomly without picking!'>ChefGPT 0.1 (AI) 🍲</a> </h2>
-            <h2 id='listed-items' className='text-4xl m-6'> <a href='https://github.com/Hoccyy/Emotion-Detector' target='_blank' title='A machine learning model that detects emotion from facial expressions made with TensorFlow and Python'>Emotion Detector (ML)</a> </h2>
-            <h2 id='listed-items' className='text-4xl m-6'> <a href='https://chrome.google.com/webstore/detail/mirrorhound/iapfedepagfopcakfpejjjlkafmnpoeh' target='_blank' title='Prevents and warns you about using mirrored websites with potential malicious intent'>MirrorHound: anti-phishing extension</a> </h2>
-            <h2 id='listed-items' className='text-4xl m-6'> <a href='https://github.com/Hoccyy/auto-clicker' target='_blank' title='App to automate repetitive tasks with Python'>QuickClick AutoClicker</a> </h2>
-            <h2 id='listed-items' className='text-4xl m-6'> <a href='https://github.com/Hoccyy/Qr-Code-Maker' target='_blank' title='An app made to quickly generate QR codes as needed with ease'>Qr-Code Generator</a> </h2>
-            <h2 id='listed-items' className='text-4xl m-6'> <a href='https://github.com/Hoccyy/House-price-prediction' target='_blank' title='Machine learning model to predict housing prices made with Python and Scikit-learn'>House Price Predictor🤖</a> </h2>
-            <h2 id='listed-items' className='text-4xl m-6'> <a href='https://github.com/Hoccyy/Graph-Maker' target='_blank' title='Automated graph plotting as a template for quick usage'>Graph Plotter 📈</a> </h2>
-          </div>
-
-          <div id='carousel-slide' className='contact'
-           onMouseOver={() => {
-            var x = document.getElementsByClassName('contact');
-            x[0].setAttribute('style', 'animation: fadeIn 0.13s ease-in 0s; opacity: 1;');
-          }}>
-            <div className='outro-pop-cont'>
-            <h1 id='outro-pop'>
-              Ready to hire? 🥳
-            </h1>
-            </div>
-
-            <h1 id='resume-title' className='text-7xl underline'>Resume</h1>
-            <h2 className='text-4xl m-6'>
-              <a href='1Hocian_Wade - Resume.pdf' target='_blank' download>
-              📥&nbsp;
-              <span className='resume-hover'>
-                Download
-              </span>
-              </a> | 
-              <a href={resumeUrl} target='_blank' title='Online read-only copy'>
-                &nbsp;
-                <span className='resume-hover'>
-                  Online Version
-                </span>
-              </a>
-              </h2>
+        <div className={styles.expSection}>
+          <div className={styles.expCenter}>
+            <ExperienceItem companyLink='https://www.aboutamazon.com/what-we-do/amazon-web-services' jobTitle='Software Engineer, Intern' companyName='Amazon' companyLogoSrc='/Amazon_icon.svg' technologies={['Java', 'AWS Cloudformation', 'AWS S3', 'JavaScript', 'TypeScript', 'React', 'CSS', 'HTML', 'Junit', 'Docker', 'Json']} duties={['Software Engineer', 'Full-Stack Engineer', 'Cloud Developer']} jobDesc={AmazonDesc} imageIncluded={true}/>
+        <h1 className={styles.sectionHeader}>Education</h1>
+            <ExperienceItem companyLink='https://www.yorku.ca' jobTitle='Sophomore Year Student' companyName='York University' companyLogoSrc='/york2.png' technologies={['Java', 'JavaScript', 'TypeScript', 'React', 'CSS', 'HTML', 'Algorithms', 'Calculus', 'Discrete Math', 'Data Structures']} duties={['Computer Science Hons. BA', '2023 - Present']} jobDesc='Coursework' imageIncluded={true}/>
+            <ExperienceItem companyLink='https://www.algomau.ca' jobTitle='Student' companyName='Algoma University' technologies={['Java', 'JavaScript', 'Linear Algebra', 'Algorithms', 'Data Structures']} duties={['Computer Science Hons. BA', '2022 - 2023']} jobDesc='Coursework' imageIncluded={false}/>
+            <ExperienceItem companyLink='https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjS1_Hcp8eDAxWVDHkGHRs0AkUQFnoECCcQAQ&url=https%3A%2F%2Fwww.tdsb.on.ca%2FFind-your%2FSchools%2Fschno%2F2812&usg=AOvVaw07NvTm-vEIx8CwYm1oxCtG&opi=89978449' jobTitle='High School' companyName='Thistletown Collegiate Institute' companyLogoSrc='/york2.png' technologies={['Python', 'C++', 'Algorithms', 'Data Structures', 'Calculus', 'OOP', 'Embedded Software', 'Arduino', 'Computer Engineering']} duties={['IT OSSD S.H.S.M', '2020 - 2022']} jobDesc='Coursework' imageIncluded={false}/>
           </div>
         </div>
       </div>
-      <h2 id='email-button' className='mb-9'>
-        <a href='mailto:hocianw@gmail.com?' target='_blank' title='Get in touch with me! 📧'>
-          @Hoccyy ²
-        </a>
-      </h2>
-
     </main>
   )
 }

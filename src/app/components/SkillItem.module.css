@@ -1,0 +1,70 @@
+
+
+.skillName {
+  font-size: 21.13px;
+  font-weight: normal;
+  color: rgb(94 234 212);
+
+  background-color: rgb(37, 103, 93);
+  width: fit-content;
+  height: fit-content;
+  border-radius: 35px;
+  padding: 13px;
+  margin: 4px;
+  box-shadow: 0 1.6px 3.6px 0 rgb(0 0 0 / 13%), 0 0.3px 0.9px 0 rgb(0 0 0 / 11%);
+}
+
+.skillName:hover {
+  color: white;
+  animation: tiltAnimation 0.4s ease-in-out;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .skillName {
+    font-size: 13px;
+    font-weight: normal;
+    color: white;
+    color: rgb(94 234 212);
+    background-color: rgb(50, 78, 50);
+    background-color: rgb(67, 140, 129);
+    width: fit-content;
+    border-radius: 35px;
+    padding: 10px;
+    margin: 3px;
+
+    color: rgb(94 234 212);
+
+    background-color: rgb(37, 103, 93);
+
+  }
+  .skillName:hover {
+    color: white;
+  }
+}
+
+/* anims */
+@keyframes textFadeIn {
+  0%{
+    color: rgb(6, 55, 37);
+  }
+  100%{
+    color: white;
+    font-weight: bolder;
+  }
+}
+
+@keyframes tiltAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(1.13deg);
+  }
+  75% {
+    transform: rotate(-1.13deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

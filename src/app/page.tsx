@@ -6,7 +6,7 @@ import ExperienceItem from './components/ExperienceItem'
 import SkillItem from './components/SkillItem'
 
 const AmazonDesc = 'Focused mainly on Software and Cloud Development designing a scalable automated cloud resource.';
-export const LinkedInProfile = 'https://www.linkedin.com/in/hoccyy/';
+const LinkedInProfile = 'https://www.linkedin.com/in/hoccyy/';
 
 
 export default function Home() {

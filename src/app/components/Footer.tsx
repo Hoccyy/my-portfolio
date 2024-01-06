@@ -4,7 +4,9 @@ import styles from '../page.module.css'
 import Link from 'next/link';
 import Image from 'next/image';
 import { SocialIcon } from 'react-social-icons';
-import ProgressBar from "react-scroll-progress-bar";
+//import ProgressBar from "react-scroll-progress-bar";
+
+const ProgressBar = require('react-scroll-progress-bar');
 
 
 const LinkedInProfile : string = 'https://www.linkedin.com/in/hoccyy/';

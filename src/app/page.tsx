@@ -5,7 +5,7 @@ import styles from './page.module.css'
 import ExperienceItem from './components/ExperienceItem'
 import SkillItem from './components/SkillItem'
 
-const AmazonDesc : string = 'Focused mainly on Software and Cloud Development designing a scalable automated cloud resource.';
+const AmazonDesc : string = 'Focused within Software and Cloud Development designing a scalable automated cloud resource and upgrading CodeCatalyst for better performance.';
 const LinkedInProfile : string = 'https://www.linkedin.com/in/hoccyy/';
 
 
@@ -61,9 +61,11 @@ export default function Home() {
               <SkillItem skillName='UI/UX Design'/>
               <SkillItem skillName='Cloud Development'/>
               <SkillItem skillName='Web Development'/>
+              <SkillItem skillName='Cloud Services'/>
               <SkillItem skillName='Scripting'/>
               <SkillItem skillName='Unix'/>
               <SkillItem skillName='TensorFlow'/>
+              <SkillItem skillName='Cloud Computing'/>
               <SkillItem skillName='PyTorch'/>
               <SkillItem skillName='Object-Oriented Programming'/>
               <SkillItem skillName='Linux'/>
@@ -87,7 +89,7 @@ export default function Home() {
 
         <div className={styles.expSection}>
           <div className={styles.expCenter}>
-            <ExperienceItem companyLink='https://www.aboutamazon.com/what-we-do/amazon-web-services' jobTitle='Software Engineer, Intern' companyName='Amazon' companyLogoSrc='/Amazon_icon.svg' technologies={['Java', 'AWS Cloudformation', 'AWS s3', 'JavaScript', 'Linux', 'Unix', 'TypeScript', 'React', 'CSS', 'HTML', 'JUnit', 'Docker', 'Json']} duties={['Software Engineer', 'Full-Stack Engineer', 'Cloud Developer']} jobDesc={AmazonDesc} imageIncluded={true}/>
+            <ExperienceItem companyLink='https://www.aboutamazon.com/what-we-do/amazon-web-services' jobTitle='Software Engineer, Intern' companyName='Amazon (AWS)' companyLogoSrc='/Amazon_icon.svg' technologies={['Java', 'AWS Cloudformation', 'CodeCatalyst', 'AWS', 'JavaScript', 'Linux', 'Unix', 'TypeScript', 'React', 'CSS', 'HTML', 'JUnit', 'Docker', 'Json']} duties={['Software Engineer', 'Full-Stack Engineer', 'Cloud Developer']} jobDesc={AmazonDesc} imageIncluded={true}/>
         <h1 className={styles.sectionHeader}>Education</h1>
             <ExperienceItem companyLink='https://www.yorku.ca' jobTitle='Sophomore Year Student' companyName='York University' companyLogoSrc='/york2.png' technologies={['Java', 'JavaScript', 'TypeScript', 'React', 'CSS', 'HTML', 'Algorithms', 'Calculus', 'Discrete Math', 'Data Structures']} duties={['Computer Science Hons. BA', '2023 - Present']} jobDesc='Coursework' imageIncluded={true}/>
             <ExperienceItem companyLink='https://www.algomau.ca' jobTitle='Student' companyName='Algoma University' technologies={['Java', 'JavaScript', 'Linear Algebra', 'Algorithms', 'Data Structures']} duties={['Computer Science Hons. BA', '2022 - 2023']} jobDesc='Coursework' imageIncluded={false}/>

@@ -87,6 +87,7 @@
     height: 30vh;
     width: 95%;
     display: inline-block;
+    border-radius: 4px;
   }
   .projectTitle {
     color: white;

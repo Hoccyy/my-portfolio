@@ -4,10 +4,10 @@ import ProjectItem from '../components/ProjectItem'
 export default function Work() {
   return (
     <main className={styles.mainProjects}>
-      <h1 className={styles.mainHeader}>Noteable Projects</h1>
+      <h1 className={styles.mainHeader}>Notable Projects</h1>
       <ProjectItem 
         projectTitle='EmotionDetector 1.0'
-        imageSrc='/github.png'
+        imageSrc='/tensorflow.svg.png'
         repoLink='https://github.com/Hoccyy/Emotion-Detector'
         imageIncluded={false}
         projDesc='This project takes a picture of a face and it uses a model that is trained to classify different emotions. When run, the program loads a serialized model that can classify facial expressions and output the emotion detected.' 
@@ -15,28 +15,28 @@ export default function Work() {
       />
 
       <ProjectItem 
-        projectTitle='ChefGPT'
-        imageSrc='/default.png'
+        projectTitle='ChefGPT 0.1'
+        imageSrc='/chef.png'
         repoLink='https://github.com/Hoccyy/ChefGPT'
-        imageIncluded={false}
+        imageIncluded={true}
         projDesc='Web application built with React that helps you decide on what meals to make and gives step-by-step instructions for preparation. To use this app, simply enter all the ingredients you have or want to use and it will output a recipe for them.' 
         technologies={['TypeScript', 'React', 'NextJS', 'NodeJS', 'GPT-3.5', 'OpenAI API', 'CSS', 'Vercel']}
       />
 
       <ProjectItem 
         projectTitle='Morseley.com' 
-        imageSrc='/default.png'
+        imageSrc='/morseley.ico'
         repoLink='https://www.morseley.com/'
-        imageIncluded={false}
+        imageIncluded={true}
         projDesc='A Morsecode Translator built with React and TypeScript to quickly convert English into Morsecode and back in realtime. The translation engine was originally written in vanilla JavaScript along with regular HTML and CSS and then the project was reformatted with React and NextJS for styling purposes. There are features to easily download and copy translations.' 
         technologies={['JavaScript', 'React', 'NextJS', 'NodeJS', 'CSS']}
       />
 
       <ProjectItem 
         projectTitle='MirrorHound'
-        imageSrc='/default.png'
+        imageSrc='/icon128.png'
         repoLink='https://chrome.google.com/webstore/detail/mirrorhound/iapfedepagfopcakfpejjjlkafmnpoeh'
-        imageIncluded={false}
+        imageIncluded={true}
         projDesc='A Chrome extension used to detect mirrored websites that could potentially have malicious intent and informs the user so it the user is aware the website is mirror and prevent phishing attacks.' 
         technologies={['JavaScript']}
       />

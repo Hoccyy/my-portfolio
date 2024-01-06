@@ -15,7 +15,7 @@ const ProjectItem = ({
     repoLink ='',
     imageSrc = '',
     imageIncluded = false,
-    technologies = [],
+    technologies = [''],
 }) => {
 
     return (

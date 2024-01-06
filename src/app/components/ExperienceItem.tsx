@@ -14,8 +14,8 @@ const ExperienceItem = ({
     companyLogoSrc = '/defaultCompany.png',
     imageIncluded= false,
     companyLink='',
-    technologies=[],
-    duties=[]
+    technologies=[''],
+    duties=['']
 }) => {
 
   return (

@@ -18,9 +18,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.primary}>
-        <h1 id='intro' className={styles.introMessage} onLoadCapture={()=> {
-          alert(13);
-        }}>
+        <h1 id='intro' className={styles.introMessage}>
           Hi, I&apos;m Hocian. A Software Engineer. 🌿
         </h1>
 

@@ -7,7 +7,7 @@ export default function Work() {
       <h1 className={styles.mainHeader}>Notable Projects</h1>
       <ProjectItem 
         projectTitle='EmotionDetector 1.0'
-        imageSrc='/tensorflow.svg.png'
+        imageSrc='/'
         repoLink='https://github.com/Hoccyy/Emotion-Detector'
         imageIncluded={false}
         projDesc='This project takes a picture of a face and it uses a model that is trained to classify different emotions. When run, the program loads a serialized model that can classify facial expressions and output the emotion detected.' 

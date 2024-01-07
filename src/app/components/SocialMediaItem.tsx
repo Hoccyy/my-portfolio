@@ -20,6 +20,7 @@ const SocialMediaItem = ({
             width={50}
             height={50}
             alt='Social Media Icon'
+            className={styles.socialImage}
             />
           <h3 id='navButtons' className={styles.socialText}>
             {platform}

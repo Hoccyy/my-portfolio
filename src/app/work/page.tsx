@@ -47,7 +47,7 @@ export default function Work() {
         repoLink='https://github.com/Hoccyy/expense-tracker'
         imageIncluded={false}
         projDesc='React app to help you keep track of your expenses and also your income to track monthly cashflow and let you know if you&apos;re on target for your financial goals.' 
-        technologies={['TypeScript', 'JavaScript', 'React', 'NextJS', 'CSS', 'csv', 'NodeJS']}
+        technologies={['TypeScript', 'JavaScript', 'React', 'NextJS', 'CSS', 'csv', 'Node.JS']}
       />
 
       <ProjectItem 

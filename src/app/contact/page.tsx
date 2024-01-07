@@ -1,7 +1,6 @@
 import styles from '../page.module.css'
 import SocialMediaItem from '../components/SocialMediaItem'
 
-// <SocialMediaItem imageSource='/linkedin.png'/>
 const resumeUrl = 'https://drive.google.com/file/d/1O4cXXNgMqks6eakNn5fM6MG8O5aYEvWb/view?usp=sharing';
 
 export default function Contact() {
@@ -10,13 +9,14 @@ export default function Contact() {
       <h1 className={styles.socialTextHeader}>Get in touch with me</h1>
       <div className={styles.resources}>
         <div className={styles.emailContainer}>
-          <SocialMediaItem imageSource='/gmail.png' platform='' src='/contact' newtab={false}/>
+          <SocialMediaItem imageSource='/gmail.png' platform='' src='mailto:hocianw@gmail.com' newtab={false}/>
           <a href='mailto:hocianw@gmail.com'>
-            <h1 className={styles.socialText}>Email me! :)</h1>
+            <h1 className={styles.socialText}>Email me!</h1>
             <h1 className={styles.socialText2}>Hocianw@gmail.com</h1>
           </a>
         </div>
       </div>
+
       <div className={styles.resources}>
         <div className={styles.generalContainer}>
           <SocialMediaItem imageSource='/linkedin.png' platform='LinkedIn' src='https://www.linkedin.com/in/hoccyy/'/>

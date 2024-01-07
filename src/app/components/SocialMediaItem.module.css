@@ -1,10 +1,17 @@
 .menu {
   list-style: none;
   display: flex;;
-  background-color: red;
   text-align: center;
 }
 
 .socialText {
   color: white;
+}
+
+.socialImage {
+  opacity: 0.9;
+}
+
+.socialImage:hover {
+  opacity: 1;
 }

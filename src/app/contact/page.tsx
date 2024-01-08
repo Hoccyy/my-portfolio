@@ -1,5 +1,6 @@
 import styles from '../page.module.css'
 import SocialMediaItem from '../components/SocialMediaItem'
+import Link from 'next/link';
 
 const resumeUrl = 'https://drive.google.com/file/d/1O4cXXNgMqks6eakNn5fM6MG8O5aYEvWb/view?usp=sharing';
 
@@ -19,7 +20,9 @@ export default function Contact() {
 
       <div className={styles.resources}>
         <div className={styles.generalContainer}>
-          <SocialMediaItem imageSource='/linkedin.png' platform='LinkedIn' src='https://www.linkedin.com/in/hoccyy/'/>
+          <Link href='https://www.linkedin.com/in/hoccyy/' target='_blank'>
+            <SocialMediaItem imageSource='/linkedin.png' platform='LinkedIn' src='https://www.linkedin.com/in/hoccyy/'/>
+          </Link>
         </div>
         <div className={styles.generalContainer}>
           <SocialMediaItem imageSource='/github.png' platform='GitHub' src='https://github.com/Hoccyy'/>

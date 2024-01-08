@@ -60,6 +60,7 @@ export default function Home() {
               <SkillItem skillName='Unix' />
               <SkillItem skillName='TensorFlow' />
               <SkillItem skillName='Cloud Computing' />
+              <SkillItem skillName='AWS EC2' />
               <SkillItem skillName='PyTorch' />
               <SkillItem skillName='Object-Oriented Programming' />
               <SkillItem skillName='Linux' />

@@ -20,7 +20,7 @@ const NavItem = ({
 
     return (
         <li id='menuItems'>
-            <h3 id='navButtons' className={active ? styles.listItemTextActive : styles.listItemText}>
+            <h3 id='navButtons' className={styles.listItemText}>
               <Link href={path} title='Some of my work' passHref>
                 {title}
               </Link>

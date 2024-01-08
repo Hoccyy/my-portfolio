@@ -361,7 +361,8 @@
   font-size: 28.13px;
 }
 .listItemText:hover {
-  background-color: rgb(15 23 42);
+  background-color: rgba(15, 23, 42, 0.622);
+  backdrop-filter: blur(13px);
   color:white;
   /* box-shadow: 0 0 2px 2px rgb(15 23 42); */
 }

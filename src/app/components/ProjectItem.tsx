@@ -6,7 +6,6 @@ import Image from 'next/image';
 import SkillItem from './SkillItem';
 import SkillItem2 from './SkillItem2';
 import SkillItem3 from './SkillItem3';
-import SkillItemMobile from './SkillItemMobile';
 
 
 const ProjectItem = ({

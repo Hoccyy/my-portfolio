@@ -1,8 +1,8 @@
-"use client"
+"use client";
 import Link from 'next/link';
-import styles from './page.module.css'
-import ExperienceItem from './components/ExperienceItem'
-import SkillItem from './components/SkillItem'
+import styles from './page.module.css';
+import ExperienceItem from './components/ExperienceItem';
+import SkillItem from './components/SkillItem';
 
 const AmazonDesc : string = 'Focused within Software and Cloud Development designing a scalable automated cloud resource and upgrading CodeCatalyst for better performance.';
 const LinkedInProfile : string = 'https://www.linkedin.com/in/hoccyy/';

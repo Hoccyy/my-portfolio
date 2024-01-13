@@ -1,15 +1,16 @@
-import './globals.css'
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import styles from './page.module.css'
+import './globals.css';
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import styles from './page.module.css';
 import Link from 'next/link';
 import NavItem from './components/NavItem';
 import Footer from './components/Footer';
 import pageTitle from './page'
-import Head from 'next/head' // Import the Head component
+import Head from 'next/head';
+import { Analytics } from '@vercel/analytics/react';
 
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: '@Hoccyy | Software Engineer 🪻',
@@ -39,6 +40,7 @@ export default function RootLayout({
         </nav>
         </div>
         {children}
+        <Analytics />
         <Footer/>
       </body>
     </html>

@@ -1,5 +1,5 @@
-import styles from '../page.module.css'
-import ProjectItem from '../components/ProjectItem'
+import styles from '../page.module.css';
+import ProjectItem from '../components/ProjectItem';
 
 export default function Work() {
   return (

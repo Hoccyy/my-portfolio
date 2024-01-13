@@ -1,5 +1,5 @@
-import styles from '../page.module.css'
-import SocialMediaItem from '../components/SocialMediaItem'
+import styles from '../page.module.css';
+import SocialMediaItem from '../components/SocialMediaItem';
 import Link from 'next/link';
 
 const resumeUrl = 'https://drive.google.com/file/d/1O4cXXNgMqks6eakNn5fM6MG8O5aYEvWb/view?usp=sharing';

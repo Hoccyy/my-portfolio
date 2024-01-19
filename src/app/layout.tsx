@@ -34,9 +34,9 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className={styles.centerMenu}>
         <nav id='menu' className={styles.menu}>
-          <NavItem title='About' path='/'/>
-          <NavItem title='Projects' path='/work'/>
-          <NavItem title='Contact' path='/contact'/>
+          <NavItem desc='A little bit about me' title='About' path='/'/>
+          <NavItem desc='Some of my work' title='Projects' path='/work'/>
+          <NavItem desc='Get in touch with me!' title='Contact' path='/contact'/>
         </nav>
         </div>
         {children}

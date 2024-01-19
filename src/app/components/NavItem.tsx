@@ -15,13 +15,14 @@ let selected = false;
 const NavItem = ({
     title = '',
     path = '',
+    desc = '',
     active = false
 }) => {
 
     return (
         <li id='menuItems'>
             <h3 id='navButtons' className={styles.listItemText}>
-              <Link href={path} title='Some of my work' passHref>
+              <Link href={path} title={desc} passHref>
                 {title}
               </Link>
             </h3>

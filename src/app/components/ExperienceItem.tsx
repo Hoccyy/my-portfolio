@@ -28,6 +28,8 @@ const ExperienceItem = ({
           alt='Project Imagery'
           className={ imageIncluded ? styles.projectImage : styles.defaultImg }
           draggable={false}
+          loading='eager'
+          priority
         />
       </div>
 

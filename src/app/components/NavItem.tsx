@@ -2,21 +2,11 @@
 import React from 'react'
 import styles from '../page.module.css'
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
-
-
-type Props = {
-    placeHolder?: string
-};
-
-const buttonContent = '⬆';
-let selected = false;
 
 const NavItem = ({
     title = '',
     path = '',
     desc = '',
-    active = false
 }) => {
 
     return (

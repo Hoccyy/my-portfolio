@@ -4,7 +4,7 @@ import styles from './page.module.css';
 import ExperienceItem from './components/ExperienceItem';
 import SkillItem from './components/SkillItem';
 
-const AmazonDesc : string = 'Focused within Software and Cloud Development designing a scalable automated cloud resource and upgrading CodeCatalyst for better performance.';
+const AmazonDesc : string = 'Focused on Cloud Development and Full-stack development designing a highly scalable Cloud resource management feature and upgrading CodeCatalyst and parts of the AWS backend for optimized performance and metrics allowing Devops teams to test software more efficiently. I also developed my documentation and technical writing skills, and various software testing methods.';
 const LinkedInProfile : string = 'https://www.linkedin.com/in/hoccyy/';
 
 
@@ -83,9 +83,9 @@ export default function Home() {
         <h1 className={styles.sectionHeader}> Experience </h1>
         <div className={styles.expSection}>
           <div className={styles.expCenter}>
-            <ExperienceItem companyLink='https://www.aboutamazon.com/what-we-do/amazon-web-services' jobTitle='Software Engineer, Intern' companyName='Amazon (AWS)' companyLogoSrc='/Amazon_icon.svg' technologies={['Java', 'AWS Cloudformation' , 'CodeCatalyst' , 'AWS' , 'JavaScript' , 'Linux' , 'Unix' , 'TypeScript' , 'React' , 'CSS' , 'HTML' , 'JUnit' , 'Docker' , 'Json' ]} duties={['Software Engineer', 'Full-Stack Engineer' , 'Cloud Developer' ]} jobDesc={AmazonDesc} imageIncluded={true} />
+            <ExperienceItem companyLink='https://www.aboutamazon.com/what-we-do/amazon-web-services' jobTitle='Software Engineer, Intern' companyName='Amazon (AWS)' companyLogoSrc='/Amazon_icon.svg' technologies={['Java', 'AWS Cloudformation' , 'CodeCatalyst' , 'AWS' , 'JavaScript', 'Vite', 'AWS CDK' , 'Linux' , 'Unix' , 'TypeScript' , 'React' , 'CSS' , 'HTML5' , 'JUnit', 'Vue' , 'Docker', 'DynamoDB', 'Json' ]} duties={['Software Engineer', 'Full-Stack Engineer' , 'Cloud Developer' ]} jobDesc={AmazonDesc} imageIncluded={true} />
             <h1 className={styles.sectionHeader}> Education </h1>
-            <ExperienceItem companyLink='https://www.yorku.ca' jobTitle='Sophomore Year Student' companyName='York University' companyLogoSrc='/york2.png' technologies={['Java', 'JavaScript' , 'TypeScript' , 'React' , 'CSS' , 'HTML' , 'Algorithms' , 'Calculus' , 'Discrete Math' , 'Data Structures' ]} duties={['Computer Science Hons. BA', '2023 - Present' ]} jobDesc='Coursework' imageIncluded={true} />
+            <ExperienceItem companyLink='https://www.yorku.ca' jobTitle='Sophomore Year Student' companyName='York University' companyLogoSrc='/york2.png' technologies={['Java', 'JavaScript' , 'TypeScript' , 'React' , 'CSS', 'Junit' , 'HTML' , 'Algorithms' , 'Calculus' , 'Discrete Math' , 'Data Structures' ]} duties={['Computer Science Hons. BA', '2023 - Present' ]} jobDesc='Coursework' imageIncluded={true} />
             <ExperienceItem companyLink='https://www.algomau.ca' jobTitle='Student' companyName='Algoma University' technologies={['Java', 'JavaScript' , 'Linear Algebra' , 'Algorithms' , 'Data Structures' ]} duties={['Computer Science Hons. BA', '2022 - 2023' ]} jobDesc='Coursework' imageIncluded={false} />
             <ExperienceItem companyLink='https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjS1_Hcp8eDAxWVDHkGHRs0AkUQFnoECCcQAQ&url=https%3A%2F%2Fwww.tdsb.on.ca%2FFind-your%2FSchools%2Fschno%2F2812&usg=AOvVaw07NvTm-vEIx8CwYm1oxCtG&opi=89978449' jobTitle='High School' companyName='Thistletown Collegiate Institute' companyLogoSrc='/york2.png' technologies={['Python', 'C++' , 'Algorithms' , 'Data Structures' , 'Calculus' , 'OOP' , 'Embedded Software' , 'Arduino' , 'Computer Engineering' ]} duties={['IT OSSD S.H.S.M', '2020 - 2022' ]} jobDesc='Coursework' imageIncluded={false} />
           </div>

@@ -54,6 +54,7 @@ export default function Home() {
               <SkillItem skillName='Machine Learning' />
               <SkillItem skillName='Scikit-learn' />
               <SkillItem skillName='UI/UX Design' />
+              <SkillItem skillName='Shell Scripting' />
               <SkillItem skillName='LUA' />
               <SkillItem skillName='UI/UX Design' />
               <SkillItem skillName='Cloud Development' />

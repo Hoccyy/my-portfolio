@@ -6,6 +6,15 @@ export default function Work() {
     <main className={styles.mainProjects}>
       <h1 className={styles.mainHeader}>Notable Projects</h1>
       <ProjectItem 
+        projectTitle='FitPick'
+        imageSrc='/fitpick.ico'
+        repoLink='https://github.com/Hoccyy/FitPick'
+        imageIncluded={true}
+        projDesc='FitPick is an app that lets you store your closet virtually with ease and picks one for you randomly. The app stores your closet safely using Firebase and Google OAuth for user account storage and login.' 
+        technologies={['Firebase', 'Google OAuth', 'NextJS', 'TypeScript', 'NodeJS', 'React', 'CSS', 'HTML']}
+      />
+
+      <ProjectItem 
         projectTitle='EmotionDetector 1.0'
         imageSrc='/'
         repoLink='https://github.com/Hoccyy/Emotion-Detector'
@@ -29,7 +38,7 @@ export default function Work() {
         repoLink='https://www.morseley.com/'
         imageIncluded={true}
         projDesc='A Morsecode Translator built with React and TypeScript to quickly convert English into Morsecode and back in realtime. The translation engine was originally written in vanilla JavaScript along with regular HTML and CSS and then the project was reformatted with React and NextJS for styling purposes. There are features to easily download and copy translations.' 
-        technologies={['JavaScript', 'React', 'NextJS', 'NodeJS', 'CSS']}
+        technologies={['JavaScript', 'React', 'NextJS', 'NodeJS', 'CSS', 'npm', 'HTML']}
       />
 
       <ProjectItem 
@@ -47,7 +56,7 @@ export default function Work() {
         repoLink='https://github.com/Hoccyy/expense-tracker'
         imageIncluded={false}
         projDesc='React app to help you keep track of your expenses and also your income to track monthly cashflow and let you know if you&apos;re on target for your financial goals.' 
-        technologies={['TypeScript', 'JavaScript', 'React', 'NextJS', 'CSS', 'csv', 'Node.JS']}
+        technologies={['TypeScript', 'JavaScript', 'React', 'NextJS', 'HTML', 'CSS', 'csv', 'Node.JS']}
       />
 
       <ProjectItem 

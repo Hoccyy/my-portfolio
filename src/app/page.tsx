@@ -39,9 +39,12 @@ export default function Home() {
               <SkillItem skillName='JavaScript' />
               <SkillItem skillName='React' />
               <SkillItem skillName='NodeJS' />
+              <SkillItem skillName='Firebase' />
+              <SkillItem skillName='Google Cloud' />
               <SkillItem skillName='NextJS' />
               <SkillItem skillName='Git' />
               <SkillItem skillName='Source Control' />
+              <SkillItem skillName='GCP' />
               <SkillItem skillName='C#' />
               <SkillItem skillName='C++' />
               <SkillItem skillName='Go' />

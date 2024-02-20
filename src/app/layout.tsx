@@ -2,10 +2,8 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import styles from './page.module.css';
-import Link from 'next/link';
 import NavItem from './components/NavItem';
 import Footer from './components/Footer';
-import pageTitle from './page'
 import Head from 'next/head';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from "@vercel/speed-insights/next";

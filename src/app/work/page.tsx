@@ -10,8 +10,8 @@ export default function Work() {
         imageSrc='/fitpick.ico'
         repoLink='https://github.com/Hoccyy/FitPick'
         imageIncluded={true}
-        projDesc='FitPick is an app that lets you store your closet virtually with ease and picks one for you randomly. The app stores your closet safely using Firebase and Google OAuth for user account storage and login.' 
-        technologies={['Firebase', 'Google OAuth', 'NextJS', 'TypeScript', 'NodeJS', 'React', 'CSS', 'HTML']}
+        projDesc='FitPick is an app that lets you store your closet virtually and picks one for you randomly. The app stores your closet safely using Firebase and Google OAuth for user account storage and login so you can take your closet with you on the go! Never worry about forgetting anything in your closet again.' 
+        technologies={['Firebase', 'Google OAuth', 'NextJS', 'TypeScript', 'NodeJS', 'React', 'Expo', 'CSS', 'HTML']}
       />
 
       <ProjectItem 

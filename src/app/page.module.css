@@ -403,6 +403,7 @@
     text-align: center;
     font-size: 36px;
     padding: 11px;
+    padding-top: 0;
   }
   .introBody {
     padding: 0 13.13px 0 13.13px;

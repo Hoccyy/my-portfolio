@@ -125,9 +125,10 @@
     display: none;
   }
   .mobileImage {
-    height: 30vh;
-    width: 95%;
+    height: 29vh;
+    width: 92.13%;
     display: inline-block;
+    border-radius: 8.13px;
   }
   .primaryCardBackground {
     background-color: rgb(18, 29, 52);

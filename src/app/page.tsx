@@ -40,7 +40,7 @@ export default function Home() {
               <SkillItem skillName='React' />
               <SkillItem skillName='NodeJS' />
               <SkillItem skillName='Firebase' />
-              <SkillItem skillName='Google Cloud' />
+              <SkillItem skillName='Google Cloud Platform' />
               <SkillItem skillName='NextJS' />
               <SkillItem skillName='Git' />
               <SkillItem skillName='Source Control' />

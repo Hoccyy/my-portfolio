@@ -23,7 +23,7 @@ export default function Home() {
                 Hocian&nbsp;Wade
               </Link>
             </span>
-            a Sophomore Computer Science student at York University and a Software Engineer with a deep passion for the coding and Software development!
+            a Sophomore year Computer Science student at York University and a Software Engineer with a deep passion for the coding and Software development!
           </h2>
         </div>
 

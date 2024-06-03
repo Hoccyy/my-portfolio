@@ -568,6 +568,8 @@
     border-radius: 13px;
     padding: 1.3px;
     text-align: center;
+
+    animation: loadShake .2s ease-in .4s 13 forwards;
   }
   .footerContainer {
     text-align: center;
@@ -675,6 +677,18 @@
     transform: rotate(-0.8deg);
   }
   100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes loadShake {
+  0%{
+    transform: rotate(1.3deg);
+  }
+  50%{
+    transform: rotate(-2.6deg);
+  }
+  100%{
     transform: rotate(0deg);
   }
 }

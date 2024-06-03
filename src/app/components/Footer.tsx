@@ -22,11 +22,12 @@ const Footer = ({
           <div className={styles.centerFtr}>
             <div className={styles.footerContainer}>
               <h1>
-                © 2024&nbsp;&nbsp;<Link href={LinkedInProfile} className={styles.footerHighlight} target='_blank'>&nbsp;@Hoccyy¹³</Link>
+                © 2024&nbsp;&nbsp;<Link href={LinkedInProfile} className={styles.footerHighlight} target='_blank'>&nbsp;@Hoccyy ¹³</Link>
                 &nbsp;&nbsp;• &nbsp;&nbsp;Toronto, ON
               </h1>
               
             </div>
+            
             <div className={styles.footerCenter}>
               <SocialIcon id={styles.footerIcon} url={LinkedInProfile} target='_blank'/>
               <SocialIcon id={styles.footerIcon} url={GitHubProfile} target='_blank'/>

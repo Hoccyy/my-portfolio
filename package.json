@@ -11,9 +11,9 @@
   "dependencies": {
     "@vercel/analytics": "^1.1.1",
     "@vercel/speed-insights": "^1.0.3",
-    "next": "14.0.4",
-    "react": "^18",
-    "react-dom": "^18",
+    "next": "^14.2.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-social-icons": "^6.7.0"
   },
   "devDependencies": {
@@ -21,7 +21,7 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
-    "eslint-config-next": "14.0.4",
+    "eslint-config-next": "^14.2.3",
     "typescript": "^5"
   }
 }

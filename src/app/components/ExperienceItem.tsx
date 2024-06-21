@@ -23,8 +23,8 @@ const ExperienceItem = ({
       <div>
         <Image
           src={companyLogoSrc}
-          width={90}
-          height={90}
+          width={900}
+          height={900}
           alt='Project Imagery'
           className={ imageIncluded ? styles.projectImage : styles.defaultImg }
           draggable={false}
@@ -42,8 +42,8 @@ const ExperienceItem = ({
       
         <Image
           src={companyLogoSrc}
-          width={90}
-          height={90}
+          width={900}
+          height={900}
           alt='Project Imagery'
           className={imageIncluded ?styles.mobileImage : styles.defaultImgMob}
           draggable={false}

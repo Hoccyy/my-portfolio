@@ -78,6 +78,7 @@
     flex-wrap: wrap;
     max-width: 100%;
   }
+
   .primaryCardBackground {
     display: inline;
     flex-direction: column;
@@ -86,6 +87,11 @@
     text-align: center;
     padding: 1px;
   }
+  
+  .primaryCardBackground:hover {
+    animation: none;
+  }
+
   .projectImage{
     display: none;
   }

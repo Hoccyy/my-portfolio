@@ -24,7 +24,7 @@ export default function Work() {
       />
 
       <ProjectItem 
-        projectTitle='ChefGPT 0.1'
+        projectTitle='ChefGPT 0.2'
         imageSrc='/chef.png'
         repoLink='https://github.com/Hoccyy/ChefGPT'
         imageIncluded={true}

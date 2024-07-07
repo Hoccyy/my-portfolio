@@ -20,7 +20,7 @@ export default function Work() {
         repoLink='https://github.com/Hoccyy/Emotion-Detector'
         imageIncluded={false}
         projDesc='This project takes a picture of a face and it uses a model that is trained to classify different emotions. When run, the program loads a serialized model that can classify facial expressions and output the emotion detected.' 
-        technologies={['Python', 'Tensorflow', 'Matplotlib', 'Pyplot', 'Numpy', 'OpenCV', 'Imghdr', 'Keras', 'cv2']}
+        technologies={['Python', 'Tensorflow', 'Matplotlib', 'Pyplot', 'Numpy', 'OpenCV', 'Keras', 'cv2']}
       />
 
       <ProjectItem 
@@ -29,7 +29,7 @@ export default function Work() {
         repoLink='https://github.com/Hoccyy/ChefGPT'
         imageIncluded={true}
         projDesc='Web application built with React that helps you decide on what meals to make and gives step-by-step instructions for preparation. To use this app, simply enter all the ingredients you have or want to use and it will output a recipe for them.' 
-        technologies={['TypeScript', 'React', 'NextJS', 'NodeJS', 'GPT-3.5', 'OpenAI API', 'CSS', 'Vercel']}
+        technologies={['TypeScript', 'React', 'NextJS', 'NodeJS', 'GPT-3.5-turbo', 'CSS', 'Vercel']}
       />
 
       <ProjectItem 
@@ -48,6 +48,15 @@ export default function Work() {
         imageIncluded={true}
         projDesc='A Chrome extension used to detect mirrored websites that could potentially have malicious intent and informs the user so it the user is aware the website is mirror and prevent phishing attacks.' 
         technologies={['JavaScript']}
+      />
+
+      <ProjectItem 
+        projectTitle='Cover Letter Updater'
+        imageSrc='/default.png'
+        repoLink='https://github.com/Hoccyy/Cover-Letter-Updater'
+        imageIncluded={false}
+        projDesc='Python program made to automate the process of updating your cover letter for each role in the background.' 
+        technologies={['Python', 'python-docx', 'Libreoffice']}
       />
 
       <ProjectItem 

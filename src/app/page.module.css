@@ -32,7 +32,7 @@
   width: 100vw;
   color: white;
   text-align: center;
-  font-size: 98.13px;
+  font-size: 48.13px;
 }
 
 .mainProjects{
@@ -185,7 +185,7 @@
 .sectionHeader {
   text-align: center;
   max-width: 100vw;
-  font-size: 80px;
+  font-size: 50px;
   color: white;
 }
 
@@ -569,7 +569,7 @@
     padding: 1.3px;
     text-align: center;
 
-    animation: loadShake .2s ease-in .4s 13 forwards;
+    animation: loadShake .2s ease-in .4s 4 forwards;
   }
   .footerContainer {
     text-align: center;

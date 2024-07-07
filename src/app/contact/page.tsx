@@ -12,8 +12,8 @@ export default function Contact() {
         <div className={styles.emailContainer}>
           <SocialMediaItem imageSource='/gmail.png' platform='' src='mailto:hocianw@gmail.com' newtab={false}/>
           <a href='mailto:hocianw@gmail.com'>
-            <h1 className={styles.socialText}>Email me!</h1>
-            <h1 className={styles.socialText2}>Hocianw@gmail.com</h1>
+            <h1 className={styles.socialText}>Email me</h1>
+            <h1 className={styles.socialText2}>hocianw@gmail.com</h1>
           </a>
         </div>
       </div>

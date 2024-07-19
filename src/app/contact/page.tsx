@@ -56,7 +56,6 @@ export default function Contact() {
           <span>{result}</span>
 
           <a href='mailto:hocianw@gmail.com'>
-          <SocialMediaItem imageSource='/gmail.png' platform='' src='mailto:hocianw@gmail.com' newtab={false}/>
           </a>
         </div>
       </div>

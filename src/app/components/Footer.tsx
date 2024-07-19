@@ -21,10 +21,10 @@ const Footer = ({
         <main>
           <div className={styles.centerFtr}>
             <div className={styles.footerContainer}>
-              <h1>
+              <h2 className={styles.footerText}>
                 © 2024&nbsp;&nbsp;<Link href={LinkedInProfile} className={styles.footerHighlight} target='_blank'>&nbsp;@Hoccyy ¹³</Link>
                 &nbsp;&nbsp;• &nbsp;&nbsp;Toronto, ON
-              </h1>
+              </h2>
               
             </div>
             

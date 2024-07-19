@@ -3,7 +3,6 @@ import React from 'react'
 import styles from './ExperienceItem.module.css'
 import Link from 'next/link';
 import Image from 'next/image';
-import SkillItem from './SkillItem';
 import SkillItem3 from './SkillItem3';
 import DutyItem from './DutyItem';
 

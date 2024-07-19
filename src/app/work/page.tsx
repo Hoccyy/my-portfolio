@@ -47,7 +47,16 @@ export default function Work() {
         repoLink='https://chrome.google.com/webstore/detail/mirrorhound/iapfedepagfopcakfpejjjlkafmnpoeh'
         imageIncluded={true}
         projDesc='A Chrome extension used to detect mirrored websites that could potentially have malicious intent and informs the user so it the user is aware the website is mirror and prevent phishing attacks.' 
-        technologies={['JavaScript']}
+        technologies={['JavaScript', 'HTML']}
+      />
+
+      <ProjectItem 
+        projectTitle='WordGuard'
+        imageSrc='/wordguard.png'
+        repoLink='https://chromewebstore.google.com/detail/wordguard/deleckgdblobccidlaabcnkmabeafmdf?authuser=0&hl=en'
+        imageIncluded={true}
+        projDesc='A browser extension built to block profanity on websites which is useful if you want a cleaner web experience for your children or if you&apos;d rather a clean web experience for yourself.'
+        technologies={['JavaScript', 'HTML', 'JSON']}
       />
 
       <ProjectItem 
@@ -57,6 +66,15 @@ export default function Work() {
         imageIncluded={false}
         projDesc='Python program made to automate the process of updating your cover letter for each role in the background.' 
         technologies={['Python', 'python-docx', 'Libreoffice']}
+      />
+
+      <ProjectItem 
+        projectTitle='WebGrabb'
+        imageSrc='/default.png'
+        repoLink='https://github.com/Hoccyy/WebGrabb'
+        imageIncluded={false}
+        projDesc='Python program made to automate the process of updating your cover letter for each role in the background.' 
+        technologies={['Go', 'Shell']}
       />
 
       <ProjectItem 

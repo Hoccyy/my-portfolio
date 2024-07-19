@@ -3,8 +3,6 @@ import React from 'react'
 import styles from './ProjectItem.module.css'
 import Link from 'next/link';
 import Image from 'next/image';
-import SkillItem from './SkillItem';
-import SkillItem2 from './SkillItem2';
 import SkillItem3 from './SkillItem3';
 
 

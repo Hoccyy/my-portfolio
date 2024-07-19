@@ -77,19 +77,55 @@
   font-family: var(--font-mono);
 }
 
+.formContainer {
+  background-color: rgb(37, 37, 37);
+  margin: 0 0 13px 0;
+  padding: 9.13px 4px 26px 4px;
+  border-radius: 8px;
+  width: 100%;
+  align-items: center;
+}
+
+.formItemContainer {
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.formTextArea {
+  background-color: rgb(26, 26, 26);
+  border: none;
+  border-radius: 8px;
+  padding: 7.13px;
+  height: 90px;
+  width: 313px;
+}
+
+.formInput {
+  background-color: rgb(26, 26, 26);
+  border: none;
+  border-radius: 6px;
+  padding: 7.13px;
+  font-size: 19.13px;
+  width: 313px;
+}
+
+.formInput:focus {
+  outline: none;
+  border-bottom: 1px solid grey;
+}
+
+.formTextArea:focus {
+  outline: none;
+  border-bottom: 1px solid grey;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(25%, auto));
   max-width: 100%;
   width: var(--max-width);
-}
-
-.card {
-  padding: 1rem 1.2rem;
-  border-radius: var(--border-radius);
-  background: rgba(var(--card-rgb), 0);
-  border: 1px solid rgba(var(--card-border-rgb), 0);
-  transition: background 200ms, border 200ms;
 }
 
 .card span {
@@ -116,7 +152,9 @@
   align-items: center;
   position: relative;
   padding: 4rem 0;
+  padding: 0 0 4rem 0;
 }
+
 .centerFtr {
   display: flex;
   justify-content: center;
@@ -185,7 +223,7 @@
 .sectionHeader {
   text-align: center;
   max-width: 100vw;
-  font-size: 50px;
+  font-size: 37px;
   color: white;
 }
 
@@ -194,6 +232,7 @@
 }
 
 .expCenter {
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -214,11 +253,9 @@
 }
 
 .emailContainer {
-  background-color: rgb(18, 29, 52);
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   padding: 23px;
   border-radius: 11px;
-  width: 500px;
+  width: 450px;
   margin: 13px;
   text-align: center;
 }
@@ -244,7 +281,8 @@
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   padding: 23px;
   border-radius: 11px;
-  width: fit-content;
+  min-width: 130px;
+  max-width: 130px;
   margin: 13px;
   text-align: center;
 }
@@ -253,12 +291,9 @@
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   padding: 23px;
   border-radius: 11px;
-  width: fit-content;
+  min-width: 350px;
   margin: 13px;
   text-align: center;
-}
-.emailContainer:hover {
-  background-color: rgb(16, 26, 47);
 }
 .generalContainer:hover {
   background-color: rgb(16, 26, 47);
@@ -282,6 +317,24 @@
 
 .resources {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 800px;
+}
+
+.submitButton {
+  margin-top: 26px;
+  background-color: rgb(26, 26, 26);
+  border: 1px solid grey;
+  border-radius: 8px;
+  padding: 5.13px;
+}
+
+.submitButton:focus {
+  outline: none;
+  background-color: rgb(184, 184, 184);
+  color: black;
 }
 
 .introMessage {
@@ -304,7 +357,7 @@
 .introBody {
   padding-top: 30px;
   width: 50%;
-  font-size: 30px;
+  font-size: 28.13px;
   text-align: center;
   opacity: 0;
   margin-top: 1px;
@@ -325,7 +378,6 @@
 .introName:hover {
   padding: 5px;
 }
-
 
 .menu {
   z-index: 1313;
@@ -407,7 +459,7 @@
   }
   .introBody {
     padding: 0 13.13px 0 13.13px;
-    width: 100vw;
+    width: 95.13vw;
     font-size: 24px;
     text-align: center;
   }
@@ -420,8 +472,13 @@
     text-align: center;
     font-size: 40px;
   }
+
+  .resumeText {
+    font-size: 13px;
+  }
   .expCenter {
-    display: inline;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -446,13 +503,16 @@
   .resumeContainerHeader {
     text-align: center;
     font-weight: normal;
-    font-size: 40px;
+    font-size: 26px;
     color: white;
   }
   .resumeContainerBody {
     font-weight: bolder;
     font-size: 19px;
     margin-top: 0;
+  }
+  .formContainer {
+    padding: 9.13px 13px 26px 13px;
   }
   .resources {
     max-width: 100vw;
@@ -507,6 +567,7 @@
   }
   .center {
     padding: 8rem 0 6rem;
+    padding: 0 0 4rem 0;
   }
 
   .center::before {
@@ -569,7 +630,7 @@
     padding: 1.3px;
     text-align: center;
 
-    animation: loadShake .2s ease-in .4s 4 forwards;
+    animation: loadShake .2s ease-in .4s 3 forwards;
   }
   .footerContainer {
     text-align: center;
@@ -598,6 +659,11 @@
     font-weight: normal;
     text-align: left;
   }
+
+  .resumeContainer {
+    min-width: 260px;
+  }
+
   .resumeContainerBody {
     font-size: 14px;
     font-weight: normal;

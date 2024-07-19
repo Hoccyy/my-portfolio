@@ -3,11 +3,7 @@
 .dutyRole {
   font-size: 17.13px;
   font-weight: lighter;
-  color: rgb(94 234 212);
-  color: rgb(37, 103, 93);
-  color: white;
   color: seashell;
-
   background-color: rgb(52, 52, 52);
   width: fit-content;
   height: fit-content;
@@ -21,14 +17,13 @@
 /* Mobile */
 @media (max-width: 700px) {
   .dutyRole {
-    font-size: 14.5px;
+    font-size: 13.5px;
     font-weight: bold;
     color: white;
     width: fit-content;
     border-radius: 35px;
     padding: 10px;
     margin: 3px;
-
   }
   .dutyRole:hover {
     color: white;

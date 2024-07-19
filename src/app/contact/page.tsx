@@ -7,23 +7,18 @@ import { FetchAPIKey } from '../components/FetchKey';
 
 const resumeUrl = 'https://drive.google.com/file/d/1O4cXXNgMqks6eakNn5fM6MG8O5aYEvWb/view?usp=sharing';
 
-
 export default function Contact() {
   const [result, setResult] = useState("");
-  const FormsKey : string = FetchAPIKey() as string;
-  
+  const temp : string = atob("ODJhZGNhOTctMGJhMC00ZGE1LTkwYzQtYzkxZTYxNjcxMDA4") as string;
   const onSubmit = async (event: any) => {
     event.preventDefault();
     setResult("Sending....");
     const formData = new FormData(event.target);
-  
-    formData.append("access_key", FormsKey);
-  
+    formData.append("access_key", temp);
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
       body: formData
     });
-  
     const data = await response.json();
   
     if (data.success) {

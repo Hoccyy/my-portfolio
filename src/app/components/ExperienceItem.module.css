@@ -89,7 +89,8 @@
 .jobTitle {
   color: white;
   text-align: left;
-  font-size: 40px;
+  margin-top: 6.13px;
+  font-size: 26px;
 }
 .secondaryPanel {
   padding: 23px;
@@ -179,6 +180,6 @@
     max-width: 86vw;
   }
   .projectImage {
-    height: 60%;
+    height: 260px;
   }
 }

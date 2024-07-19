@@ -11,7 +11,7 @@ export default function Work() {
         repoLink='https://github.com/Hoccyy/FitPick'
         imageIncluded={true}
         projDesc='FitPick is an app that lets you store your closet virtually and picks one for you randomly. The app stores your closet safely using Firebase and Google OAuth for user account storage and login so you can take your closet with you on the go! Never worry about forgetting anything in your closet again.' 
-        technologies={['Firebase','Google Cloud Platform', 'Google OAuth', 'NextJS', 'TypeScript', 'NodeJS', 'React', 'Expo', 'CSS', 'HTML']}
+        technologies={['Firebase','Google Cloud Platform', 'Google OAuth', 'NextJS', 'TypeScript', 'NodeJS', 'React', 'Expo', 'HTML', 'CSS']}
       />
 
       <ProjectItem 
@@ -38,7 +38,7 @@ export default function Work() {
         repoLink='https://www.morseley.com/'
         imageIncluded={true}
         projDesc='A Morsecode Translator built with React and TypeScript to quickly convert English into Morsecode and back in realtime. The translation engine was originally written in vanilla JavaScript along with regular HTML and CSS and then the project was reformatted with React and NextJS for styling purposes. There are features to easily download and copy translations.' 
-        technologies={['JavaScript', 'React', 'NextJS', 'NodeJS', 'CSS', 'npm', 'HTML']}
+        technologies={['JavaScript', 'React', 'NextJS', 'NodeJS', 'npm', 'HTML', 'CSS']}
       />
 
       <ProjectItem 

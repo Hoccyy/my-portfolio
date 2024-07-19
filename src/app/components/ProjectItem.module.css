@@ -1,7 +1,5 @@
 .primaryCardBackground {
   background-color: rgb(18, 29, 52);
-  outline: 2px rgba(10, 16, 29, 0.401) solid;
-  outline-offset: 2px;
   border-radius: 10px;
   padding: 25px;
   margin: 7px;
@@ -126,6 +124,10 @@
   .primaryCardBackground {
     width: 100vw;
     max-width: 86vw;
+  }
+
+  .projectImage {
+    height: 230px;
   }
 }
 

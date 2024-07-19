@@ -11,7 +11,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: '@Hoccyy | Software Engineer 🪻',
+  title: 'Hoccyy | Software Engineer 💻',
   description: 'I\'m Hocian Wade, Software Engineer and Computer Science student with a passion for Software Engineering and a burning desire to learn more about Computer Science and technology.',
 }
 

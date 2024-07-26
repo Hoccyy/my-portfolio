@@ -1,5 +1,5 @@
 "use client"
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './ProjectItem.module.css'
 import Link from 'next/link';
 import Image from 'next/image';
@@ -15,17 +15,22 @@ const ProjectItem = ({
     technologies = [''],
 }) => {
 
+    const [imgSrc, setImgSrc] = useState(imageSrc);
+
     return (
       <div className={styles.primaryCardBackground}>
         <div>
           <Link href={repoLink} target='_blank'>
           <Image
-            src={imageSrc}
+            src={imgSrc}
             width={90}
             height={90}
             alt='Project Imagery'
             className={ imageIncluded ? styles.projectImage : styles.defaultImg }
             draggable={false}
+            onError={() => {
+              setImgSrc('/default.png');
+            }}
           />
           </Link>
         </div>
@@ -35,12 +40,15 @@ const ProjectItem = ({
             <h1 className={styles.projectTitle}>{projectTitle} ↗ </h1>
             <Link href={repoLink} target='_blank'>
             <Image
-              src={imageSrc}
+              src={imgSrc}
               width={90}
               height={90}
               alt='Project Imagery'
               className={imageIncluded ?styles.mobileImage : styles.defaultImgMob}
               draggable={false}
+              onError={() => {
+                setImgSrc('/default.png');
+              }}
             />
             </Link>
             <h4 className={styles.projDesc}>{projDesc}</h4>

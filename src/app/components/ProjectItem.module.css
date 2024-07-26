@@ -33,6 +33,10 @@
 .defaultImg {
   opacity: 0;
   width: 200px;
+
+  height: 267px;
+  width: 250px;
+  border-radius: 7.13px;
 }
 
 .defaultImgMob {
@@ -94,7 +98,7 @@
     display: none;
   }
   .mobileImage {
-    height: 30vh;
+    height: 38.13vh;
     width: 95%;
     display: inline-block;
 

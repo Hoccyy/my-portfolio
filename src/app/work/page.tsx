@@ -15,15 +15,6 @@ export default function Work() {
       />
 
       <ProjectItem 
-        projectTitle='EmotionDetector 1.0'
-        imageSrc='/'
-        repoLink='https://github.com/Hoccyy/Emotion-Detector'
-        imageIncluded={false}
-        projDesc='This project takes a picture of a face and it uses a model that is trained to classify different emotions. When run, the program loads a serialized model that can classify facial expressions and output the emotion detected.' 
-        technologies={['Python', 'Tensorflow', 'Matplotlib', 'Pyplot', 'Numpy', 'OpenCV', 'Keras', 'cv2']}
-      />
-
-      <ProjectItem 
         projectTitle='ChefGPT 0.2'
         imageSrc='/chef.png'
         repoLink='https://github.com/Hoccyy/ChefGPT'
@@ -33,12 +24,32 @@ export default function Work() {
       />
 
       <ProjectItem 
+        projectTitle='EmotionDetector 1.0'
+        imageSrc='/'
+        repoLink='https://github.com/Hoccyy/Emotion-Detector'
+        imageIncluded={false}
+        projDesc='This project takes a picture of a face and it uses a model that is trained to classify different emotions. When run, the program loads a serialized model that can classify facial expressions and output the emotion detected.' 
+        technologies={['Python', 'Tensorflow', 'Matplotlib', 'Pyplot', 'Numpy', 'OpenCV', 'Keras', 'cv2']}
+      />
+
+      
+
+      <ProjectItem 
         projectTitle='Morseley.com' 
         imageSrc='/morseley.ico'
         repoLink='https://www.morseley.com/'
         imageIncluded={true}
         projDesc='A Morsecode Translator built with React and TypeScript to quickly convert English into Morsecode and back in realtime. The translation engine was originally written in vanilla JavaScript along with regular HTML and CSS and then the project was reformatted with React and NextJS for styling purposes. There are features to easily download and copy translations.' 
         technologies={['JavaScript', 'React', 'NextJS', 'NodeJS', 'npm', 'HTML', 'CSS']}
+      />
+
+      <ProjectItem 
+        projectTitle='Morseley' 
+        imageSrc='/default.png'
+        repoLink='https://www.npmjs.com/package/morseley'
+        imageIncluded={false}
+        projDesc='Morseley is a lightweight node package made to easily encode and decode morse-code. Morseley is an adaptation of a previous project Morseley.com to enable portability and ease of use.' 
+        technologies={['JavaScript', 'npm']}
       />
 
       <ProjectItem 

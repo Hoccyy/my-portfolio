@@ -755,7 +755,7 @@
     transform: rotate(1.3deg);
   }
   50%{
-    transform: rotate(-2.6deg);
+    transform: rotate(-2.613deg);
   }
   100%{
     transform: rotate(0deg);

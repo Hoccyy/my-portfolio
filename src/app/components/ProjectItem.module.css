@@ -1,12 +1,17 @@
 .primaryCardBackground {
   background-color: rgb(18, 29, 52);
+  background-color: #1e315d;
   border-radius: 10px;
   padding: 25px;
-  margin: 7px;
+  margin: 39px;
   display: flex;
-  max-width: 65vw;
-  min-width: 65vw;
+  max-width: 45%;
+  min-width: 45%;
+  width: 45%;
+  min-height: 450px;
+  max-height: 510px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .primaryCardBackground:hover {
@@ -25,7 +30,7 @@
 }
 
 .projectImage {
-  height: 267px;
+  height: 250px;
   width: 250px;
   border-radius: 7.13px;
 }
@@ -64,10 +69,19 @@
 .projectTitle:hover {
   text-decoration: underline;
   color: rgb(67, 127, 140);
+  color: #738ece;
+}
+
+.cardCenter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: center;
 }
 
 .secondaryPanel {
   padding: 23px;
+  height: fit-content;
 }
 
 /* Mobile */
@@ -75,6 +89,7 @@
   .skillHolder {
     display: none;
   }
+  
   .skillHolderMobile {
     display: flex;
     flex-wrap: wrap;
@@ -84,10 +99,19 @@
   .primaryCardBackground {
     display: inline;
     flex-direction: column;
-    width: 93vw;
+    width: 97%;
+    min-width: 97%;
     max-width: 100vw;
     text-align: center;
-    padding: 1px;
+    padding: 0;
+
+    max-height: none;
+    min-height: 10px;
+    height: fit-content;
+  }
+
+  .secondaryPanel {
+    height: fit-content;
   }
   
   .primaryCardBackground:hover {
@@ -97,6 +121,7 @@
   .projectImage{
     display: none;
   }
+
   .mobileImage {
     height: 38.13vh;
     width: 95%;
@@ -104,22 +129,29 @@
 
     border-radius: 9.13px;
   }
+
   .projectTitle {
     color: white;
     font-size: 20px;
     text-align: center;
+    margin-bottom: 26px;
   }
+
   .projectTitle:hover {
     text-decoration: underline;
     color: rgb(67, 140, 129);
+    color: #738ece;
   }
+
   .defaultImg {
     opacity: 0;
     width: 200px;
     height: 45px;
   }
+
   .projDesc {
     padding: 6px;
+    font-weight: 400;
   }
 }
 
@@ -132,6 +164,27 @@
 
   .projectImage {
     height: 230px;
+  }
+
+  .primaryCardBackground {
+    height: fit-content;
+  }
+
+  .secondaryPanel {
+    height: fit-content;
+  }
+}
+
+@media (min-width: 1120px) and (max-width: 2600px) {
+  .secondaryPanel {
+    background-color: none;
+  }
+
+  .primaryCardBackground {
+    max-height: none;
+    max-width: none;
+    width: 85vw;
+    height: fit-content;
   }
 }
 

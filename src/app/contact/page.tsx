@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import styles from '../page.module.css';
 import SocialMediaItem from '../components/SocialMediaItem';
 import Link from 'next/link';

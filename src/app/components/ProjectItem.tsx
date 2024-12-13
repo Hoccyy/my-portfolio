@@ -19,8 +19,11 @@ const ProjectItem = ({
 
     return (
       <div className={styles.primaryCardBackground}>
+        <div className={styles.cardCenter}>
         <div>
           <Link href={repoLink} target='_blank'>
+          {imageIncluded?
+          
           <Image
             src={imgSrc}
             width={90}
@@ -32,6 +35,8 @@ const ProjectItem = ({
               setImgSrc('/default.png');
             }}
           />
+          : null
+          }
           </Link>
         </div>
 
@@ -39,6 +44,8 @@ const ProjectItem = ({
           <Link href={repoLink} target='_blank'>
             <h1 className={styles.projectTitle}>{projectTitle} ↗ </h1>
             <Link href={repoLink} target='_blank'>
+            {imageIncluded?
+            
             <Image
               src={imgSrc}
               width={90}
@@ -50,22 +57,34 @@ const ProjectItem = ({
                 setImgSrc('/default.png');
               }}
             />
+          : <Image
+          src={imgSrc}
+          width={90}
+          height={90}
+          alt='Project Imagery'
+          className={imageIncluded ?styles.mobileImage : styles.defaultImgMob}
+          draggable={false}
+          onError={() => {
+            setImgSrc('/default.png');
+          }}
+        />}
             </Link>
-            <h4 className={styles.projDesc}>{projDesc}</h4>
+              <h4 className={styles.projDesc}>{projDesc}</h4>
+              <div className={styles.skillHolder}>
+                {technologies.map((technologies, index) => (
+                  <SkillItem3 skillName={technologies}/>
+                ))}
+              </div>
 
-            <div className={styles.skillHolder}>
-              {technologies.map((technologies, index) => (
-                <SkillItem3 skillName={technologies}/>
-              ))}
-            </div>
-            <div className={styles.skillHolderMobile}>
-              {technologies.map((technologies, index) => (
-                <SkillItem3 skillName={technologies}/>
-              ))}
-            </div>
+              <div className={styles.skillHolderMobile}>
+                {technologies.map((technologies, index) => (
+                  <SkillItem3 skillName={technologies}/>
+                ))}
+              </div>
 
-        </Link>
+            </Link>
           </div>
+        </div>
       </div>
     );
 };

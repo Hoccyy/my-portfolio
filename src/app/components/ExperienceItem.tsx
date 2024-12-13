@@ -11,6 +11,7 @@ const ExperienceItem = ({
     companyName = 'Company',
     jobTitle = 'Position',
     companyLogoSrc = '/defaultCompany.png',
+    roleLength = '',
     imageIncluded= false,
     companyLink='',
     technologies=[''],
@@ -19,7 +20,7 @@ const ExperienceItem = ({
 
   return (
     <div className={styles.primaryCardBackground}>
-      <div>
+      <div className={styles.expValign}>
         <Image
           src={companyLogoSrc}
           width={900}
@@ -44,10 +45,15 @@ const ExperienceItem = ({
           width={900}
           height={900}
           alt='Project Imagery'
-          className={imageIncluded ?styles.mobileImage : styles.defaultImgMob}
+          className={imageIncluded ? styles.mobileImage : styles.defaultImgMob}
           draggable={false}
         />
-        <h4 className={styles.jobTitle}>{jobTitle} </h4>
+
+        <div className={styles.roleAndDate}>
+          <h4 className={styles.jobTitle}>{jobTitle} </h4>
+          <h4 className={styles.roleLength}>{roleLength} </h4>
+        </div>
+
         <h4 className={styles.jobDesc}>{jobDesc}</h4>
 
         <div className={styles.skillHolder}>

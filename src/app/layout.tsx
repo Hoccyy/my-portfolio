@@ -13,7 +13,7 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'Hoccyy | Software Engineer 💻',
   description: 'I\'m Hocian Wade, Software Engineer and Computer Science student with a passion for Software Engineering and a burning desire to learn more about Computer Science and technology.',
-}
+};
 
 export default function RootLayout({
   children,
@@ -31,11 +31,11 @@ export default function RootLayout({
       </Head>
       <body className={inter.className}>
         <div className={styles.centerMenu}>
-        <nav id='menu' className={styles.menu}>
-          <NavItem desc='A little bit about me' title='About' path='/'/>
-          <NavItem desc='Some of my work' title='Projects' path='/work'/>
-          <NavItem desc='Get in touch with me!' title='Contact' path='/contact'/>
-        </nav>
+          <nav id='menu' className={styles.menu}>
+            <NavItem desc='A little bit about me' title='About' path='/'/>
+            <NavItem desc='Some of my work' title='Projects' path='/work'/>
+            <NavItem desc='Get in touch with me!' title='Contact' path='/contact'/>
+          </nav>
         </div>
         {children}
         <SpeedInsights />

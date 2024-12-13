@@ -4,18 +4,22 @@
   font-size: 21.13px;
   font-weight: normal;
   color: rgb(94 234 212);
+  color: #6f91e1;
 
   background-color: rgb(37, 103, 93);
+  background-color: #1E2A47;
   width: fit-content;
   height: fit-content;
   border-radius: 35px;
   padding: 13px;
   margin: 4px;
+  transition: color 1s;
   box-shadow: 0 1.6px 3.6px 0 rgb(0 0 0 / 13%), 0 0.3px 0.9px 0 rgb(0 0 0 / 11%);
 }
 
-.skillName:hover {
+.skillName:hover, .skillName:focus{
   color: white;
+  color: #d3defb;
   animation: tiltAnimation 0.4s ease-in-out;
 }
 
@@ -24,8 +28,6 @@
   .skillName {
     font-size: 13px;
     font-weight: normal;
-    color: white;
-    color: rgb(94 234 212);
     background-color: rgb(50, 78, 50);
     background-color: rgb(67, 140, 129);
     width: fit-content;
@@ -34,12 +36,14 @@
     margin: 3px;
 
     color: rgb(94 234 212);
+    transition: color 1s;
 
     background-color: rgb(37, 103, 93);
+    color: #6f91e1;background-color: #1E2A47;
 
   }
   .skillName:hover {
-    color: white;
+    color: #d3defb;
   }
 }
 
@@ -59,10 +63,10 @@
     transform: rotate(0deg);
   }
   50% {
-    transform: rotate(1.13deg);
+    transform: rotate(1.065deg);
   }
   75% {
-    transform: rotate(-1.13deg);
+    transform: rotate(-1.065deg);
   }
   100% {
     transform: rotate(0deg);

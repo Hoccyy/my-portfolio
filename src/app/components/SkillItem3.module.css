@@ -4,8 +4,12 @@
   font-size: 15px;
   font-weight: normal;
   color: rgb(94 234 212);
+  color: #6f91e1;
+
 
   background-color: rgb(67, 140, 129);
+  background-color: #1E2A47;
+  transition: color 0.6s;
   width: fit-content;
   height: fit-content;
   border-radius: 35px;
@@ -15,7 +19,7 @@
 }
 
 .skillName:hover {
-  color: white;
+  color: #d3defb;
   animation: tiltAnimation 0.4s ease-in-out;
 }
 
@@ -28,13 +32,16 @@
     color: rgb(94 234 212);
     background-color: rgb(50, 78, 50);
     background-color: rgb(67, 140, 129);
+    background-color: #1e315d;
+    color: #6f91e1;
     width: fit-content;
     border-radius: 35px;
+    transition: color 1s;
     padding: 7px 11px 7px 11px;
     margin: 3px;
   }
   .skillName:hover {
-    color: rgb(88, 220, 200);
+    color: #d3defb;
   }
 }
 

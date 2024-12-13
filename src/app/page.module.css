@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 7rem;
+  padding: 0rem 0rem 0rem 0rem;
   min-height: 40vh;
   max-width: 99vw;
   margin-left: 0.5vw;
@@ -16,8 +16,9 @@
   align-items: center;
   padding: 2rem;
   max-width: 99vw;
-  margin-top: 50px;
+  margin-top: 100px;
   min-height: 50vh;
+  margin-bottom: 90px;
 }
 
 .primary {
@@ -40,10 +41,14 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 7rem;
+  padding: 2.13rem;
   min-height: 50vh;
   max-width: 99vw;
   margin-left: 0.5vw;
+  margin-top: 37px;
+  opacity: 0;
+  filter: blur(5px);
+  animation: loadIntro2 0.6s ease-in forwards;
 }
 .description {
   display: inherit;
@@ -56,34 +61,14 @@
   font-family: var(--font-mono);
 }
 
-.description a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.description p {
-  position: relative;
-  margin: 0;
-  padding: 1rem;
-  background-color: rgba(var(--callout-rgb), 0.5);
-  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
-  border-radius: var(--border-radius);
-}
-
-.code {
-  font-weight: 700;
-  font-family: var(--font-mono);
-}
-
 .formContainer {
-  background-color: rgb(37, 37, 37);
+  background-color: rgb(36, 36, 36);
   margin: 0 0 13px 0;
   padding: 9.13px 4px 26px 4px;
   border-radius: 8px;
   width: 100%;
   align-items: center;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .formItemContainer {
@@ -129,22 +114,27 @@
   width: var(--max-width);
 }
 
-.card span {
-  display: inline-block;
-  transition: transform 200ms;
+.skillsCont {
+  margin: 63.13px 0 130px 0;
 }
 
-.card h2 {
-  font-weight: 600;
-  margin-bottom: 0.7rem;
+.projectRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: center;
+  text-align: center;
+  width: 98vw;
 }
 
-.card p {
-  margin: 0;
-  opacity: 0.6;
-  font-size: 0.9rem;
-  line-height: 1.5;
-  max-width: 30ch;
+.projectCont {
+  max-width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  display: flex;
+  gap: 13px;
+  margin-top: 13px;
 }
 
 .center {
@@ -161,12 +151,15 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  margin-bottom: 26px;
 }
 .centerMenu {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+  background-color: #00000048;
+  padding: 13px;
 }
 .footerCenter {
   display: flex;
@@ -188,7 +181,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 2rem 0 0 0;
+  padding: 1rem 0 0 0;
   width: 100%;
   max-width: 93.13vw;
   text-align: center;
@@ -201,11 +194,18 @@
   z-index: 13131313;
 }
 
+.introSect {
+  background: linear-gradient(-126deg, #1e315d00 60%, #00000048 60%);
+  padding-top: 130px;
+  filter: drop-shadow(10px 13px 80px rgba(0, 0, 0, 1.3));
+  height: 600px;
+}
+
 .footerContainer{
   padding: 13px;
   font-size: 10px;
   color: rgb(200, 200, 200);
-  border-top: 3px solid rgba(10, 16, 29, 0.601);
+  border-top: 3px solid #223562b5;
 }
 
 .footerHighlight:hover {
@@ -215,10 +215,28 @@
 #footerIcon {
   margin: 6.13px;
   opacity: 0.8;
+  animation: jumpAnim1 1.1331s ease 1s forwards;
 }
 
 #footerIcon:hover {
   opacity: 1;
+  animation: jumpAnim1 1.13s ease forwards;
+}
+
+#footerIcon:nth-child(1) {
+  animation-delay: 1.3s;
+}
+#footerIcon:nth-child(2) {
+  animation-delay: 1.613s;
+}
+#footerIcon:nth-child(3) {
+  animation-delay: 1.731s;
+}
+#footerIcon:nth-child(4) {
+  animation-delay: 1.8s;
+}
+#footerIcon:nth-child(5) {
+  animation-delay: 1s;
 }
 
 .sectionHeader {
@@ -226,6 +244,10 @@
   max-width: 100vw;
   font-size: 37px;
   color: white;
+}
+
+.eduSect {
+  margin: 130px 0 130px 0;
 }
 
 .primary {
@@ -237,8 +259,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  padding: 4rem 0;
-
+  padding: 2rem 0;
 }
 
 .expSection {
@@ -279,6 +300,7 @@
 
 .generalContainer {
   background-color: rgb(18, 29, 52);
+  background-color: #243b71;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   padding: 23px;
   border-radius: 11px;
@@ -289,6 +311,7 @@
 }
 .resumeContainer {
   background-color: rgb(18, 29, 52);
+  background-color: #243b71;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   padding: 23px;
   border-radius: 11px;
@@ -297,10 +320,10 @@
   text-align: center;
 }
 .generalContainer:hover {
-  background-color: rgb(16, 26, 47);
+  background-color: #28427e;
 }
 .resumeContainer:hover {
-  background-color: rgb(16, 26, 47);
+  background-color: #28427e;
 }
 
 .resumeContainerHeader {
@@ -321,7 +344,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: 800px;
+  width: 780px;
   animation: loadIntro2 0.6s ease-in forwards;
 }
 
@@ -368,17 +391,22 @@
   color: white;
   font-weight: normal;
 }
+
 .introName {
   color: rgb(84, 114, 183);
   opacity: 0;
   padding: 4px;
-  animation: loadIntro3 1.45s ease-in forwards;
+  animation: loadIntroName 1.45s ease-in forwards;
   opacity: 1;
   font-weight: 600;
 }
 
-.introName:hover {
-  padding: 5px;
+.name {
+  transition: color .813s;
+}
+
+.name:hover {
+  color: white;
 }
 
 .menu {
@@ -389,12 +417,20 @@
   position: fixed;
   text-align: center;
   display: flex;
+  transition: margin-top .613s;
+  height: fit-content;
   justify-content: center;
   background-color: rgba(22, 34, 61, 0.377);
   backdrop-filter: blur(13px);
   border-radius: 25px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
+
+.menu:hover {
+  margin-top: 26px;
+  scale: 1.01;
+}
+
 #menuItems {
   color: red;
   text-align: center;
@@ -404,33 +440,27 @@
   padding-right: 3rem;
   /* animation: hoverFade 1.2s ease-in-out 0s; */
 }
+
 .listItemText {
   padding: 13px;
-  margin-top: 25px;
   margin-left: 2.5px;
   margin-right: 2.5px;
   color: white;
-  color: rgb(217, 217, 217);
-  border-radius: 28px;
+  color: rgb(209, 209, 209);
+  transition: color 1s;
+  transition: box-shadow 1s ease; 
+  border-radius: 30px;
   font-size: 28.13px;
 }
+
 .listItemText:hover {
-  background-color: rgba(15, 23, 42, 0.622);
-  backdrop-filter: blur(13px);
   color:white;
-  /* box-shadow: 0 0 2px 2px rgb(15 23 42); */
+  box-shadow: 0 0 2px 2px rgb(15 23 42);
 }
 
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  .card:hover {
-    background: rgba(var(--card-rgb), 0.1);
-    border: 1px solid rgba(var(--card-border-rgb), 0.15);
-  }
-
-  .card:hover span {
-    transform: translateX(4px);
-  }
+.uniSpan {
+  border-radius: 7px;
+  padding: 3px;
 }
 
 @media (prefers-reduced-motion) {
@@ -473,6 +503,32 @@
   .sectionHeader {
     text-align: center;
     font-size: 40px;
+  }
+
+  .projectRow {
+    flex-direction: column;
+  }
+
+  .mainProjects {
+    padding: 0;
+  }
+
+  .menu {
+    transition: margin-top none;
+  }
+
+  .menu:hover {
+    margin-top: 13px;
+  }
+  
+  .eduSect {
+    margin-bottom: 0;
+  }
+
+  .introSect {
+    padding-top: 26px;
+    margin-top: 0;
+    height: fit-content;
   }
 
   .resumeText {
@@ -537,7 +593,6 @@
     max-height: fit-content;
   }
   #menuItems {
-    color: red;
     text-align: center;
     padding: 0.513rem;
     
@@ -547,7 +602,6 @@
   }
   .listItemText {
     padding: 13px;
-    color: white;
     font-size: 18.13px;
   }
 
@@ -577,51 +631,6 @@
     height: 300px;
   }
 
-  .description {
-    font-size: 0.8rem;
-  }
-
-  .description a {
-    padding: 1rem;
-  }
-
-  .description p,
-  .description div {
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    width: 100%;
-  }
-
-  .description p {
-    align-items: center;
-    inset: 0 0 auto;
-    padding: 2rem 1rem 1.4rem;
-    border-radius: 0;
-    border: none;
-    border-bottom: 1px solid rgba(var(--callout-border-rgb), 0.25);
-    background: linear-gradient(
-      to bottom,
-      rgba(var(--background-start-rgb), 1),
-      rgba(var(--callout-rgb), 0.5)
-    );
-    background-clip: padding-box;
-    backdrop-filter: blur(24px);
-  }
-
-  .description div {
-    align-items: flex-end;
-    pointer-events: none;
-    inset: auto 0 0;
-    padding: 2rem;
-    height: 200px;
-    background: linear-gradient(
-      to bottom,
-      transparent 0%,
-      rgb(var(--background-end-rgb)) 40%
-    );
-    z-index: 1;
-  }
   .footerCenter {
     position: fixed;
     bottom: 0;
@@ -632,8 +641,9 @@
     padding: 1.3px;
     text-align: center;
 
-    animation: loadShake .2s ease-in .4s 3 forwards;
+    animation: loadShake .713s ease-in .2s 1 forwards;
   }
+
   .footerContainer {
     text-align: center;
   }
@@ -645,6 +655,7 @@
     z-index: 131313;
     width: 50vw;
   }
+
   .centerFtr {
     display: flex;
     justify-content: center;
@@ -656,10 +667,15 @@
   .listItemText {
     font-size: 28px;
   }
+
   .introBody {
     width: 80vw;
     font-weight: normal;
     text-align: left;
+  }
+
+  .projectRow {
+    flex-direction: column;
   }
 
   .resumeContainer {
@@ -670,6 +686,7 @@
     font-size: 14px;
     font-weight: normal;
   }
+
   .footerCenter {
     position: fixed;
     bottom: 0;
@@ -680,24 +697,18 @@
     padding: 1.3px;
     text-align: center;
   }
+
   .footerContainer {
     text-align: center;
     margin-top: 208px;
   }
 }
 
-/* TODO: */
-@media (prefers-color-scheme: dark) {
-  .vercelLogo {
-    filter: invert(1);
-  }
-
-  .logo {
-    filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
+@media (min-width: 1120px) and (max-width: 1500px) {
+  .projectRow {
+    flex-direction: column;
   }
 }
-
-
 
 /* Animations list */
 @keyframes loadIntro {
@@ -711,7 +722,7 @@
   }
 }
 
-@keyframes loadIntro3 {
+@keyframes loadIntroName {
   0% {
     opacity: 0;
   }
@@ -719,8 +730,15 @@
     opacity: 1;
     transform: translateY(23px);
     background-color: rgb(197, 222, 135);
-    color: rgb(67, 140, 129);;
-    border-radius: 5px;
+    background-color: rgb(248, 248, 216);
+    background-color: #273a68;
+    background-color: grey;
+    color: rgb(67, 140, 129);
+    padding: 4px 13px 4px 13px;
+    color: white;
+    color: #a4baec;background-color: #273a68;
+    font-weight: 300;
+    border-radius: 9px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   }
 }
@@ -755,9 +773,24 @@
     transform: rotate(1.3deg);
   }
   50%{
-    transform: rotate(-2.613deg);
+    transform: rotate(-2.6deg);
   }
   100%{
     transform: rotate(0deg);
+  }
+}
+
+@keyframes jumpAnim1 {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-13.5px);
+  }
+  50% {
+    transform: translateY(6.5px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from 'react'
 import styles from '../page.module.css'
 import Link from 'next/link';
@@ -10,6 +10,7 @@ const GitHubProfile : string = 'https://github.com/hoccyy';
 const TwitterProfile : string = 'https://twitter.com/Hoccyy_';
 const InstagramProfile : string = 'https://www.instagram.com/hoccyy_/';
 const leetcodeProfile : string = 'http://leetcode.com/Hoccyy/';
+const year : number = new Date().getFullYear();
 
 const Footer = ({
     title = '',
@@ -22,8 +23,8 @@ const Footer = ({
           <div className={styles.centerFtr}>
             <div className={styles.footerContainer}>
               <h2 className={styles.footerText}>
-                © 2024&nbsp;&nbsp;<Link href={LinkedInProfile} className={styles.footerHighlight} target='_blank'>&nbsp;@Hoccyy ¹³</Link>
-                &nbsp;&nbsp;• &nbsp;&nbsp;Toronto, ON
+                © {year}&nbsp;&nbsp;<Link href={LinkedInProfile} className={styles.footerHighlight} target='_blank'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@Hoccyy ¹³</Link>
+                &nbsp;&nbsp;• &nbsp;&nbsp;Toronto
               </h2>
               
             </div>

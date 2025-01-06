@@ -101,7 +101,7 @@ export default function Home() {
         <h1 className={styles.sectionHeader}> Experience </h1>
         <div className={styles.expSection}>
           <div className={styles.expCenter}>
-            <ExperienceItem companyLink='https://www.microsoft.com/en-ca/about' jobTitle='Software Engineer, Intern &nbsp;🧑‍💻' companyName='Microsoft' companyLogoSrc='/Microsoft_logo.svg' technologies={['C#', 'JavaScript', 'TypeScript', "Azure DevOps", 'Linux', 'CSS', 'JUnit', 'XUnit']} duties={['Software Engineer', ]} jobDesc={MsftDesc} imageIncluded={true} roleLength='Incoming'/>
+            <ExperienceItem companyLink='https://www.microsoft.com/en-ca/about' jobTitle='Software Engineer, Intern &nbsp;🧑‍💻' companyName='Microsoft' companyLogoSrc='/Microsoft_logo.svg' technologies={['C#', '.NET', 'JavaScript', 'TypeScript', "Azure DevOps", 'Linux', 'CSS', 'JUnit', 'XUnit']} duties={['Software Engineer', ]} jobDesc={MsftDesc} imageIncluded={true} roleLength='Incoming 2025'/>
             <ExperienceItem companyLink='https://www.aboutamazon.com/what-we-do/amazon-web-services' jobTitle='Software Engineer, Intern &nbsp;🧑‍💻' companyName='Amazon Web Services' companyLogoSrc='/Amazon_icon.svg' technologies={['Java', 'AWS Cloudformation' , 'CodeCatalyst' , 'AWS' , 'JavaScript', 'Vite', 'AWS CDK' , 'Linux' , 'Unix' , 'TypeScript' , 'React', 'HTML5', 'CSS', 'JUnit', 'Vue' , 'Docker', 'DynamoDB', 'Json' ]} duties={['Software Engineer', 'Full-Stack Engineer' , 'Cloud Developer' ]} jobDesc={AmazonDesc} imageIncluded={true} roleLength='Jun 2023 - Sep 2023'/>
             
             <div className={styles.eduSect}>

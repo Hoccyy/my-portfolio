@@ -25,8 +25,16 @@ export default function Work() {
             technologies={['TypeScript', 'React', 'NextJS', 'NodeJS', 'GPT-3.5-turbo', 'CSS', 'Vercel']}
           />
         </div>
-
         <div className={styles.projectRow}>
+          <ProjectItem 
+            projectTitle='AccrueMind'
+            imageSrc='/accrueMind.ico'
+            repoLink='https://accrue-mind.vercel.app'
+            imageIncluded={true}
+            projDesc='AccrueMind is a simple compound interest calculator made to simplify the process of calculating compound interest.' 
+            technologies={['NextJS', 'JavaScript', 'NodeJS', 'React', 'HTML5', 'Chart.js', 'CSS']}
+          />
+
           <ProjectItem 
             projectTitle='WordGuard'
             imageSrc='/wordguard.png'
@@ -35,7 +43,9 @@ export default function Work() {
             projDesc='A browser extension built to block profanity on websites which is useful if you want a cleaner web experience for your children or if you&apos;d rather a clean web experience for yourself.'
             technologies={['JavaScript', 'HTML', 'JSON']}
           />
-          
+        </div>
+
+        <div className={styles.projectRow}>
           <ProjectItem 
             projectTitle='Morseley.com' 
             imageSrc='/morseley.ico'
@@ -45,10 +55,6 @@ export default function Work() {
             technologies={['JavaScript', 'React', 'NextJS', 'NodeJS', 'npm', 'HTML', 'CSS']}
           />
 
-        </div>
-
-
-        <div className={styles.projectRow}>
           <ProjectItem 
             projectTitle='Morseley Codec' 
             imageSrc='/default.png'
@@ -58,6 +64,10 @@ export default function Work() {
             technologies={['JavaScript', 'npm']}
           />
 
+        </div>
+
+
+        <div className={styles.projectRow}>
           <ProjectItem 
             projectTitle='MirrorHound'
             imageSrc='/icon128.png'
@@ -66,11 +76,8 @@ export default function Work() {
             projDesc='A Chrome extension used to detect mirrored websites that could potentially have malicious intent and informs the user so it the user is aware the website is mirror and prevent phishing attacks.' 
             technologies={['JavaScript', 'HTML']}
           />
-        </div>
 
-        <div className={styles.projectRow}>
-
-        <ProjectItem 
+          <ProjectItem 
             projectTitle='EmotionDetector 1.0'
             imageSrc='/'
             repoLink='https://github.com/Hoccyy/Emotion-Detector'
@@ -78,6 +85,9 @@ export default function Work() {
             projDesc='This project takes a picture of a face and it uses a model that is trained to classify different emotions. When run, the program loads a serialized model that can classify facial expressions and output the emotion detected.' 
             technologies={['Python', 'Tensorflow', 'Matplotlib', 'Pyplot', 'Numpy', 'OpenCV', 'Keras', 'cv2']}
           />
+        </div>
+
+        <div className={styles.projectRow}>
 
           <ProjectItem 
             projectTitle='Cover Letter Updater'
@@ -87,9 +97,7 @@ export default function Work() {
             projDesc='Python program made to automate the process of updating your cover letter for each role in the background.' 
             technologies={['Python', 'python-docx', 'Libreoffice']}
           />
-        </div>
 
-        <div className={styles.projectRow}>
           <ProjectItem 
             projectTitle='WebGrabb'
             imageSrc='/default.png'
@@ -97,15 +105,6 @@ export default function Work() {
             imageIncluded={false}
             projDesc='Python program made to automate the process of updating your cover letter for each role in the background.' 
             technologies={['Go', 'Shell']}
-          />
-
-          <ProjectItem 
-            projectTitle='Finance Tracker'
-            imageSrc='/default.png'
-            repoLink='https://github.com/Hoccyy/expense-tracker'
-            imageIncluded={false}
-            projDesc='React app to help you keep track of your expenses and also your income to track monthly cashflow and let you know if you&apos;re on target for your financial goals.' 
-            technologies={['TypeScript', 'JavaScript', 'React', 'NextJS', 'HTML', 'CSS', 'csv', 'Node.JS']}
           />
         </div>
         <div className={styles.projectRow}>
@@ -148,7 +147,12 @@ export default function Work() {
         </div>
         
         <div className={styles.projectRow}>
-          <ProjectItem 
+          
+        </div>
+
+        <div className={styles.projectRow}>
+
+        <ProjectItem 
             projectTitle='GraphPlotter 1.0'
             imageSrc='/default.png'
             repoLink='https://github.com/Hoccyy/Graph-Maker'
@@ -156,7 +160,15 @@ export default function Work() {
             projDesc='Python app that uses Matplotlib to create graphs quickly using Matplotlib instead of making them manually which is slower.' 
             technologies={['Python', 'NumPy', 'matplotlib', 'SciPy']}
           />
-          
+          <ProjectItem 
+            projectTitle='QR-code maker'
+            imageSrc='/default.png'
+            repoLink='https://github.com/Hoccyy/Qr-Code-Maker'
+            imageIncluded={false}
+            projDesc='App made with Python and Matplotlib to create graphs quickly using Matplotlib instead of making them manually which is slower.' 
+            technologies={['Python', 'NumPy', 'matplotlib', 'SciPy']}
+          />
+
           <ProjectItem 
             projectTitle='Cache-Whoosh'
             imageSrc='/default.png'
@@ -169,12 +181,12 @@ export default function Work() {
 
         <div className={styles.projectRow}>
           <ProjectItem 
-            projectTitle='QR-code maker'
+            projectTitle='Finance Tracker'
             imageSrc='/default.png'
-            repoLink='https://github.com/Hoccyy/Qr-Code-Maker'
+            repoLink='https://github.com/Hoccyy/expense-tracker'
             imageIncluded={false}
-            projDesc='App made with Python and Matplotlib to create graphs quickly using Matplotlib instead of making them manually which is slower.' 
-            technologies={['Python', 'NumPy', 'matplotlib', 'SciPy']}
+            projDesc='React app to help you keep track of your expenses and also your income to track monthly cashflow and let you know if you&apos;re on target for your financial goals.' 
+            technologies={['TypeScript', 'JavaScript', 'React', 'NextJS', 'HTML', 'CSS', 'csv', 'Node.JS']}
           />
         </div>
       </div>

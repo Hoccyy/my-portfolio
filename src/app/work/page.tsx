@@ -22,7 +22,7 @@ export default function Work() {
             repoLink='https://github.com/Hoccyy/ChefGPT'
             imageIncluded={true}
             projDesc='Web application built with React that helps you decide on what meals to make and gives step-by-step instructions for preparation. To use this app, simply enter all the ingredients you have or want to use and it will output a recipe for them.' 
-            technologies={['TypeScript', 'React', 'NextJS', 'NodeJS', 'GPT-3.5-turbo', 'CSS', 'Vercel']}
+            technologies={['TypeScript', 'React', 'NextJS', 'NodeJS', 'GPT-4o', 'CSS', 'Vercel']}
           />
         </div>
         <div className={styles.projectRow}>

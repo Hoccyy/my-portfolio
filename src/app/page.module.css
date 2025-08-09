@@ -254,6 +254,18 @@
   max-width: 100vw;
 }
 
+.profilePic {
+  /* set the picture to float and not affect the grid layout */
+  float: left;
+  width: 287px;
+  height: 500px;
+  border-radius: 54px;
+  /* Make it so that it's sitting atop and doesn't affect the rest of the grid */
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+
 .expCenter {
   flex-direction: column;
   justify-content: center;

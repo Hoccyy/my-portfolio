@@ -6,7 +6,7 @@ import SkillItem from './components/SkillItem';
 
 const AmazonDesc: string = 'Specialized in Cloud Development and Full-Stack Development, deigning a scalable cloud resource management feature enhancing CodeCatalyst and working on the AWS backend improving performance and metrics, enabling DevOps teams to test software more efficiently.';
 const MsftDesc: string = 'In my recent role at Microsoft, I integrated a social media feature within Microsoft Teams and Viva Engage, enabling users to better customize profiles and strengthen their branding. This involved creating dynamic UI components with TypeScript and React-Relay, and integrating them with GraphQL APIs for efficient data handling. I also utilized Azure DevOps for CI/CD workflows in conjunction with Git, and wrote comprehensive unit tests to ensure the delivery of high-quality, reliable code.';
-
+const CIBCDesc: string = 'During my Coop term at CIBC as a Student Mainframe Developer I developed and maintained core banking applications using COBOL, REXX, and JCL, and built REXX automation in IBM z/OS environments to streamline enterprise workflows and optimize batch processing for financial services.'
 const LinkedInProfile: string = 'https://www.linkedin.com/in/hoccyy/';
 
 
@@ -24,7 +24,7 @@ export default function Home() {
             <h2 className={styles.introBody}> I&apos;m&nbsp;
               <span className={styles.introName}>
                 <Link className={styles.name} href={LinkedInProfile} target='_blank'>
-                  Hocian&nbsp;Wade
+                  Hocían&nbsp;Wade
                 </Link>
               </span>
               &nbsp;and I am a Software Engineer and student. I&apos;m a Junior at
@@ -85,6 +85,7 @@ export default function Home() {
               <SkillItem skillName='AWS EC2' />
               <SkillItem skillName='Cobol' />
               <SkillItem skillName='JCL' />
+              <SkillItem skillName='IBM MVS' />
               <SkillItem skillName='SDLC' />
               <SkillItem skillName='PyTorch' />
               <SkillItem skillName='Object-Oriented Programming' />
@@ -107,7 +108,7 @@ export default function Home() {
         <h1 className={styles.sectionHeader}> Experience </h1>
         <div className={styles.expSection}>
           <div className={styles.expCenter}>
-
+            <ExperienceItem companyLink='https://www.cibc.com/en/about-cibc.html' jobTitle='Mainframe Application Developer, Coop &nbsp;🧑‍💻' companyName='CIBC' companyLogoSrc='/CIBC_logo.png' technologies={['REXX', 'DB2', 'Cobol', 'JCL', 'SQL', 'SDLC', 'IBM Mainframe']} duties={['Mainframe Engineer', ]} jobDesc={CIBCDesc} imageIncluded={true} roleLength='Fall 2025'/>
             <ExperienceItem companyLink='https://www.microsoft.com/en-ca/about' jobTitle='Software Engineer, Intern &nbsp;🧑‍💻' companyName='Microsoft' companyLogoSrc='/Microsoft_logo.svg' technologies={['JavaScript', 'TypeScript', 'Azure DevOps', 'GraphQL', 'React-Relay', 'Redux', 'Linux', 'CSS', 'Jest', 'JUnit', 'XUnit']} duties={['Software Engineer', ]} jobDesc={MsftDesc} imageIncluded={true} roleLength='Jun 2025 - Aug 2025'/>
             <ExperienceItem companyLink='https://www.aboutamazon.com/what-we-do/amazon-web-services' jobTitle='Software Engineer, Intern &nbsp;🧑‍💻' companyName='Amazon Web Services' companyLogoSrc='/Amazon_icon.svg' technologies={['Java', 'AWS Cloudformation' , 'CodeCatalyst' , 'AWS' , 'JavaScript', 'Vite', 'AWS CDK' , 'Linux' , 'Unix' , 'TypeScript' , 'React', 'HTML5', 'CSS', 'JUnit', 'Vue' , 'Docker', 'DynamoDB', 'Json' ]} duties={['Software Engineer', 'Full-Stack Engineer' , 'Cloud Developer' ]} jobDesc={AmazonDesc} imageIncluded={true} roleLength='Jun 2023 - Sep 2023'/>
             

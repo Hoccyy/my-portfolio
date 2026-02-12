@@ -8,12 +8,12 @@ export default function Work() {
       <div className={styles.projectCont}>
         <div className={styles.projectRow}>
           <ProjectItem 
-            projectTitle='FitPick'
-            imageSrc='/fitpick.ico'
-            repoLink='https://github.com/Hoccyy/FitPick'
+            projectTitle='Makku'
+            imageSrc='/makku1.png'
+            repoLink='https://makku.co'
             imageIncluded={true}
-            projDesc='FitPick is an app to store your closet virtually and also pick one for you randomly. The app stores your closet safely using Firebase and Google OAuth for login so you can take your closet with you on the go!' 
-            technologies={['Firebase','Google Cloud Platform', 'Google OAuth', 'NextJS', 'TypeScript', 'NodeJS', 'React', 'Expo', 'HTML', 'CSS']}
+            projDesc='A minimalist AI platform empowering authors and screenwriters. Trusted by 1,000+ users and growing.'
+            technologies={['Firebase','Google Cloud Platform', 'Google OAuth', 'NextJS', 'TypeScript', 'NodeJS', 'React', 'HTML', 'CSS']}
           />
 
           <ProjectItem 

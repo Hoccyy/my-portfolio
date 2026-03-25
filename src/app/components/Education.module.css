@@ -1,0 +1,136 @@
+.wrapper {
+    max-width: 900px;
+    margin: 4rem auto;
+    padding: 0 1.5rem;
+  }
+  
+  .sectionTitle {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #52525b;
+    margin-bottom: 1.5rem;
+  }
+  
+  .bentoGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 1rem;
+  }
+  
+  .card {
+    background: #09090b;
+    border: 1px solid #18181b;
+    border-radius: 16px;
+    padding: 1.5rem;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  .card:hover {
+    border-color: #27272a;
+    background: #0c0c0e;
+  }
+  
+  /* Specific Grid Placements */
+  .mainCard {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .sideCard {
+    grid-column: span 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .footerCard {
+    grid-column: span 3;
+  }
+  
+  /* Typography & Elements */
+  .logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  .schoolName {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #fafafa;
+    margin: 0;
+  }
+  
+  .degree {
+    color: #3b82f6;
+    font-weight: 500;
+    margin: 0.2rem 0;
+  }
+  
+  .description {
+    font-size: 0.9rem;
+    color: #a1a1aa;
+    margin: 1rem 0;
+    line-height: 1.5;
+  }
+  
+  .badge {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 0.7rem;
+    font-family: monospace;
+    color: #3f3f46;
+    border: 1px solid #27272a;
+    padding: 2px 8px;
+    border-radius: 4px;
+  }
+  
+  .tagCloud, .tagCloudMini {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .tag {
+    background: #18181b;
+    color: #d4d4d8;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+  }
+  
+  .tagMini {
+    background: #18181b;
+    color: #71717a;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.7rem;
+  }
+  
+  .footerFlex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .shsm {
+    font-size: 0.8rem;
+    color: #71717a;
+    margin-top: 4px;
+  }
+  
+  @media (max-width: 768px) {
+    .bentoGrid {
+      grid-template-columns: 1fr;
+    }
+    .mainCard, .sideCard, .footerCard {
+      grid-column: span 1;
+    }
+  }

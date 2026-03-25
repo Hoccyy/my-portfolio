@@ -1,0 +1,90 @@
+.wrapper {
+    color: #ffffff;
+    padding: 4rem 2rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
+  }
+  
+  .header {
+    margin-bottom: 3rem;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem 0;
+  }
+  
+  .subtitle {
+    color: #737373;
+    font-size: 0.95rem;
+    margin: 0;
+  }
+  
+  .stackBody {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .row {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .label {
+    width: 140px;
+    min-width: 140px;
+    color: #737373;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    padding-top: 0.75rem;
+  }
+  
+  .pillContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+  
+  .pill {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    background-color: #171717; /* Dark gray pill */
+    border: 1px solid #262626;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 1.3s cubic-bezier(0.16, 1, 0.3, 1);
+    cursor: default;
+  }
+  
+  .pill:hover {
+    background-color: #262626;
+    border-color: #404040;
+  }
+  
+  .icon {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 640px) {
+    .row {
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    
+    .label {
+      padding-top: 0;
+    }
+  }

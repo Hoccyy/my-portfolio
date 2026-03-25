@@ -34,7 +34,7 @@ const Interests = () => {
       
       <div className={styles.footer}>
         <p>
-          <span className={styles.highlight}>Fun Fact:</span> I’m a huge <strong>movie buff</strong>—always down to discuss cinematography or the latest indie gem.
+          <span className={styles.highlight}>Fun Fact:</span> I’m a <strong>movie buff</strong>—always down to discuss cinematography or the latest indie gem.
         </p>
       </div>
     </section>

@@ -1,0 +1,95 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem 0;
+  }
+  
+  .card {
+    background: #121212;
+    border: 1px solid #2a2a2a;
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 1.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card:hover {
+    border-color: #4a4a4a;
+    transform: translateY(-4px);
+    background: #1a1a1a;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .logo, .logoPlaceholder {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .logoPlaceholder {
+    background: linear-gradient(135deg, #333, #111);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+    font-family: inherit;
+    border: 1px solid #444;
+  }
+  
+  .title {
+    color: #ededed;
+    font-size: 1.25rem;
+    margin: 0;
+    font-weight: 600;
+  }
+  
+  .description {
+    color: #a0a0a0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+  }
+  
+  .techStack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .tag {
+    background: #222;
+    color: #888;
+    font-size: 0.75rem;
+    padding: 0.25rem 0.6rem;
+    border-radius: 4px;
+    border: 1px solid #333;
+  }
+  
+  .link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+  }
+  
+  .link:hover {
+    opacity: 1;
+  }

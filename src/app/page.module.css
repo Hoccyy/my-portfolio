@@ -142,8 +142,6 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  padding: 4rem 0;
-  padding: 0 0 4rem 0;
 }
 
 .centerFtr {
@@ -158,8 +156,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  background-color: #00000048;
-  padding: 13px;
+
 }
 .footerCenter {
   display: flex;
@@ -195,17 +192,41 @@
 }
 
 .introSect {
-  background: linear-gradient(-126deg, #1e315d00 60%, #00000048 60%);
   padding-top: 130px;
   filter: drop-shadow(10px 13px 80px rgba(0, 0, 0, 1.3));
   height: 600px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  background: linear-gradient(#1b1b1b, black);
+}
+
+.introSect2 {
+  background-color: rgb(27, 27, 27);
+  filter: drop-shadow(10px 13px 80px rgba(0, 0, 0, 1.3));
+  border-radius: 26px;
+  height: 600px;
+  width: 60%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.portraitImg {
+  height: 390px;
+  width: 260px;
+  border-radius: 13px;
+  margin-left: 13px;
 }
 
 .footerContainer{
   padding: 13px;
   font-size: 10px;
   color: rgb(200, 200, 200);
-  border-top: 3px solid #223562b5;
 }
 
 .footerHighlight:hover {
@@ -381,7 +402,7 @@
   color: white;
   font-family: monospace;
   font-weight: 800;
-  font-size: 80px;
+  font-size: 43px;
   text-align: center;
   max-width: 100%;
   padding: 25px;
@@ -392,7 +413,6 @@
 }
 
 .introBody {
-  padding-top: 30px;
   width: 50%;
   font-size: 28.13px;
   text-align: center;

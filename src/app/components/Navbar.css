@@ -34,7 +34,7 @@
   }
   
   .nav-logo a {
-    font-size: 1.25rem;
+    font-size: 1.7rem;
     font-weight: 600;
     color: var(--text-main);
     text-decoration: none;
@@ -71,6 +71,10 @@
   .nav-links .nav-cta:hover {
     background: var(--text-main);
     color: var(--bg-dark);
+  }
+
+  .nav-links a {
+    font-size: 1.1rem
   }
 
   .initials {

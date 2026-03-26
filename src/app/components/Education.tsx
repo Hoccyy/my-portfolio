@@ -1,20 +1,19 @@
-import React from 'react';
 import styles from './Education.module.css';
 
 const Education = () => {
   const education = [
     {
       school: "York University",
-      degree: "Bachelor of Science in Computer Science",
+      degree: "BA — Computer Science",
       period: "Sep 2023 — Present",
       location: "Toronto, ON",
       logo: "/york2.png",
       highlights: "Focusing on Systems Architecture, Operating Systems, and Advanced Algorithms.",
-      skills: ["Java", "TypeScript", "React", "C", "Unix/Linux", "Data Structures"]
+      skills: ["Java", "TypeScript", "React", "C/C++", "Unix/Linux", "Data Structures"]
     },
     {
       school: "Algoma University",
-      degree: "Bachelor of Arts (Hons) in Computer Science",
+      degree: "BA (Honours) — Computer Science",
       period: "2022 — 2023",
       location: "Brampton, ON",
       logo: "/algoma.png",
@@ -56,7 +55,7 @@ const Education = () => {
               <p className={styles.highlights}>{edu.highlights}</p>
               
               <div className={styles.skillsWrapper}>
-                <span className={styles.skillLabel}>Key Competencies:</span>
+                <span className={styles.skillLabel}>Proficiencies</span>
                 <div className={styles.skillCloud}>
                   {edu.skills.map(skill => (
                     <span key={skill} className={styles.skillTag}>{skill}</span>

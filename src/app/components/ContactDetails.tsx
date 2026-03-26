@@ -1,4 +1,3 @@
-import React from 'react';
 import './ContactDetails.css';
 
 const ContactDetails: React.FC = () => {

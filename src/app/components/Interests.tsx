@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './Interests.module.css';
 
 interface Interest {
@@ -8,10 +7,10 @@ interface Interest {
 }
 
 const interests: Interest[] = [
-  { name: "Writing", description: "Narratives & docs.", icon: "✍️" },
+  { name: "Writing", description: "Narratives & clean docs.", icon: "✍️" },
   { name: "Photography", description: "Visual storytelling.", icon: "📷" },
   { name: "Working Out", icon: "💪", description: "Physical discipline." },
-  { name: "Crocheting", icon: "🧶", description: "Tangible fiber art." },
+  { name: "Crocheting", icon: "🧶", description: "Focus, patterns, and creativity." },
   { name: "Gaming", icon: "🎮", description: "World exploration." },
   { name: "Music", icon: "🎵", description: "Deep work soundtracks." },
 ];
@@ -34,7 +33,7 @@ const Interests = () => {
       
       <div className={styles.footer}>
         <p>
-          <span className={styles.highlight}>Movie Buff:</span> Obsessed with cinematography and indie gems.
+          <span className={styles.highlight}>Movie Buff:</span> Appreciates cinematography and independent films.
         </p>
       </div>
     </section>

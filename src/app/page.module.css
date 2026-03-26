@@ -34,6 +34,7 @@
   color: white;
   text-align: center;
   font-size: 48.13px;
+  font-family: sans-serif;
 }
 
 .mainProjects{
@@ -115,7 +116,7 @@
 }
 
 .skillsCont {
-  margin: 63.13px 0 130px 0;
+  margin: 206px 0 130px 0;
 }
 
 .projectRow {
@@ -192,7 +193,7 @@
 }
 
 .introSect {
-  padding-top: 130px;
+  padding-top: 190px;
   filter: drop-shadow(10px 13px 80px rgba(0, 0, 0, 1.3));
   height: 600px;
   text-align: center;
@@ -204,8 +205,11 @@
 }
 
 .introSect2 {
-  background-color: rgb(27, 27, 27);
-  filter: drop-shadow(10px 13px 80px rgba(0, 0, 0, 1.3));
+  background: linear-gradient(135deg, #1a1a1a 0%, #252525 50%, #1a1a1a 100%);
+  background-size: 200% 200%;
+  animation: gradientShift 10s ease infinite;
+
+  filter: drop-shadow(10px 13px 80px rgba(0, 0, 0, 0.8));
   border-radius: 26px;
   height: 600px;
   width: 60%;
@@ -214,13 +218,33 @@
   justify-content: center;
   display: flex;
   flex-direction: column;
+  border: 1px solid #333;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.portraitImgMobile {
+  display: none;
 }
 
 .portraitImg {
   height: 390px;
   width: 260px;
-  border-radius: 13px;
   margin-left: 13px;
+  object-fit: cover;
+  /* A sharp, futuristic tech-cutout */
+  clip-path: polygon(0% 0%, 75% 0%, 100% 15%, 100% 100%, 25% 100%, 0% 85%);
+  transition: clip-path 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: loadIntro2 0.6s ease-in forwards;
+}
+
+.portraitImg:hover {
+  /* Shifts the slant for a dynamic "loading" feel */
+  clip-path: polygon(0% 15%, 25% 0%, 100% 0%, 100% 85%, 75% 100%, 0% 100%);
 }
 
 .footerContainer{
@@ -263,8 +287,9 @@
 .sectionHeader {
   text-align: center;
   max-width: 100vw;
-  font-size: 37px;
+  font-size: 26px;
   color: white;
+  font-family: sans-serif;
 }
 
 .eduSect {
@@ -292,7 +317,6 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  padding: 2rem 0;
 }
 
 .expSection {
@@ -399,10 +423,11 @@
   width: 100%;
   max-width: 100%;
 
-  color: white;
+  color: rgb(76, 133, 247);
   font-family: monospace;
-  font-weight: 800;
-  font-size: 43px;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-weight: 500;
+  font-size: 52px;
   text-align: center;
   max-width: 100%;
   padding: 25px;
@@ -413,7 +438,7 @@
 }
 
 .introBody {
-  width: 50%;
+  width: 60%;
   font-size: 28.13px;
   text-align: center;
   opacity: 0;
@@ -491,8 +516,16 @@
 }
 
 .uniSpan {
-  border-radius: 7px;
-  padding: 3px;
+  /* Thin but vibrant */
+  color: #ff3d3d; 
+  font-weight: 500; 
+  letter-spacing: 0.02em; /* Slight tracking for a high-end look */
+  
+  /* The "Flare": a very tight, focused glow */
+  text-shadow: 0 0 5px rgba(255, 61, 61, 0.4);
+  
+  /* Interactive pulse */
+  transition: text-shadow 0.3s ease, color 0.3s ease;
 }
 
 @media (prefers-reduced-motion) {
@@ -534,7 +567,7 @@
   }
   .sectionHeader {
     text-align: center;
-    font-size: 40px;
+    font-size: 31px;
   }
 
   .projectRow {
@@ -543,6 +576,7 @@
 
   .mainProjects {
     padding: 0;
+    margin-top: 130px;
   }
 
   .menu {
@@ -561,6 +595,43 @@
     padding-top: 26px;
     margin-top: 0;
     height: fit-content;
+    flex-direction: column;
+  }
+
+  .introSect2 {
+    width: 97vw;
+    height: 400px;
+  }
+
+  .portraitImg {
+    display: none;
+  }
+  .portraitImgMobile {
+    height: 140px; 
+    width: 140px; 
+    margin: 20px auto; 
+    display: block;
+    object-fit: cover;
+    border-radius: 50%;
+    
+    /* Double-ring effect: One sharp, one soft */
+    border: 1px solid rgba(255, 255, 255, 0.4); 
+    outline: 4px solid rgba(255, 255, 255, 0.05);
+    outline-offset: 4px;
+    
+    /* Animation from your original code */
+    animation: loadIntro2 0.8s ease-in forwards;
+    transition: transform 0.3s ease, outline-color 0.3s ease;
+  }
+
+  .portraitImgMobile:active {
+    transform: scale(1.05);
+    outline-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .skillsCont {
+    margin-top: 0;
+    margin-bottom: 49px;
   }
 
   .resumeText {
@@ -645,6 +716,7 @@
   }
   .mainContact {
     min-height: 1vh;
+    margin-top: 26px;
   }
 
   .grid {

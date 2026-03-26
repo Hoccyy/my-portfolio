@@ -1,195 +1,87 @@
 import styles from '../page.module.css';
-import ProjectItem from '../components/ProjectItem';
+import ProjectCard from '../components/ProjectCard';
+
+const myProjects = [
+  {
+    title: "Makku.co",
+    description: "A minimalist AI platform empowering authors and screenwriters. Trusted by 1,000+ users and growing.",
+    technologies: ["Next.js", "TypeScript", "Firebase", "GCP", "Node.js", "NoSQL", "AI"],
+    link: "https://makku.co",
+    logoSrc: "/makku1.png"
+  },
+  {
+    title: "ChefGPT 0.2",
+    description: "AI-driven recipe generator that helps you decide on meals based on ingredients you have on hand.",
+    technologies: ["Next.js", "TypeScript", "React", "GPT-4o", "AI", "Vercel"],
+    link: "https://github.com/Hoccyy/ChefGPT",
+    logoSrc: "/chef.png"
+  },
+  {
+    title: "AccrueMind",
+    description: "A simple compound interest calculator designed to simplify the process of calculating future investment growth.",
+    technologies: ["Next.js", "React", "Chart.js", "Node.js"],
+    link: "https://accrue-mind.vercel.app",
+    logoSrc: "/accrueMind.ico"
+  },
+  {
+    title: "WordGuard",
+    description: "A browser extension built to block profanity on websites for a cleaner web experience.",
+    technologies: ["JavaScript", "HTML", "JSON"],
+    link: "https://chromewebstore.google.com/detail/wordguard/deleckgdblobccidlaabcnkmabeafmdf",
+    logoSrc: "/wordguard.png"
+  },
+  {
+    title: "Morseley.com",
+    description: "Real-time Morse code translator with features to download and copy translations instantly.",
+    technologies: ["React", "TypeScript", "Next.js", "Node.js"],
+    link: "https://www.morseley.com/",
+    logoSrc: "/morseley.ico"
+  },
+  {
+    title: "Morseley Codec",
+    description: "Lightweight npm package to easily encode and decode Morse code, adapted for portability.",
+    technologies: ["JavaScript", "npm", "Node.js"],
+    link: "https://www.npmjs.com/package/morseley"
+  },
+  {
+    title: "MirrorHound",
+    description: "Chrome extension used to detect mirrored websites and prevent potential phishing attacks.",
+    technologies: ["JavaScript", "HTML"],
+    link: "https://chrome.google.com/webstore/detail/mirrorhound/iapfedepagfopcakfpejjjlkafmnpoeh",
+    logoSrc: "/icon128.png"
+  },
+  {
+    title: "EmotionDetector",
+    description: "Computer vision project that classifies facial expressions and outputs detected emotions using a trained model.",
+    technologies: ["Python", "Tensorflow", "OpenCV", "Keras"],
+    link: "https://github.com/Hoccyy/Emotion-Detector"
+  },
+  {
+    title: "WebGrabb",
+    description: "A Go-based utility for rapid web data extraction and information gathering via CLI.",
+    technologies: ["Go", "Shell"],
+    link: "https://github.com/Hoccyy/WebGrabb"
+  },
+  {
+    title: "Finance Tracker",
+    description: "Full-stack tracking app to monitor monthly cashflow and visualize financial goals.",
+    technologies: ["TypeScript", "Next.js", "React", "Node.js", "CSS"],
+    link: "https://github.com/Hoccyy/expense-tracker"
+  },
+  {
+    title: "York Schedule Builder Fixer",
+    description: "York Schedule Builder Fixer is a Chrome extension that improves York University’s Schedule Builder UX.",
+    technologies: ["JavaScript", "HTML", "Json"],
+    link: "https://chromewebst2ore.google.com/detail/york-sched-builder-fixer/mdphcplfohfllimndkmkbigbcddgfoec",
+    logoSrc: 'https://lh3.googleusercontent.com/rIVl-71ba5sB0eW7lBop9Z5mA4i0q0pnE04CUcsJuShR_9SOtGxEuqHnTvYNyKGhkunNpnE7NCqH2gUFDjsorigY=s60'
+  }
+];
 
 export default function Work() {
   return (
     <main className={styles.mainProjects}>
-      <h1 className={styles.mainHeader}>Projects</h1>
-      <div className={styles.projectCont}>
-        <div className={styles.projectRow}>
-          <ProjectItem 
-            projectTitle='Makku'
-            imageSrc='/makku1.png'
-            repoLink='https://makku.co'
-            imageIncluded={true}
-            projDesc='A minimalist AI platform empowering authors and screenwriters. Trusted by 1,000+ users and growing.'
-            technologies={['Firebase','Google Cloud Platform', 'Google OAuth', 'NextJS', 'TypeScript', 'NodeJS', 'React', 'HTML', 'CSS']}
-          />
-
-          <ProjectItem 
-            projectTitle='ChefGPT 0.2'
-            imageSrc='/chef.png'
-            repoLink='https://github.com/Hoccyy/ChefGPT'
-            imageIncluded={true}
-            projDesc='Web application built with React that helps you decide on what meals to make and gives step-by-step instructions for preparation. To use this app, simply enter all the ingredients you have or want to use and it will output a recipe for them.' 
-            technologies={['TypeScript', 'React', 'NextJS', 'NodeJS', 'GPT-4o', 'CSS', 'Vercel']}
-          />
-        </div>
-        <div className={styles.projectRow}>
-          <ProjectItem 
-            projectTitle='AccrueMind'
-            imageSrc='/accrueMind.ico'
-            repoLink='https://accrue-mind.vercel.app'
-            imageIncluded={true}
-            projDesc='AccrueMind is a simple compound interest calculator made to simplify the process of calculating compound interest.' 
-            technologies={['NextJS', 'JavaScript', 'NodeJS', 'React', 'HTML5', 'Chart.js', 'CSS']}
-          />
-
-          <ProjectItem 
-            projectTitle='WordGuard'
-            imageSrc='/wordguard.png'
-            repoLink='https://chromewebstore.google.com/detail/wordguard/deleckgdblobccidlaabcnkmabeafmdf?authuser=0&hl=en'
-            imageIncluded={true}
-            projDesc='A browser extension built to block profanity on websites which is useful if you want a cleaner web experience for your children or if you&apos;d rather a clean web experience for yourself.'
-            technologies={['JavaScript', 'HTML', 'JSON']}
-          />
-        </div>
-
-        <div className={styles.projectRow}>
-          <ProjectItem 
-            projectTitle='Morseley.com' 
-            imageSrc='/morseley.ico'
-            repoLink='https://www.morseley.com/'
-            imageIncluded={true}
-            projDesc='A Morsecode Translator built with React and TypeScript to quickly convert English into Morsecode and back in realtime. The translation engine was originally written in vanilla JavaScript along with regular HTML and CSS and then the project was reformatted with React and NextJS for styling purposes. There are features to easily download and copy translations.' 
-            technologies={['JavaScript', 'React', 'NextJS', 'NodeJS', 'npm', 'HTML', 'CSS']}
-          />
-
-          <ProjectItem 
-            projectTitle='Morseley Codec' 
-            imageSrc='/default.png'
-            repoLink='https://www.npmjs.com/package/morseley'
-            imageIncluded={false}
-            projDesc='Morseley is a lightweight node package made to easily encode and decode morse-code. Morseley is an adaptation of a previous project Morseley.com to enable portability and ease of use.' 
-            technologies={['JavaScript', 'npm']}
-          />
-
-        </div>
-
-
-        <div className={styles.projectRow}>
-          <ProjectItem 
-            projectTitle='MirrorHound'
-            imageSrc='/icon128.png'
-            repoLink='https://chrome.google.com/webstore/detail/mirrorhound/iapfedepagfopcakfpejjjlkafmnpoeh'
-            imageIncluded={true}
-            projDesc='A Chrome extension used to detect mirrored websites that could potentially have malicious intent and informs the user so it the user is aware the website is mirror and prevent phishing attacks.' 
-            technologies={['JavaScript', 'HTML']}
-          />
-
-          <ProjectItem 
-            projectTitle='EmotionDetector 1.0'
-            imageSrc='/'
-            repoLink='https://github.com/Hoccyy/Emotion-Detector'
-            imageIncluded={false}
-            projDesc='This project takes a picture of a face and it uses a model that is trained to classify different emotions. When run, the program loads a serialized model that can classify facial expressions and output the emotion detected.' 
-            technologies={['Python', 'Tensorflow', 'Matplotlib', 'Pyplot', 'Numpy', 'OpenCV', 'Keras', 'cv2']}
-          />
-        </div>
-
-        <div className={styles.projectRow}>
-
-          <ProjectItem 
-            projectTitle='Cover Letter Updater'
-            imageSrc='/default.png'
-            repoLink='https://github.com/Hoccyy/Cover-Letter-Updater'
-            imageIncluded={false}
-            projDesc='Python program made to automate the process of updating your cover letter for each role in the background.' 
-            technologies={['Python', 'python-docx', 'Libreoffice']}
-          />
-
-          <ProjectItem 
-            projectTitle='WebGrabb'
-            imageSrc='/default.png'
-            repoLink='https://github.com/Hoccyy/WebGrabb'
-            imageIncluded={false}
-            projDesc='Python program made to automate the process of updating your cover letter for each role in the background.' 
-            technologies={['Go', 'Shell']}
-          />
-        </div>
-        <div className={styles.projectRow}>
-          <ProjectItem 
-            projectTitle='Media Downloader'
-            imageSrc='/default.png'
-            repoLink='https://github.com/Hoccyy/Youtube-Video-Downloader'
-            imageIncluded={false}
-            projDesc='Python application made to download videos from their URL or download a playlist of videos all at once for convenience, in a folder. This app also has a feature to download images given the URL and save it.' 
-            technologies={['Python', 'Pytube', 'Requests']}
-          />
-
-          <ProjectItem 
-            projectTitle='House Price Predictor(ML)'
-            imageSrc='/default.png'
-            repoLink='https://github.com/Hoccyy/House-price-prediction'
-            imageIncluded={false}
-            projDesc='Machine learning project to predict the price of a house using various attributes, such as the lot area, year constructed, nuumber of rooms etc.' 
-            technologies={['Python', 'Scikit-learn', 'Pickle', 'Pandas', 'csv', 'Numpy', 'Matplotlib']}
-          />
-        </div>
-        <div className={styles.projectRow}>
-          <ProjectItem 
-            projectTitle='Image Generator'
-            imageSrc='/default.png'
-            repoLink='https://github.com/Hoccyy/Image-Generator'
-            imageIncluded={false}
-            projDesc='A web app that utilizes the OpenAI API to fetch generated images from the Dall-e model based on the user&apos;s prompt.' 
-            technologies={['TypeScript', 'React', 'NextJS', 'NodeJS', 'dall-e-3', 'Vercel']}
-          />
-
-          <ProjectItem 
-            projectTitle='QuickClick 1.0'
-            imageSrc='/default.png'
-            repoLink='https://github.com/Hoccyy/auto-clicker'
-            imageIncluded={false}
-            projDesc='an autoclicker made with PyQt and python to automate repetitive clicking with custom quantities of clicks and a custom delay time between each click.' 
-            technologies={['Python', 'PyQt', 'Pyautogui']}
-          />
-        </div>
-        
-        <div className={styles.projectRow}>
-          
-        </div>
-
-        <div className={styles.projectRow}>
-
-        <ProjectItem 
-            projectTitle='GraphPlotter 1.0'
-            imageSrc='/default.png'
-            repoLink='https://github.com/Hoccyy/Graph-Maker'
-            imageIncluded={false}
-            projDesc='Python app that uses Matplotlib to create graphs quickly using Matplotlib instead of making them manually which is slower.' 
-            technologies={['Python', 'NumPy', 'matplotlib', 'SciPy']}
-          />
-          <ProjectItem 
-            projectTitle='QR-code maker'
-            imageSrc='/default.png'
-            repoLink='https://github.com/Hoccyy/Qr-Code-Maker'
-            imageIncluded={false}
-            projDesc='App made with Python and Matplotlib to create graphs quickly using Matplotlib instead of making them manually which is slower.' 
-            technologies={['Python', 'NumPy', 'matplotlib', 'SciPy']}
-          />
-
-          <ProjectItem 
-            projectTitle='Cache-Whoosh'
-            imageSrc='/default.png'
-            repoLink='https://github.com/Hoccyy/Cache-Whoosh'
-            imageIncluded={false}
-            projDesc='A Python app to clean the cache from computers and get rid of unused files to speed up your computer.' 
-            technologies={['Python', 'PyQt']}
-          />
-        </div>
-
-        <div className={styles.projectRow}>
-          <ProjectItem 
-            projectTitle='Finance Tracker'
-            imageSrc='/default.png'
-            repoLink='https://github.com/Hoccyy/expense-tracker'
-            imageIncluded={false}
-            projDesc='React app to help you keep track of your expenses and also your income to track monthly cashflow and let you know if you&apos;re on target for your financial goals.' 
-            technologies={['TypeScript', 'JavaScript', 'React', 'NextJS', 'HTML', 'CSS', 'csv', 'Node.JS']}
-          />
-        </div>
-      </div>
+      <h1 className={styles.mainHeader}>Latest Projects</h1>
+      <ProjectCard projects={myProjects} />
     </main>
-  )
+  );
 }

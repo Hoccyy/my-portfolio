@@ -1,5 +1,4 @@
 "use client";
-import React from 'react'
 import styles from '../page.module.css'
 import Link from 'next/link';
 import { SocialIcon } from 'react-social-icons';
@@ -12,9 +11,6 @@ const leetcodeProfile : string = 'http://leetcode.com/Hoccyy/';
 const year : number = new Date().getFullYear();
 
 const Footer = ({
-    title = '',
-    path = '',
-    active = false
 }) => {
 
     return (
@@ -22,8 +18,8 @@ const Footer = ({
           <div className={styles.centerFtr}>
             <div className={styles.footerContainer}>
               <h2 className={styles.footerText}>
-                © {year}&nbsp;&nbsp;<Link href={LinkedInProfile} className={styles.footerHighlight} target='_blank'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@Hoccyy ¹³</Link>
-                &nbsp;&nbsp;• &nbsp;&nbsp;Toronto
+                © {year}&nbsp;&nbsp;<Link href={LinkedInProfile} className={styles.footerHighlight} target='_blank'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@Hoccyy</Link>
+                &nbsp;&nbsp;• &nbsp;&nbsp;Toronto, CA
               </h2>
               
             </div>

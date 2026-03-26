@@ -1,0 +1,166 @@
+:root {
+    --bg-dark: #050505;
+    --card-bg: rgba(23, 23, 23, 0.6);
+    --accent-blue: #3b82f6;
+    --text-bright: #ffffff;
+    --text-dim: #a1a1aa;
+    --border-glass: rgba(255, 255, 255, 0.08);
+  }
+  
+  .timeline-wrapper {
+    background-color: var(--bg-dark);
+    padding: 60px 20px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .timeline-container {
+    max-width: 900px;
+    width: 100%;
+  }
+  
+  .timeline-item {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+  
+  .timeline-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .timeline-dot-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .timeline-dot {
+    width: 50px;
+    height: 50px;
+    background: #111;
+    border: 1px solid var(--border-glass);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.1);
+    z-index: 2;
+  }
+  
+  .company-icon {
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
+  }
+  
+  .timeline-connector {
+    width: 1px;
+    flex-grow: 1;
+    background: linear-gradient(to bottom, var(--border-glass), transparent);
+    margin-top: 10px;
+  }
+  
+  .timeline-content-card {
+    position: relative;
+    flex: 1;
+    background: var(--card-bg);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--border-glass);
+    border-radius: 20px;
+    padding: 28px;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .timeline-content-card:hover {
+    transform: translateY(-5px) scale(1.01);
+    border-color: rgba(59, 130, 246, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  }
+  
+  .card-glow {
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.05) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  
+  .timeline-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 16px;
+  }
+  
+  .company-name {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--text-bright);
+    letter-spacing: -0.02em;
+  }
+  
+  .company-link {
+    text-decoration: none;
+  }
+  
+  .role-title {
+    margin: 4px 0 0 0;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--accent-blue);
+  }
+  
+  .duration-pill {
+    font-size: 0.75rem;
+    color: var(--text-dim);
+    background: rgba(255, 255, 255, 0.05);
+    padding: 6px 14px;
+    border-radius: 99px;
+    border: 1px solid var(--border-glass);
+  }
+  
+  .job-description {
+    color: var(--text-dim);
+    line-height: 1.7;
+    font-size: 0.95rem;
+    margin-bottom: 24px;
+  }
+  
+  .tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .tech-pill {
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 5px 12px;
+    background: rgba(59, 130, 246, 0.05);
+    border: 1px solid rgba(59, 130, 246, 0.1);
+    border-radius: 8px;
+    color: #93c5fd;
+    transition: all 0.2s ease;
+  }
+  
+  .tech-pill:hover {
+    background: var(--accent-blue);
+    color: white;
+  }
+  
+  @media (max-width: 640px) {
+    .timeline-item { gap: 15px; }
+    .timeline-dot { width: 40px; height: 40px; }
+    .timeline-header { flex-direction: column; gap: 10px; }
+    .duration-pill { align-self: flex-start; }
+  }

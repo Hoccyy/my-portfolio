@@ -1,0 +1,133 @@
+.container {
+    max-width: 850px;
+    margin: 4rem auto;
+    padding: 0 1.5rem;
+    font-family: 'Inter', -apple-system, sans-serif;
+    color: #fafafa;
+  }
+  
+  .sectionTitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+    color: #fff;
+    letter-spacing: -0.02em;
+  }
+  
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .card {
+    background: #09090b; /* Deep Zinc */
+    border: 1px solid #18181b;
+    border-radius: 12px;
+    padding: 2rem;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+  }
+  
+  .card:hover {
+    border-color: #27272a;
+    transform: translateY(-2px);
+  }
+  
+  .header {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+  }
+  
+  .logoBox {
+    width: 54px;
+    height: 54px;
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    flex-shrink: 0;
+  }
+  
+  .logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .titleArea {
+    flex-grow: 1;
+  }
+  
+  .topRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.25rem;
+  }
+  
+  .school {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+    color: #fff;
+  }
+  
+  .period {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #71717a; /* Zinc 400 */
+  }
+  
+  .degree {
+    font-size: 1rem;
+    color: #3b82f6; /* Accessible Blue */
+    margin: 0;
+    font-weight: 500;
+  }
+  
+  .body {
+    padding-left: calc(54px + 1.5rem); /* Align with the text, not the logo */
+  }
+  
+  .highlights {
+    font-size: 0.95rem;
+    color: #a1a1aa;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+  }
+  
+  .skillLabel {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #52525b;
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.05em;
+  }
+  
+  .skillCloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .skillTag {
+    background: #18181b;
+    border: 1px solid #27272a;
+    color: #e4e4e7;
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  
+  @media (max-width: 640px) {
+    .topRow { flex-direction: column; align-items: flex-start; gap: 0.2rem; }
+    .period { margin-bottom: 0.5rem; }
+    .body { padding-left: 0; margin-top: 1rem; }
+  }

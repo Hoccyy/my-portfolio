@@ -8,12 +8,12 @@ interface Interest {
 }
 
 const interests: Interest[] = [
-  { name: "Writing", description: "Crafting narratives and technical documentation.", icon: "✍️" },
-  { name: "Photography", description: "Capturing moments through a digital lens.", icon: "📷" },
-  { name: "Working Out", description: "Staying active and pushing physical limits.", icon: "💪" },
-  { name: "Crocheting", description: "Creating tangible art, one stitch at a time.", icon: "🧶" },
-  { name: "Gaming", description: "Exploring immersive worlds and mechanics.", icon: "🎮" },
-  { name: "Music", description: "Curating soundtracks for deep work and life.", icon: "🎵" },
+  { name: "Writing", description: "Narratives & docs.", icon: "✍️" },
+  { name: "Photography", description: "Visual storytelling.", icon: "📷" },
+  { name: "Working Out", icon: "💪", description: "Physical discipline." },
+  { name: "Crocheting", icon: "🧶", description: "Tangible fiber art." },
+  { name: "Gaming", icon: "🎮", description: "World exploration." },
+  { name: "Music", icon: "🎵", description: "Deep work soundtracks." },
 ];
 
 const Interests = () => {
@@ -34,7 +34,7 @@ const Interests = () => {
       
       <div className={styles.footer}>
         <p>
-          <span className={styles.highlight}>Fun Fact:</span> I’m a <strong>movie buff</strong>—always down to discuss cinematography or the latest indie gem.
+          <span className={styles.highlight}>Movie Buff:</span> Obsessed with cinematography and indie gems.
         </p>
       </div>
     </section>

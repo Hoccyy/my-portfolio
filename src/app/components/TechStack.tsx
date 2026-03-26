@@ -21,7 +21,7 @@ export default function TechStack() {
     <section className={styles.wrapper}>
       <header className={styles.header}>
         <h2 className={styles.title}>Tech Stack</h2>
-        <p className={styles.subtitle}>Tools and technologies I use to build projects.</p>
+        <p className={styles.subtitle}>Tools and technologies I use to build my projects.</p>
       </header>
 
       <div className={styles.stackBody}>

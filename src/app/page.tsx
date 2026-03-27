@@ -1,7 +1,7 @@
-"use client";
-import Image from "next/image";
-import styles from "./page.module.css";
-import TechStack from "./components/TechStack";
+'use client';
+import Image from 'next/image';
+import styles from './page.module.css';
+import TechStack from './components/TechStack';
 import Education from './components/Education';
 import Interests from './components/Interests';
 import { ExperienceTimeline } from './components/ExperienceTimeline';

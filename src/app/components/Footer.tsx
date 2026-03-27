@@ -1,6 +1,6 @@
-"use client";
-import styles from '../page.module.css'
+'use client';
 import Link from 'next/link';
+import styles from '../page.module.css'
 import { SocialIcon } from 'react-social-icons';
 
 

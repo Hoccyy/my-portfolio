@@ -41,10 +41,10 @@ export default function TechStack() {
 
       <div className={styles.stackBody}>
         <StackRow label="FRONTEND">
-          <TechPill name="Vue.js" />
           <TechPill name="React" />
           <TechPill name="Next.js" />
           <TechPill name="TypeScript" />
+          <TechPill name="Vue.js" />
           <TechPill name="HTML5" />
           <TechPill name="CSS" />
         </StackRow>
@@ -54,9 +54,10 @@ export default function TechStack() {
           <TechPill name="Python" />
           <TechPill name="C++" />
           <TechPill name="REXX" />
-          <TechPill name="JCl" />
+          <TechPill name="JCL" />
           <TechPill name="Java" />
           <TechPill name="Go" />
+          <TechPill name="Rust" />
           <TechPill name="Dart" />
           <TechPill name="Node.js" />
         </StackRow>

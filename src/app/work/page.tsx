@@ -5,9 +5,16 @@ const myProjects = [
   {
     title: "Makku.co",
     description: "A minimalist AI platform empowering authors and screenwriters. Trusted by 1,000+ users and growing.",
-    technologies: ["Next.js", "TypeScript", "Firebase", "GCP", "Node.js", "NoSQL", "AI"],
+    technologies: ["TypeScript", "Next.js", "Firebase", "GCP", "Node.js", "NoSQL", "AI"],
     link: "https://makku.co",
     logoSrc: "/makku1.png"
+  },
+  {
+    title: "Calvor",
+    description: "A fitness and health platform to calculate daily energy expenditure, water intake, and protein needs.",
+    technologies: ["TypeScript", "Next.js", "React", "Node.js"],
+    link: "https://www.calvor.co",
+    logoSrc: "https://www.calvor.co/favicon.ico"
   },
   {
     title: "ChefGPT 0.2",

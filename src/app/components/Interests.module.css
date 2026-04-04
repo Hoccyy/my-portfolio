@@ -52,6 +52,10 @@
       transform: scale(0.97);
       background: rgba(255, 255, 255, 0.06);
     }
+
+    .container {
+        max-width: 90%; /* More flexible width on mobile */
+    }
   }
   
   .icon {

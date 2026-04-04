@@ -94,3 +94,15 @@
   .link:hover {
     opacity: 1;
   }
+
+  /* Mobile-specific: Active state for touch feedback */
+  @media (max-width: 599px) {
+    .card:active {
+      transform: scale(0.97);
+      background: #1a1a1a;
+    }
+  
+    .grid {
+        width: 90%; /* More flexible width on mobile */
+    }
+  }

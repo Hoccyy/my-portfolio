@@ -30,7 +30,7 @@ export default function Home() {
                 student at
                 <span className={styles.uniSpan}>&nbsp;York&nbsp;University </span>
                 pursuing my bachelor&apos;s degree with a deep passion
-                for developing software and bringing ideas to life 💻&nbsp;⚙️
+                for Software Development and bringing ideas to life 💻&nbsp;⚙️
               </h2>
             </div>
 

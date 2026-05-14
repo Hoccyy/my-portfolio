@@ -5,7 +5,7 @@ const myProjects = [
   {
     title: "Makku.co",
     description: "A minimalist AI platform empowering authors and screenwriters. Trusted by 1,000+ users and growing.",
-    technologies: ["TypeScript", "Next.js", "Firebase", "GCP", "Node.js", "NoSQL", "AI"],
+    technologies: ["TypeScript", "Next.js", "Firebase", "Lexical", "GCP", "Node.js", "NoSQL", "AI", "DOMPurify", "Marked"],
     link: "https://makku.co",
     logoSrc: "/makku1.png"
   },

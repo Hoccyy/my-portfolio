@@ -196,6 +196,7 @@
   padding-top: 190px;
   filter: drop-shadow(10px 13px 80px rgba(0, 0, 0, 1.3));
   height: 600px;
+  width: 100%;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -589,14 +590,14 @@
   .introMessage {
     width: 100vw;
     text-align: center;
-    font-size: 36px;
+    font-size: 39px;
     padding: 11px;
     padding-top: 0;
   }
   .introBody {
-    padding: 0 13.13px 0 13.13px;
+    padding: 0 39px 0 39px;
     width: 95.13vw;
-    font-size: 24px;
+    font-size: 22px;
     text-align: center;
   }
   .socialTextHeader {
@@ -812,10 +813,17 @@
     font-size: 28px;
   }
 
+  .introSect {
+    max-width: 100vw;
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+
   .introBody {
-    width: 80vw;
+    width: 99%;
+    padding: 6px;
     font-weight: normal;
-    text-align: left;
+    text-align: center;
   }
 
   .projectRow {

@@ -28,6 +28,7 @@
   border-radius: 12px;
   padding: 2rem;
   width: 850px;
+  width: 50vw;
   transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
@@ -136,6 +137,7 @@
   font-weight: 500;
 }
 
+/* Mobile */
 @media (max-width: 640px) {
   .topRow {
     flex-direction: column;
@@ -158,6 +160,7 @@
 
   .card {
     max-width: 100%;
+    width: 85vw;
   }
 
   .titleArea {
@@ -166,5 +169,18 @@
 
   .highlights {
     text-align: justify;
+  }
+}
+
+/* Tablet */
+@media (min-width: 701px) and (max-width: 1120px) {
+  .card {
+    width: 88vw;
+  }
+}
+
+@media (min-width: 1120px) and (max-width: 1500px) {
+  .card {
+    width: 70vw;
   }
 }

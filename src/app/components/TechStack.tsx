@@ -37,6 +37,9 @@ export default function TechStack() {
           <TechPill name="Rust" />
           <TechPill name="Dart" />
           <TechPill name="Node.js" />
+          <TechPill name="Postman" />
+          <TechPill name="Relay" />
+          <TechPill name="GraphQL" />
         </StackRow>
 
         <StackRow label="MOBILE">

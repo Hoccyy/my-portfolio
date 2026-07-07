@@ -202,23 +202,63 @@
   display: flex;
   flex-direction: row;
   background: linear-gradient(#1b1b1b, black);
+  margin-top: 26px;
 }
 
 .introSect2 {
-  background: linear-gradient(135deg, #1a1a1a 0%, #252525 50%, #1a1a1a 100%);
-  background-size: 200% 200%;
+  position: relative;
+  overflow: hidden;
+
+  background:
+    radial-gradient(circle at 15% 15%, rgba(255,255,255,0.08), transparent 35%),
+    radial-gradient(circle at 85% 80%, rgba(255,255,255,0.04), transparent 45%),
+    radial-gradient(circle at 50% 0%, rgba(90, 110, 160, 0.35), transparent 60%),
+    linear-gradient(135deg, #12141c 0%, #1b1f2e 45%, #0f1119 100%);
+
+  background-size: 220% 220%;
   animation: gradientShift 6.13s ease forwards;
 
   filter: drop-shadow(10px 13px 80px rgba(0, 0, 0, 0.8));
   border-radius: 26px;
   height: 600px;
-  width: 60%;
+  width: 64%;
   text-align: center;
   align-items: center;
   justify-content: center;
   display: flex;
   flex-direction: column;
-  border: 1px solid #333;
+  border: 1px solid rgba(140, 160, 220, 0.12);
+
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.06),
+    inset 0 -30px 60px rgba(0,0,0,0.15);
+}
+
+.introSect2::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: inherit;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,0.08) 0%,
+      rgba(255,255,255,0.02) 20%,
+      transparent 50%
+    );
+}
+
+.introSect2::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+
+  background:
+    radial-gradient(circle at 50% 50%, transparent 55%, rgba(120, 140, 200, 0.03) 100%);
 }
 
 @keyframes gradientShift {
@@ -231,14 +271,14 @@
 }
 
 .portraitImg {
-  height: 390px;
-  width: 260px;
+  height: 442px;
+  width: 273px;
   margin-left: 13px;
   object-fit: cover;
-  /* A sharp, futuristic tech-cutout */
   clip-path: polygon(0% 0%, 75% 0%, 100% 15%, 100% 100%, 25% 100%, 0% 85%);
   transition: clip-path 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   animation: loadIntro2 0.6s ease-in forwards;
+  cursor: copy;
 }
 
 .portraitImg:hover {
@@ -423,6 +463,7 @@
   max-width: 100%;
 
   color: rgb(76, 133, 247);
+  color: white;
   font-family: monospace;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: 500;
@@ -437,7 +478,7 @@
 }
 
 .introBody {
-  width: 60%;
+  width: 65%;
   font-size: 28.13px;
   text-align: center;
   opacity: 0;
@@ -515,16 +556,15 @@
 }
 
 .uniSpan {
-  /* Thin but vibrant */
-  color: #ff3d3d; 
-  font-weight: 500; 
-  letter-spacing: 0.02em; /* Slight tracking for a high-end look */
-  
-  /* The "Flare": a very tight, focused glow */
-  text-shadow: 0 0 5px rgba(255, 61, 61, 0.4);
-  
-  /* Interactive pulse */
-  transition: text-shadow 0.3s ease, color 0.3s ease;
+  color: #9fb7d8;
+  font-weight: 600;
+  letter-spacing: 0.015em;
+  transition: color 0.25s ease, text-shadow 0.25s ease;
+}
+
+.uniSpan:hover {
+  color: #bfd4ef;
+  text-shadow: 0 0 16px rgba(159, 183, 216, 0.18);
 }
 
 @media (prefers-reduced-motion) {
@@ -598,8 +638,9 @@
   }
 
   .introSect2 {
-    width: 97vw;
-    height: 400px;
+    width: 92vw;
+    max-width: 100vw;
+    height: 450px;
   }
 
   .portraitImg {

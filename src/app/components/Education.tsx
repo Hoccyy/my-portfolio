@@ -3,31 +3,31 @@ import styles from './Education.module.css';
 const Education = () => {
   const education = [
     {
-      school: "York University",
-      degree: "BA — Computer Science",
-      period: "Sep 2023 — Present",
-      location: "Toronto, ON",
-      logo: "/york2.png",
-      highlights: "Focusing on Systems Architecture, Operating Systems, and Advanced Algorithms.",
-      skills: ["Java", "TypeScript", "React", "C/C++", "Unix/Linux", "Data Structures"]
+      school: 'York University',
+      degree: 'BA – Computer Science',
+      period: 'Sep 2023 — Present',
+      location: 'Toronto, ON',
+      logo: '/york2.png',
+      highlights: 'Focusing on Systems Architecture, Operating Systems, and Advanced Algorithms.',
+      skills: ['Java', 'JavaScript', 'React', 'C/C++', 'OOP', 'Calculus', 'Unix/Linux', 'Software Design', 'UX Design', 'Data Structures', 'Database Management Systems', 'Discrete Mathematics', 'HCI']
     },
     {
-      school: "Algoma University",
-      degree: "BA (Honours) — Computer Science",
-      period: "2022 — 2023",
-      location: "Brampton, ON",
-      logo: "/algoma.png",
-      highlights: "Completed core foundations in Computational Theory and Mathematics.",
-      skills: ["Java", "JavaScript", "Algorithms", "Linear Algebra"]
+      school: 'Algoma University',
+      degree: 'BA (Honours) – Computer Science',
+      period: '2022 — 2023',
+      location: 'Brampton, ON',
+      logo: '/algoma.png',
+      highlights: 'Completed core foundations in Computational Theory and Mathematics.',
+      skills: ['Java', 'JavaScript', 'Algorithms', 'Linear Algebra', 'DSA', 'Geography', 'OOP']
     },
     {
-      school: "Thistletown Collegiate Institute",
-      degree: "Ontario Secondary School Diploma",
-      period: "2020 — 2022",
-      location: "Toronto, ON",
-      logo: "/tci.png",
-      highlights: "Specialist High Skills Major (SHSM) in Information & Communications Technology.",
-      skills: ["Python", "C++", "Embedded Systems", "Robotics"]
+      school: 'Thistletown Collegiate Institute',
+      degree: 'Ontario Secondary School Diploma',
+      period: '2020 — 2022',
+      location: 'Toronto, ON',
+      logo: '/tci.png',
+      highlights: 'Specialist High Skills Major (SHSM) in Information & Communications Technology.',
+      skills: ['Python', 'C++', 'Embedded Systems', 'Robotics', 'Calculus', 'Computer Engineering']
     }
   ];
 
@@ -40,7 +40,7 @@ const Education = () => {
           <div key={idx} className={styles.card}>
             <div className={styles.header}>
               <div className={styles.logoBox}>
-                <img src={edu.logo} alt="" className={styles.logo} />
+                <img src={edu.logo} alt='' className={styles.logo} />
               </div>
               <div className={styles.titleArea}>
                 <div className={styles.topRow}>

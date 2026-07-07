@@ -1,13 +1,10 @@
 'use client';
 import Link from 'next/link';
 import styles from '../page.module.css'
+import { GITHUB_URL, LEETCODE_PROFILE, LINKEDIN_URL, TWITTER_PROFILE } from './constants';
 import { SocialIcon } from 'react-social-icons';
 
 
-const LinkedInProfile : string = 'https://www.linkedin.com/in/hoccyy/';
-const GitHubProfile : string = 'https://github.com/hoccyy';
-const TwitterProfile : string = 'https://twitter.com/Hoccyy_';
-const leetcodeProfile : string = 'http://leetcode.com/Hoccyy/';
 const year : number = new Date().getFullYear();
 
 const Footer = ({
@@ -18,17 +15,18 @@ const Footer = ({
           <div className={styles.centerFtr}>
             <div className={styles.footerContainer}>
               <h2 className={styles.footerText}>
-                © {year}&nbsp;&nbsp;<Link href={LinkedInProfile} className={styles.footerHighlight} target='_blank'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@Hoccyy</Link>
+                © {year}&nbsp;&nbsp;
+                <Link href={LINKEDIN_URL} className={styles.footerHighlight} target='_blank'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@Hoccyy</Link>
                 &nbsp;&nbsp;• &nbsp;&nbsp;Toronto, CA
               </h2>
               
             </div>
             
             <div className={styles.footerCenter}>
-              <SocialIcon id={styles.footerIcon} url={LinkedInProfile} target='_blank'/>
-              <SocialIcon id={styles.footerIcon} url={GitHubProfile} target='_blank'/>
-              <SocialIcon id={styles.footerIcon} url={leetcodeProfile} target='_blank'/>
-              <SocialIcon id={styles.footerIcon} url={TwitterProfile} target='_blank'/>
+              <SocialIcon id={styles.footerIcon} url={LINKEDIN_URL} target='_blank'/>
+              <SocialIcon id={styles.footerIcon} url={GITHUB_URL} target='_blank'/>
+              <SocialIcon id={styles.footerIcon} url={LEETCODE_PROFILE} target='_blank'/>
+              <SocialIcon id={styles.footerIcon} url={TWITTER_PROFILE} target='_blank'/>
             </div>
         </div>
         </main>

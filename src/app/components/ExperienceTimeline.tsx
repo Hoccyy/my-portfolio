@@ -31,7 +31,7 @@ const experiences: Experience[] = [
     technologies: ["JavaScript", "TypeScript", "Azure DevOps", "GraphQL", "React-Relay", "Redux", "Linux", "Jest"],
     duties: ["Software Engineer"],
     jobDesc: "In my recent role at Microsoft, I integrated a social media feature within Microsoft Teams and Viva Engage, enabling users to better customize profiles and strengthen their branding. This involved creating dynamic UI components with TypeScript and React-Relay, and integrating them with GraphQL APIs for efficient data handling. I also utilized Azure DevOps for CI/CD workflows in conjunction with Git, and wrote comprehensive unit tests to ensure the delivery of high-quality, reliable code.", 
-    roleLength: "Jun 2025 - Aug 2025",
+    roleLength: "Jun 2025 — Aug 2025",
   },
   {
     companyLink: "https://www.aboutamazon.com/what-we-do/amazon-web-services",
@@ -41,7 +41,7 @@ const experiences: Experience[] = [
     technologies: ["Java", "AWS Cloudformation", "AWS CDK", "TypeScript", "React", "Docker", "DynamoDB"],
     duties: ["Software Engineer", "Full-Stack Engineer"],
     jobDesc: "Specialized in Cloud Development and Full-Stack Development, deigning a scalable cloud resource management feature enhancing CodeCatalyst and working on the AWS backend improving performance and metrics, enabling DevOps teams to test software more efficiently.",
-    roleLength: "Jun 2023 - Sep 2023",
+    roleLength: "Jun 2023 — Sep 2023",
   }
 ];
 

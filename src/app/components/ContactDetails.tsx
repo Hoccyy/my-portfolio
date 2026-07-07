@@ -1,10 +1,7 @@
 import './ContactDetails.css';
+import { DRIVE_ID, EMAIL, GITHUB_URL, LINKEDIN_URL } from './constants';
 
 const ContactDetails: React.FC = () => {
-  const DRIVE_ID = "1O4cXXNgMqks6eakNn5fM6MG8O5aYEvWb";
-  const GITHUB_URL = "https://github.com/hoccyy";
-  const LINKEDIN_URL = "https://linkedin.com/in/hoccyy";
-  const EMAIL = "hocianw@gmail.com";
 
   return (
     <section className="contact-details-section">
@@ -12,7 +9,7 @@ const ContactDetails: React.FC = () => {
       <div className="portfolio-header">
         <div className="title-area">
           <h2 className="header-title">The Paperwork</h2>
-          <p className="subtitle">Grab the latest version of my resume or find me online.</p>
+          <p className="subtitle">Grab the latest version of my resume or connect with me</p>
         </div>
         <div className="action-links">
           <a 
@@ -37,7 +34,7 @@ const ContactDetails: React.FC = () => {
         <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer" className="link-card">
           <div className="link-content">
             <span className="link-label">GitHub</span>
-            <span className="link-sub">My recent builds</span>
+            <span className="link-sub">My recent work</span>
           </div>
           <div className="arrow">↗</div>
         </a>

@@ -5,6 +5,8 @@ import TechStack from './components/TechStack';
 import Education from './components/Education';
 import Interests from './components/Interests';
 import { ExperienceTimeline } from './components/ExperienceTimeline';
+import { LINKEDIN_URL } from './components/constants';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -12,14 +14,14 @@ export default function Home() {
       <div className={styles.primary}>
         <div className={styles.center}>
           <div className={styles.introSect}>
-          <Image
-              src={"/portrait2.jpg"}
-              width={900}
-              height={900}
-              alt="Portrait"
-              className={styles.portraitImgMobile}
-              draggable={false}
-          />
+            <Image
+                src={"/portrait2.jpg"}
+                width={900}
+                height={900}
+                alt="Portrait"
+                className={styles.portraitImgMobile}
+                draggable={false}
+            />
             <div className={styles.introSect2}>
               <h1 id="intro" className={styles.introMessage}>
                 Hocían Wade 👨🏾‍💻
@@ -34,14 +36,18 @@ export default function Home() {
               </h2>
             </div>
 
-            <Image
-              src={"/portrait2.jpg"}
-              width={900}
-              height={900}
-              alt="Portrait"
-              className={styles.portraitImg}
-              draggable={false}
-            />
+            <Link href={LINKEDIN_URL} target='_blank' passHref>
+              <div onClick={() => console.log('Image clicked!')} style={{ cursor: 'pointer' }}>
+                <Image 
+                  src="/portrait2.jpg" 
+                  width={900} 
+                  height={900} 
+                  alt="Portrait" 
+                  className={styles.portraitImg} 
+                  draggable={false} 
+                />
+              </div>
+            </Link>
           </div>
         </div>
 
